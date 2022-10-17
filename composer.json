@@ -1,0 +1,23 @@
+{
+    "name": "moccomposer/composer-test",
+    "description": "This is the test project for moc environment",
+    "autoload": {
+        "psr-4": {
+            "Moccomposer\\ComposerTest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "viktorsokoliuk",
+            "email": "viktor.sokoliuk@masterofcode.com"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^6.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "johnpbloch/wordpress-core-installer": true
+        }
+    }
+}
