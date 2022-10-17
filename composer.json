@@ -13,11 +13,63 @@
         }
     ],
     "require": {
-        "johnpbloch/wordpress": "^6.0"
+        "johnpbloch/wordpress": "^6.0",
+        "wpackagist-plugin/wp-migrate-db": "2.*",
+        "wpackagist-plugin/advanced-custom-fields": "^6.0",
+        "wpackagist-plugin/contact-form-7": "^5.6",
+        "wpackagist-plugin/akismet": "^5.0",
+        "wpackagist-plugin/amp": "^2.3",
+        "wpackagist-plugin/svg-support": "^2.5",
+        "wpackagist-plugin/wp-mail-smtp": "^3.6",
+        "wpackagist-plugin/wordpress-seo": "^19.8",
+        "wpackagist-plugin/w3-total-cache": "^2.2",
+        "wpackagist-plugin/wp-security-audit-log": "4.4.2.1",
+        "wpackagist-plugin/simple-share-buttons-adder": "^8.3",
+        "wpackagist-plugin/classic-editor": "^1.6",
+        "wpackagist-plugin/cf7-conditional-fields": "^2.2",
+        "wpackagist-plugin/contact-form-7-mailchimp-extension": "^0.5.62",
+        "wpackagist-plugin/accelerated-mobile-pages": "1.0.77.53",
+        "wpackagist-plugin/custom-post-type-ui": "^1.13",
+        "wpackagist-plugin/easy-table-of-contents": "^2.0",
+        "wpackagist-plugin/flamingo": "^2.3",
+        "wpackagist-plugin/geoip-detect": "^5.0",
+        "wpackagist-plugin/wp-structuring-markup": "^4.8",
+        "wpackagist-plugin/my-simple-space": "^1.2",
+        "wpackagist-plugin/post-duplicator": "^2.28",
+        "wpackagist-plugin/post-type-transfer": "^1.3",
+        "wpackagist-plugin/post-types-order": "1.9.9.1",
+        "wpackagist-plugin/publishpress-authors": "^3.23",
+        "wpackagist-plugin/redirection": "^5.3",
+        "wpackagist-plugin/regenerate-thumbnails": "^3.1"
     },
     "config": {
         "allow-plugins": {
-            "johnpbloch/wordpress-core-installer": true
+            "johnpbloch/wordpress-core-installer": true,
+            "composer/installers": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+            "wpackagist-plugin/*",
+            "wpackagist-theme/*"
+            ]
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "wordpress/wp-content/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "wordpress/wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "wordpress/wp-content/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
         }
     }
+    
 }
