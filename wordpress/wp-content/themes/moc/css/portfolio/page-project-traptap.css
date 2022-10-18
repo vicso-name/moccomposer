@@ -1,0 +1,433 @@
+/*---------------------------------------------------------*/
+/*-------------------------TRAPTAP-------------------------*/
+/*---------------------------------------------------------*/
+.traptap .case-study-idea {
+  padding: 0;
+  /*background-image: url('../images/project/traptap/idea.jpg');*/
+  background: transparent;
+}
+.estimate-list.smaller-font {
+  font-size: 18px;
+}
+.traptap .idea-substring {
+  margin: 300px auto 80px;
+  width: auto;
+  max-width: 500px;
+  display:         flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #91b7d4;
+}
+.traptap .idea-substring p {
+  font-size: inherit;
+  line-height: inherit;
+}
+.bt-logo {
+  height: 40px;
+  width: 30px;
+  min-width: 30px;
+  margin-right: 30px;
+}
+.traptap .case-study-launch {
+  position: relative;
+  background: transparent;
+  /*background: url('../images/project/traptap/launch_bg.jpg') center no-repeat;*/
+  /*background-size: cover;*/
+}
+.traptap-launch-list {
+  margin: 25px auto 0;
+}
+.traptap-launch-list .case-study-launch-list-item {
+  vertical-align: top;
+}
+.traptap-launch-list .launch-list-item {
+  max-width: 330px;
+}
+.traptap-launch-image {
+  margin: 0;
+  max-width: 320px;
+}
+.traptap-launch-title {
+  position: relative;
+  z-index: 1;
+}
+.traptap-launch-title .case-study-launch-percent {
+  line-height: 80px;
+}
+.traptap-launch-title:before {
+  display: block;
+  z-index: -1;
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -40px;
+  margin-top: 0;
+  background: #ffffff;
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+}
+.case-study-launch .traptap-launch-image .case-study-image-wrapper img {
+  margin: 0 -10px;
+}
+.traptap-steps {
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+}
+.traptap-steps li {
+  display: inline-block;
+  vertical-align: top;
+  width: 160px;
+  padding: 0 60px 0 0;
+  text-align: center;
+  position: relative;
+}
+.sprite-step {
+  background-image: url('../images/project/traptap/steps_spritesheet.png');
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto 30px;
+  height: 103px;
+  width: 103px;
+}
+.traptap-steps li:after {
+  background: url('../images/project/dots.svg') center no-repeat;
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 42px;
+  height: 20px;
+  width: 60px;
+}
+.traptap-steps li:last-child {
+  padding: 0;
+}
+.traptap-steps li:last-child:after {
+  content: none;
+}
+.sprite-step_1 {
+  width: 103px;
+  height: 102px;
+  background-position: -10px -10px;
+}
+
+.sprite-step_2 {
+  width: 103px;
+  height: 102px;
+  background-position: -10px -132px;
+}
+
+.sprite-step_3 {
+  width: 103px;
+  height: 102px;
+  background-position: -10px -254px;
+}
+
+.sprite-step_4 {
+  width: 103px;
+  height: 102px;
+  background-position: -10px -376px;
+}
+.grey-bg {
+  background: #f8f9f9;
+}
+.traptap .resources-block-case-study {
+  background-color: #f8f9f9;
+}
+.grey-bg .masters-comment-title .text-title {
+  /*background-color: #f8f9f9;*/
+  background-color: inherit;
+}
+.grey-bg .comment-author:before {
+  border-top-color: #f8f9f9;
+}
+.full-height-image-wrapper {
+  justify-content: space-between;
+  align-content: stretch;
+}
+.full-height-image-wrapper .comment-image-wrapper {
+  max-height: inherit;
+}
+.full-height-image-wrapper .comment-image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.case-study-wrapper.full-width-wrapper {
+  padding-bottom: 80px;
+}
+.case-study-wrapper.full-width-wrapper .case-study-comment,
+.case-study-wrapper.full-width-wrapper {
+  width: auto;
+  overflow: visible;
+}
+.case-study-wrapper.full-width-wrapper .comment-wrapper {
+  overflow: visible;
+  align-items: stretch;
+}
+.case-study-wrapper.full-width-wrapper .comment-image-wrapper {
+  margin: 60px 40px 60px 0;
+  position: relative;
+}
+.case-study-wrapper.full-width-wrapper .comment-image-wrapper img {
+  height: 100%;
+  width: auto;
+  max-width: inherit;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.google-store-link {
+  height: 57px;
+  width: 193px;
+  display: block;
+  margin: 40px auto;
+}
+.google-store-link img {
+  height: auto;
+  width: 100%;
+}
+.vertical-indent {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.small-vertical-indent {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*custom technologies block*/
+.traptap .tech-wrapper {
+  display: none;
+}
+.custom-technologies {
+  display: block;
+  text-align: center;
+}
+.custom-tech-list {
+  text-align: center;
+  margin: 18px auto 68px;
+  font-size: 0;
+}
+.custom-tech-item {
+  display: inline-block;
+  height: 42px;
+  line-height: 40px;
+  vertical-align: middle;
+  padding: 0 25px;
+  margin: 22px 0 22px -1px;
+  overflow: hidden;
+  border: 1px solid lightgrey;
+  border-top: none;
+  border-bottom: none;
+}
+.technology-icon {
+  height: auto;
+  width: auto;
+  max-height: 42px;
+  max-width: 42px;
+  display: inline-block;
+  line-height: inherit;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.tech-icon-wrapper {
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: inherit;
+  text-align: center;
+}
+.tech-icon-wrapper img {
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: inherit;
+  text-align: center;
+}
+.technology-description {
+  display: inline-block;
+  vertical-align: inherit;
+  line-height: inherit;
+  text-align: left;
+}
+.technology-heading {
+  line-height: 1em;
+  color: #333333;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+.tech-sublist {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.tech-sublist li {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: inherit;
+  font-weight: 400;
+  position: relative;
+}
+.tech-sublist li + li:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  margin-top: -2px;
+  height: 3px;
+  width: 3px;
+  border-radius: 100%;
+  background: #333333;
+}
+@media all and (max-width: 960px) {
+  .traptap-steps li {
+    width: 120px;
+  }
+  .case-study-wrapper.full-width-wrapper .comment-image-wrapper {
+    margin: 0;
+    padding: 20px 40px 20px 0;
+    position: static;
+  }
+  .case-study-wrapper.full-width-wrapper .comment-image-wrapper img {
+    height: initial;
+    width: 100%;
+    position: static;
+    margin-left: -34px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .traptap .case-study-idea {
+    /*background-image: url('../images/project/traptap/idea_mob.jpg');*/
+  }
+  .traptap .case-study-launch {
+    /*background: url('../images/project/traptap/launch_bg_mob.jpg') center no-repeat;*/
+    /*background-size: cover;*/
+  }
+  .case-study-wrapper.full-width-wrapper .comment-image-wrapper {
+    padding: 0 0 20px 0;
+  }
+  .case-study-wrapper.full-width-wrapper:after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+  .case-study-wrapper.full-width-wrapper {
+    padding-bottom: 40px;
+  }
+  .traptap .case-section-text-centered {
+    font-size: 14px;
+  }
+  .traptap-steps {
+    font-size: 14px;
+  }
+  .estimate-list.smaller-font {
+    font-size: 16px;
+  }
+  .traptap .idea-substring {
+    font-size: 12px;
+    margin: 100px auto 40px;
+  }
+  .bt-logo {
+    margin: 5px 30px 5px 0;
+  }
+  .traptap-steps li {
+    width: auto;
+    padding: 0 0 80px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .sprite-step {
+    margin: 0 20px 0 0;
+    min-width: 103px;
+  }
+  .traptap-steps li:after {
+    right: initial;
+    top: 131px;
+    left: 22px;
+    transform: rotateZ(90deg);
+  }
+  .traptap-launch-title .case-study-launch-percent {
+    line-height: 60px;
+  }
+  .traptap-launch-title:before {
+    margin-left: -30px;
+    height: 60px;
+    width: 60px;
+  }
+  .google-store-link {
+    height: 44px;
+    width: 150px;
+    margin: 20px auto;
+  }
+  .vertical-indent {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .small-vertical-indent {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .custom-tech-list {
+    text-align: left;
+    margin: 20px auto ;
+  }
+  .custom-tech-item {
+    display: block;
+    height: auto;
+    line-height: 42px;
+    padding: 0;
+    margin: 20px auto;
+    border: none;
+  }
+  .tech-icon-wrapper {
+    display: inline-block;
+    width: 42px;
+    vertical-align: top;
+  }
+  .technology-icon {
+    vertical-align: bottom;
+  }
+  .tech-sublist {
+    font-size: 14px;
+    height: initial;
+    vertical-align: top;
+    margin-top: -14px;
+  }
+  .tech-sublist li {
+    display: block;
+    height: 22px;
+    padding: 20px 10px 0;
+  }
+  .tech-sublist li + li:before {
+    content: none;
+  }
+  .technology-heading {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 767px) and (orientation: landscape) {
+  .traptap .comment-wrapper {
+    display: block;
+  }
+}
+@media only screen and (max-width: 599px) and (orientation: portrait) {
+  .case-study-wrapper.full-width-wrapper .comment-image-wrapper {
+    margin: 0 -34px 40px;
+    max-width: initial;
+  }
+  .case-study-wrapper.full-width-wrapper .comment-image-wrapper img {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 370px) {
+  .bt-logo {
+    margin: 10px 20px 10px 0;
+  }
+}

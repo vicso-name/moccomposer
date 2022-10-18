@@ -1,0 +1,118 @@
+@import "variables";
+@mixin moc_section ($background, $max_width){
+  background-color: $background;
+  width: auto;
+
+  margin: 0 auto;
+  padding: 45px 0;
+  &.small-padding-bottom {
+    padding-bottom: 20px;
+  }
+  &.small-padding-top {
+    padding-top: 20px;
+  }
+  @media all and (min-width: 768px) {
+    padding: 46px 0;
+    &.small-padding-bottom {
+      padding-bottom: 30px;
+    }
+    &.small-padding-top {
+      padding-top: 30px;
+    }
+  }
+  @media all and (min-width: 1025px) {
+    padding: 60px 0;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 77px 0;
+    &.small-padding-bottom {
+      padding-bottom: 60px;
+    }
+    &.small-padding-top {
+      padding-top: 60px;
+    }
+  }
+  @media all and (min-width: 1600px) {
+    padding: 80px 0;
+  }
+  .moc-inner {
+    max-width: $max_width;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@mixin heading_style ($color, $family, $desktop_size, $laptop_size, $tablet_size, $mobile_size) {
+  font-size: $mobile_size;
+  color: $color;
+  font-family: $family;
+  margin: 0 auto 1em;
+  padding: 0 30px;
+  line-height: 1.2;
+  font-weight: 300;
+  vertical-align: middle;
+  text-align: center;
+  @media all and (min-width: 768px) {
+    font-size: $tablet_size;
+  }
+  @media all and (min-width: 1200px) {
+    font-size: $laptop_size;
+    margin: 0 auto 1.1em;
+  }
+  @media all and (min-width: 1600px) {
+    font-size: $desktop_size;
+  }
+}
+
+@mixin flex_grid ($columns, $margin) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  width: auto;
+  margin: 0 -$margin;
+  padding: 0;
+  .column {
+    width: 100%;
+    margin: $margin;
+    box-sizing: border-box;
+  }
+  @media all and (min-width: 800px) {
+    .column {
+      margin: $margin;
+      width: calc( ( 100% - #{$columns} * #{$margin} * 2 ) / #{$columns} );
+    }
+  }
+}
+
+
+@mixin industries_grid ($columns, $columns_mobile, $margin, $max_width, $max_width_mobile) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  width: auto;
+  max-width: $max_width_mobile;
+  margin: 0 -$margin;
+  padding: 0;
+  .column {
+    margin: $margin;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    width: 33.3%;
+    //width: calc( ( 100% - #{$columns_mobile} * #{$margin} * 2 ) / #{$columns_mobile} );
+  }
+  @media all and (min-width: 960px ) {
+    max-width: $max_width;
+    .column {
+      margin: $margin;
+      width: 11.11%;
+      //width: calc( ( 100% - #{$columns} * #{$margin} * 2 ) / #{$columns} );
+    }
+  }
+}

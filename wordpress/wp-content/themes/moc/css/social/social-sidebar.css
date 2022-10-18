@@ -1,0 +1,90 @@
+/*---------------------------------------------------------------------------*/
+/*------------------------------> SOCIAL <-----------------------------------*/
+/*---------------------------------------------------------------------------*/
+.share-sidebar {
+  width: auto;
+  max-width: 840px;
+  overflow:hidden;
+  margin:40px 0 20px;
+  padding: 0 0 10px;
+  text-align: right;
+}
+@media all and (max-width: 767px) {
+  .share-sidebar .ssba_facebook_share {
+    color:#3C5B9A;
+  }
+  .share-sidebar .ssba_facebook_share svg {
+    fill:#3C5B9A;
+  }
+  .share-sidebar .ssba_twitter_share {
+    color:#28AAE1;
+  }
+  .share-sidebar .ssba_twitter_share svg {
+    fill:#28AAE1;
+  }
+  .share-sidebar .ssba_linkedin_share {
+    color:#0B78B7;
+  }
+  .share-sidebar .ssba_linkedin_share svg {
+    fill:#0B78B7;
+  }
+}
+
+.no-touch .share-sidebar .ssba_facebook_share:hover {
+  border-color:#3C5B9A;
+}
+
+.no-touch .share-sidebar .ssba_twitter_share:hover {
+  border-color:#28AAE1;
+}
+
+.no-touch .share-sidebar .ssba_linkedin_share:hover {
+  border-color:#0B78B7;
+}
+
+.share-sidebar a img {
+  display:none !important;
+}
+
+.share-sidebar .ssba_sharecount {
+  display: none;
+}
+.share-sidebar > div,
+.share-sidebar > div > div {
+  text-align: right !important;
+  font-size: 0;
+}
+.share-sidebar a {
+  width: 22px;
+  height: 18px;
+  display: inline-block;
+  border-radius: 0;
+  border: none;
+  text-align: right;
+  margin: 0;
+  line-height: 22px;
+}
+.share-sidebar a + a {
+  margin-left: 22px;
+}
+.share-sidebar a svg {
+  position: static;
+  margin: 0;
+  width: 18px;
+  height: 18px;
+}
+.share-sidebar .ssba_twitter_share svg {
+  width: 22px;
+}
+.share-sidebar .ssba svg {
+  fill: #ccc;
+}
+.no-touch .share-sidebar .ssba_facebook_share:hover svg{
+  fill:#3C5B9A;
+}
+.no-touch .share-sidebar .ssba_twitter_share:hover svg {
+  fill:#28AAE1;
+}
+.no-touch .share-sidebar .ssba_linkedin_share:hover svg{
+  fill:#0B78B7;
+}

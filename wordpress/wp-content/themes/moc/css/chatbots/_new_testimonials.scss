@@ -1,0 +1,189 @@
+@import "variables";
+@import "mixins";
+.moc-section.testimonials-section h2 {
+  //margin-bottom: calc(1em - 10px);
+}
+.moc-section .chatbots-testimonials-column {
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+}
+@media all and (min-width: 1200px) {
+  .touch-only {
+    display: none !important;
+  }
+}
+@media all and (max-width: 1199px) {
+  .notouch-only {
+    display: none !important;
+  }
+  .moc-inner.touch-only.touch-only.touch-only {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .moc-section .chatbots-testimonials-column {
+    margin: 15px 40px 40px;
+  }
+  .moc-section.testimonials-section h2 {
+    margin-bottom: 25px;
+  }
+}
+@media all and (max-width: 600px) {
+  .moc-section.testimonials-section h2 {
+    margin-bottom: 15px;
+  }
+}
+
+@media all and (min-width: 400px) and (max-width: 600px) {
+  .moc-section .chatbots-testimonials-column {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .moc-section .chatbots-testimonials-column {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+.chatbots-testimonials-grid.designv2 {
+  @include flex_grid(3, 15px);
+  padding: 0 0 46px 0;
+}
+
+.designv2 .column.chatbots-testimonials-column {
+  text-align: center;
+  padding: 30px 24px 35px;
+  background-color: #fefefe;
+  position: relative;
+}
+.designv2 .avatar-holder {
+  height: 70px;
+  width: 70px;
+  margin: 10px auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+.designv2 .chatbots-testimonial-heading {
+  font-size: 20px;
+  line-height: 1.2;
+  min-height: 4.2em;
+  font-weight: 500;
+  text-align: center;
+  color: #444444;
+  margin: 4px auto 0;
+}
+.designv2 .chatbots-testimonial-logo {
+  margin: 0;
+  background-color: #f15840;
+  position: absolute;
+  top: 37px;
+  left: 50%;
+  margin-left: 20px;
+  height: 14px;
+  padding: 3px;
+  border-radius: 10px;
+  width: auto;
+}
+.designv2 .chatbots-testimonial-content {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.9;
+  text-align: left;
+
+  margin: 0 auto;
+  &:before {
+    display: block;
+    //content: '';
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 32px;
+    transform-origin: center;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 45' height='24' width='32' version='1.1'%3E%3Cpath transform='translate(-21,-29)' d='m 21.154655,66.205148 c 0.18994,-0.476808 4.169672,-7.693024 8.84385,-16.036036 L 38.49701,35 h 6.818883 c 6.615938,0 6.797671,0.06697 6.106179,2.25 C 51.030085,38.4875 48.575393,45.575 45.9672,53 L 41.225031,66.5 31.01717,66.786036 c -5.614323,0.157319 -10.052455,-0.10408 -9.862515,-0.580888 z m 28,0 c 0.18994,-0.476808 4.169672,-7.693024 8.84385,-16.036036 L 66.49701,35 h 6.818883 c 6.615938,0 6.797671,0.06697 6.106179,2.25 C 79.030085,38.4875 76.575393,45.575 73.9672,53 L 69.225031,66.5 59.01717,66.786036 c -5.614323,0.157319 -10.052455,-0.10408 -9.862515,-0.580888 z' style='fill:%23f1563c' opacity='0.2'/%3E%3C/svg%3E%0A");
+    margin: -7px 0 5px;
+  }
+}
+.designv2 .chatbots-testimonial-site_link,
+.designv2 .chatbots-testimonial-no_link {
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 2.2;
+  font-weight: 300;
+}
+.designv2 .chatbots-testimonial-site_link {
+  color: #f15840;
+  text-decoration: none;
+}
+.designv2 .chatbots-testimonial-no_link {
+  color: #333333;
+}
+@media all and (min-width: 768px) {
+  .designv2 .avatar-holder {
+    height: 80px;
+    width: 80px;
+    margin: 20px auto;
+  }
+  .designv2 .chatbots-testimonial-logo {
+    top: 47px;
+    height: 16px;
+  }
+  @media all and (max-width: 1024px) {
+    .moc-section .chatbots-testimonials-column {
+      margin: 15px 30px 40px;
+    }
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 767px) {
+  .moc-section .chatbots-testimonials-column {
+    margin: 15px 15px 40px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .designv2.chatbots-testimonials-grid {
+    margin: -10px auto -15px;
+    padding: 0;
+  }
+};
+@media all and (min-width: 1600px) {
+  .designv2.chatbots-testimonials-grid {
+    margin: -15px auto -5px;
+  }
+};
+//carousel
+.owl-carousel .owl-item .chatbots-testimonial-logo {
+  width: auto;
+}
+.testimonials-carousel {
+  .owl-dots {
+    display: block;
+    bottom: -10px;
+    .owl-dot {
+      margin: 0 8px;
+      background-color: #d8d8d8;
+      &.active {
+        background-color: #7d7d7d;
+      }
+    }
+  }
+  .owl-stage {
+    display: flex;
+  }
+  .owl-item {
+    display: flex;
+
+
+  }
+
+}
+

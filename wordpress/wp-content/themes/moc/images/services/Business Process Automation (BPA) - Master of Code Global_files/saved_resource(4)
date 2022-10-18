@@ -1,0 +1,100 @@
+function _typeof(e){return(_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e})(e)}function loadCss(){var e=window.location.host+"/wp-content/plugins/moc-dialogflow/includes/css/bot-form.css",t=document.createElement("link");t.setAttribute("rel","stylesheet"),t.setAttribute("src",e),document.head.appendChild(t)}document.addEventListener("DOMContentLoaded",loadCss);var contextLifetime,botFormWrapper=document.getElementById("bot-form__wrapper");function botInit(e){var t={config:{messagesWrapper:document.getElementById("bot-form__conversation-wrapper"),messagesForm:document.getElementById("bot-form__input-form"),messagesInput:document.getElementById("bot-form__input"),botFormProjecttype:document.getElementById("bot-form__projecttype"),botFormBudget:document.getElementById("bot-form__budget"),botFormButtons:document.getElementById("bot-form__buttons"),botLanguageButtons:document.getElementById("bot-language__buttons"),botSkipButtons:document.getElementById("bot-form__skip"),botSummaryButtons:document.getElementById("bot-summary__buttons"),botMenuButton:document.getElementById("bot-menu__btn"),botFormMenu:document.getElementById("bot-form__menu"),botFormSubmit:document.getElementById("bot-form__submit"),botRestartButtons:document.querySelectorAll('[data-id="bot__restart-conversation"]'),exitFullscreenButton:document.getElementById("exit-fullscreen"),sessionId:0,menuVisible:!1,radiosVisible:!1,quickReplyVisible:!1,inputHeightChanged:!1,fullScreenMode:!1,agentName:"newagent-81693",currentChannel:0,contextLifeInterval:1e4,contextLost:!1,summary:"",leadSummary:{},agentChannel:[{name:"php",messagesReceiverAddress:blogVars.ajaxUrl,dialogSettings:[{action:"send_intent",event:"WELCOME"},{action:"send_intent",text:"",context_id:"awaiting_name"},{action:"send_intent",text:"",context_id:"awaiting_project_type"},{action:"send_intent",text:"",context_id:"awaiting_describe_project"},{action:"send_intent",text:"",context_id:"awaiting_price"},{action:"send_intent",text:"",context_id:"awaiting_company_name"},{action:"send_intent",text:"",context_id:"awaiting_email"},{action:"send_intent",text:"",context_id:"awaiting_tel"},{action:"send_intent",text:"",context_id:"awaiting_tnx"},{action:"send_intent",text:"",context_id:"awaiting_bye"},{action:"send_intent",text:"",context_id:"awaiting_bye"},{action:"send_intent",text:"",context_id:"awaiting_bye"},{action:"send_intent",text:"",context_id:"awaiting_bye"},{action:"send_intent",text:"",context_id:"awaiting_bye"},{action:"send_intent",text:"",context_id:"awaiting_bye"},{action:"send_intent",text:"",context_id:"awaiting_bye"},{action:"send_intent",text:"",context_id:"awaiting_bye"},{action:"send_intent",text:"",context_id:"awaiting_bye"},{action:"send_intent",text:"",context_id:"awaiting_bye"},{action:"send_intent",text:"",context_id:"awaiting_bye"},{action:"send_intent",text:"",context_id:"awaiting_bye"},{action:"send_intent",text:"",context_id:"awaiting_bye"}]}],intentEvents:["type of project","budget for the project","Your info has been received","email address","I am an English speaking bot","phone number","check the details"],responses:[],stepIndex:0,botNotActivated:!0,needValidateEmail:!1,mirrorMessage:""},init:function(){function e(){var e=t.config.messagesInput.value.replace(/(<[^>]+>|<[^>]>|<\/[^>]>)/g," ");if(""!==e){if(t.config.needValidateEmail){if(!t.validateEmail(e))return t.config.messagesForm.classList.add("error"),void t.addMessage("Your email address is invalid. Please enter a valid address.","bot");t.config.needValidateEmail=!1}t.config.messagesForm.classList.remove("error"),t.addMessage(e,"customer"),t.config.mirrorMessage.length?(t.sendToApi(t.config.mirrorMessage),t.config.mirrorMessage=""):t.sendToApi(e),t.hideRadios(),t.hideQuickReply(),t.config.messagesInput.value=""}else t.config.messagesForm.classList.add("error")}deleteFromStorage("retries"),console.log("initializing bot object with settings:",this.config.agentChannel[this.config.currentChannel].name),window.addEventListener("scroll",function(){window.pageYOffset>parseInt(t.config.messagesWrapper.offsetTop)-800&&t.config.botNotActivated&&t.activateBot()}),t.config.messagesInput.addEventListener("focus",function(e){t.makeFormFullScreen()}),t.config.exitFullscreenButton.addEventListener("click",function(e){t.exitFormFullScreen()}),t.config.messagesInput.addEventListener("keydown",function(t){"Enter"!==t.key||t.shiftKey||(t.preventDefault(),e()),this.style.height="auto",this.style.height=this.scrollHeight+"px"}),t.config.messagesForm.addEventListener("submit",function(t){t.preventDefault(),e()});var n=t.config.messagesForm.querySelectorAll('[data-name="quick-reply"]');[].forEach.call(n,function(n){n.addEventListener("click",function(){t.config.messagesInput.value=n.value,e(),t.hideQuickReply()})});var o=t.config.messagesForm.querySelectorAll('input[type="checkbox"]');[].forEach.call(o,function(e){e.addEventListener("click",function(){var e,n="",i="";[].forEach.call(o,function(t){t.checked&&(e=document.querySelector('[data-id="'+t.getAttribute("id")+'"]'),n.length?(n+=", "+t.value,i+=", "+e.innerHTML):(n=t.value,i=e.innerHTML))}),t.config.mirrorMessage=n,t.config.messagesInput.value=i})}),[].forEach.call(t.config.botRestartButtons,function(e){e.addEventListener("click",t.restart)}),t.config.botMenuButton.addEventListener("click",t.showMenu),document.getElementById("ok").addEventListener("click",function(){t.sendLeadToProsper()}),contextLifetime=setTimeout(function(){t.config.contextLost=!0},t.config.contextLifeInterval)},addMessage:function(e,n){"bot"===n&&"object"!==_typeof(e)?t.triggerEventIfNeeded(e):t.hideMenu();var o=[];"object"!==_typeof(e)?o=e.split("<br />"):o.push(e),o.forEach(function(e,o){setTimeout(function(){!function(e,n){var o='<li class="message '+n+'-message"><div class="'+n+'-message__avatar"></div><div class="content">'+e+"</div></li>";t.config.messagesWrapper.insertAdjacentHTML("beforeEnd",o),t.scrollToBottom()}(e,n)},500*o)}),contextLifetime=setTimeout(function(){t.config.contextLost=!0},t.config.contextLifeInterval)},activateBot:function(){t.config.stepIndex=0,t.config.botNotActivated=!1,t.config.sessionId=""+(new Date).getTime(),t.sendToApi("WELCOME"),t.config.needValidateEmail=!1},activateInput:function(){var e=!(arguments.length>0&&void 0!==arguments[0])||arguments[0],n=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];e&&changeElementEnable(t.config.messagesInput,!0,!0,"Send a message"),n&&changeElementEnable(t.config.botFormSubmit,!0)},createIntent:function(e,n){var o,i;(clearInterval(contextLifetime),void 0===n)?(n=t.config.agentChannel[t.config.currentChannel],0===t.config.currentChannel&&(n.dialogSettings[t.config.stepIndex].text=e,n.dialogSettings[t.config.stepIndex].session=t.config.sessionId,o=n.dialogSettings[t.config.stepIndex],i=n.messagesReceiverAddress,saveToStorage("sessionData",{url:n.messagesReceiverAddress,data:n.dialogSettings[t.config.stepIndex]}))):(i=n.url,o=n.data);if(t.config.contextLost&&t.config.stepIndex>0){var a=restoreFromStorage("sessionData");i=a.url,o=a.data}try{$.ajax({type:"POST",url:i,data:o,timeout:6e3}).done(function(e){t.clearFallbackDataIfExists(),t.serveResponse(e)}).fail(function(e){t.fallbackResponse()})}catch(e){console.log("catched error ",e),t.fallbackResponse()}},clearFallbackDataIfExists:function(){deleteFromStorage("retries")},deactivateBot:function(){t.config.botNotActivated=!0},deactivateInput:function(){var e=!(arguments.length>0&&void 0!==arguments[0])||arguments[0],n=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];e&&changeElementEnable(t.config.messagesInput,!1,!1,"Choose an option above"),n&&changeElementEnable(t.config.botFormSubmit,!1)},exitFormFullScreen:function(){t.config.messagesForm.classList.remove("fixed"),document.body.classList.remove("with-form-opened")},fallbackResponse:function(){var e,n=parseInt(restoreFromStorage("retries"));if(n){if(n>2)return;n>1?(t.addMessage("Sorry, we are working on getting this fixed as soon as we can. You can contact us using our contact form.","bot"),setTimeout(function(){t.showQuickReply(t.config.botLanguageButtons)},500),saveToStorage("retries",3)):(setTimeout(function(){var e=restoreFromStorage("sessionData");t.createIntent("ping",e)},5e3),saveToStorage("retries",2))}else saveToStorage("retries",1),t.addMessage("Oops, Something went wrong((( Trying to reconnect...","bot"),e=restoreFromStorage("sessionData"),t.createIntent("ping",e)},hideMenu:function(){t.config.menuVisible&&(t.config.menuVisible=!1,t.config.botFormMenu.classList.remove("activated"))},hideQuickReply:function(e){if(t.config.quickReplyVisible){if(void 0!==e)e.classList.remove("activated"),t.deactivateInput();else{var n=document.querySelectorAll(".quick-reply");[].forEach.call(n,function(e){e.classList.remove("activated")})}t.config.quickReplyVisible=!1,t.activateInput()}},hideRadios:function(){t.config.radiosVisible&&(t.config.radiosVisible=!1,t.config.botFormProjecttype.classList.remove("activated"),t.activateInput())},makeFormFullScreen:function(){t.config.fullScreenMode||checkIfMobile()&&(document.body.classList.add("with-form-opened"),t.config.messagesForm.classList.add("fixed"))},prepareLeadData:function(){for(var e=[["your-name","user_name"],["email","email"],["description","project_type"],["description","launch_date"],["description","unit-currency"],["description","describe_project"],["phone","phone_number"],["company","company_name"]],n=["project_type","launch_date","unit-currency","describe_project"],o=[["Name","user_name"],["Email","email"],["Company Name","company_name"],["Project Type","project_type"],["Launch Date","launch_date"],["Budget","unit-currency"],["Project Description","describe_project"],["Phone","phone_number"]],i=t.config.responses.map(function(e){var t=e.parameters;return n.indexOf(Object.keys(t)[0])>-1?[Object.keys(t)[0],Object.values(t).join(",")]:Object.keys(t).length>1?[Object.keys(t)[1],Object.values(t)[1].name]:[Object.keys(t)[0],Object.values(t)]}),a=i.map(function(e){return n.indexOf(e[0])>-1?[e[0],e.join(": ")]:Array.isArray(e[1])?[e[0],e[1].join(": ")]:[e[0],e[1]]}),s={},c="",r=0,d=e.length;r<d;r++)for(var l=0,u=a.length;l<u;l++)e[r][1]===a[l][0]&&(void 0!==s[e[r][0]]?s[e[r][0]]+=", "+a[l][1]:s[e[r][0]]=a[l][1]);for(r=0,d=o.length;r<d;r++)for(l=0,u=i.length;l<u;l++){if(o[r][1]===i[l][0])"string"==typeof(g=i[l][1])&&(g=(g=(g=g.replace("projecttype1","Chatbot")).replace("projecttype2","Voice Assistant")).replace("projecttype3","Mobile")),c+='<span class="summary-list">'+o[r][0]+": "+g+"</span>"}var g;g=(g=(g=(g=s.description).replace("projecttype1","Chatbot")).replace("projecttype2","Voice Assistant")).replace("projecttype3","Mobile"),s.description=g,t.config.summary=c,t.config.leadSummary=s,t.sendToAdmin()},restart:function(e){e.preventDefault(),t.hideMenu(),t.hideRadios(),t.hideQuickReply(t.botFormButtons),t.config.botNotActivated=!0;var n=document.getElementById("bot-form__conversation-wrapper").querySelectorAll(".message");[].forEach.call(n,function(e){e.remove()}),t.config.responses=[],setTimeout(function(){t.activateBot()},700)},scrollToBottom:function(){t.config.messagesWrapper.scrollHeight;$(t.config.messagesWrapper).animate({scrollTop:t.config.messagesWrapper.scrollHeight},300)},sendLeadToProsper:function(){prepareLeadForSend(t.config.leadSummary),generateEventForGTM()},sendToAdmin:function(){var e=t.config.leadSummary;e.action="save_lead";try{$.ajax({type:"POST",url:t.config.agentChannel[t.config.currentChannel].messagesReceiverAddress,data:e,timeout:6e3}).done(function(e){}).fail(function(e){})}catch(e){console.log("catched error ",e)}},sendToApi:function(e){t.config.stepIndex&&t.config.stepIndex>0?t.createIntent(e):t.createIntent("WELCOME")},serveResponse:function(e){var n=JSON.parse(e);n.length>1&&(n=n[0]),n.allRequiredParamsPresent&&(t.config.responses.push(n),t.config.stepIndex+=1),t.addMessage(n.fulfillmentText,"bot")},showRadios:function(e){t.config.radiosVisible||(t.config.radiosVisible=!0,t.deactivateInput(!0,!1),e.classList.add("activated"),null!==e.querySelector("input")&&setTimeout(function(){var t=e.querySelectorAll('input[type="radio"]'),n=e.querySelectorAll('input[type="checkbox"]'),o=t.length?t:n;o[0].focus(),[].forEach.call(o,function(e,t){t?e.checked=!1:e.focus()})},500))},showMenu:function(e){e.preventDefault(),t.config.menuVisible?(t.config.menuVisible=!1,t.config.botFormMenu.classList.remove("activated")):(t.config.menuVisible=!0,t.config.botFormMenu.classList.add("activated"))},showQuickReply:function(e){t.config.quickReplyVisible||(t.config.quickReplyVisible=!0,e!==t.config.botSkipButtons&&t.deactivateInput(),t.config.messagesWrapper.appendChild(e),e.classList.add("activated"),t.scrollToBottom())},triggerEventIfNeeded:function(e){t.config.intentEvents.some(function(n,o){if(e.indexOf(n)>-1)switch(o){case 0:return t.showRadios(t.config.botFormProjecttype),n;case 1:return setTimeout(function(){t.showQuickReply(t.config.botFormBudget)},500),n;case 2:setTimeout(function(){t.showQuickReply(t.config.botFormButtons),setTimeout(function(){return t.sendToApi("end dialog"),n},2e3)},500);case 3:return t.config.needValidateEmail=!0,n;case 4:return setTimeout(function(){t.showQuickReply(t.config.botLanguageButtons)},100),n;case 5:return setTimeout(function(){t.showQuickReply(t.config.botSkipButtons)},100),n;case 6:return t.prepareLeadData(),setTimeout(function(){t.addMessage(t.config.summary,"bot")},500),setTimeout(function(){t.showQuickReply(t.config.botSummaryButtons)},600),n;default:return t.config.messagesInput.focus(),!1}})},validateEmail:function(e){return/^[a-z0-9](\.?[a-z0-9_-]){0,}@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i.test(e)&&!/.web$/i.test(e)&&!/@-/i.test(e)}};t.init()}function changeElementEnable(e,t){var n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],o=arguments.length>3&&void 0!==arguments[3]?arguments[3]:"";t?e.removeAttribute("disabled"):e.setAttribute("disabled",!0),n?e.focus():e.blur(),o.length&&(e.placeholder=o)}null!==botFormWrapper&&botInit(botFormWrapper),"remove"in Element.prototype||(Element.prototype.remove=function(){this.parentNode&&this.parentNode.removeChild(this)});var generateEventForGTM=function(){var e=document.createEvent("Event");e.initEvent("botLeadSent",!0,!0),document.addEventListener("botLeadSent",function(e){console.log("event for GTM generated")},!1),document.dispatchEvent(e)};function saveToStorage(e,t){var n=localStorage;if(void 0!==n)try{return n.setItem(e,JSON.stringify(t)),!0}catch(e){console.log("storage not writable",e)}return!1}function restoreFromStorage(e){var t=localStorage;if(void 0!==t)try{var n=t.getItem(e);if(null!=n)return JSON.parse(t.getItem(e))}catch(e){console.log("storage not writable",e)}return!1}function deleteFromStorage(e){var t=localStorage;if(void 0!==t)try{return t.removeItem(e)}catch(e){console.log("storage not writable",e)}return!1}function checkIfMobile(){return!!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)||window.innerWidth<800)}
+;/**
+ * Main.
+ *
+ * @package SimpleShareButtonsAdder
+ */
+
+/* exported Main */
+var Main = ( function( $, FB ) {
+	'use strict';
+
+	return {
+		/**
+		 * Holds data.
+		 */
+		data: {},
+
+		/**
+		 * Boot plugin.
+		 *
+		 * @param data
+		 */
+		boot: function( data ) {
+			this.data = data;
+
+			$( document ).ready( function() {
+				this.init();
+			}.bind( this ) );
+		},
+
+		/**
+		 * Initialize plugin.
+		 */
+		init: function() {
+			this.listen();
+			this.removeP();
+		},
+
+		/**
+		 * Listener event.
+		 */
+		listen: function() {
+			var self = this;
+
+			// Upon clicking a share button.
+			$( 'body' ).on( 'click', '.ssbp-wrap a', function( event ) {
+
+				// Don't go the the href yet.
+				event.preventDefault();
+				self.engageShareButton( this );
+			} );
+		},
+
+		/**
+		 * Share button popup
+		 *
+		 * @param event
+		 */
+		engageShareButton: function( event ) {
+
+			// If it's facebook mobile.
+			if ( 'mobile' === $( event ).data( 'facebook' ) ) {
+				FB.ui( {
+					method: 'share',
+					mobile_iframe: true,
+					href: $( event ).data( 'href' )
+				}, function( response ) {} );
+			} else {
+
+				// These share options don't need to have a popup.
+				if ( 'email' === $( event ).data( 'site' ) || 'print' === $( event ).data( 'site' ) || 'pinterest' === $( event ).data( 'site' ) ) {
+
+					// Just redirect.
+					window.location.href = $( event ).attr( 'href' );
+				} else {
+
+					// Prepare popup window.
+					var width  = 575,
+						height = 520,
+						left = ( $( window ).width() - width ) / 2,
+						top = ( $( window ).height() - height ) / 2,
+						opts = 'status=1' +
+								 ',width=' + width +
+								 ',height=' + height +
+								 ',top=' + top +
+								 ',left=' + left;
+
+					// Open the share url in a smaller window.
+					window.open( $( event ).attr( 'href' ), 'share', opts );
+				}
+			}
+		},
+
+		/**
+		 * Remove generated p tag from facebook save button.
+		 */
+		removeP: function() {
+		}
+	};
+} )( window.jQuery, window.FB );

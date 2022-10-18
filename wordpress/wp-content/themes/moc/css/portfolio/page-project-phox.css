@@ -1,0 +1,251 @@
+/*---------------------------------------------------------*/
+/*---------------------------PHOX--------------------------*/
+/*---------------------------------------------------------*/
+.phox.case-study,
+.phox .case-study-content {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.phox .case-study-idea {
+  padding: 0;
+  color: #232a34;
+  background-color: #f3f3f3;
+}
+.idea-image-wrapper img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+.phox.case-study .info-block .logo-block {
+  height: 114px;
+  width: 300px;
+}
+.phox.case-study .info-block .logo-block img {
+  height: auto;
+  width: 100%;
+}
+.phox .name-caption {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+}
+.phox .name-link.text-theme {
+  margin: 43px auto 123px;
+  color: #ffffff;
+}
+.case-section-subtitle {
+  font-size: 1.67em;
+  font-weight: 400;
+  text-align: center;
+}
+.case-study-feature {
+  border-top: 1px solid #d7d7d7;
+  padding: 28px 0 40px;
+}
+.case-study-feature p {
+  padding-left: 84px;
+  text-align: justify;
+}
+.case-study-feature:first-child {
+  border: none;
+}
+.feature-heading {
+  color: #00bebf;
+  font-size: 1.67em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  margin: 0 auto 10px;
+  line-height: 1.6em;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.feature-icon {
+  float: left;
+  line-height: inherit;
+  vertical-align: top;
+  padding: 0 34px 0 10px;
+  height: 1.6em;
+  width: 38px;
+  min-width: 38px;
+}
+.phox .masters-comment-title .text-title {
+  color: #00bebf;
+}
+.phox .masters-comment-title:after {
+  background-color: #00bebf;
+}
+.case-study-wrapper.with-custom-bg {
+  position: relative;
+  overflow: inherit;
+}
+.with-custom-bg .case-study-comment {
+  overflow: inherit;
+}
+.with-custom-bg .comment-wrapper {
+  position: relative;
+  overflow: inherit;
+}
+.with-custom-bg:before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: calc( 81% - 100px );
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  background: #f3f3f3;
+}
+.with-custom-bg .text-title {
+  background: #f3f3f3;
+}
+.with-custom-bg .comment-author:before {
+  border-top-color: #f3f3f3;
+}
+.full-height-image-wrapper .comment-image-wrapper.round-bordered-shadow img {
+  border-bottom-left-radius: 14% 7%;
+  border-bottom-right-radius: 14% 7%;
+  border-top-left-radius: 14% 7%;
+  border-top-right-radius: 14% 7%;
+  box-shadow: 0 15px 55px rgba(62, 62, 62, 0.2);
+  display: block;
+  height: auto;
+  max-height: 100%;
+  margin: 50px 100px 50px 30px;
+  width: auto;
+}
+.comment-image-wrapper.blue-shadow img {
+  box-shadow: 0 20px 54px rgba(62, 161, 193, 0.2);
+}
+.phox .estimate-list-item:before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='17'%3E%3Cpath d='M8.26 17L0 8.54l1.84-1.89 6.4 6.57L21.16 0 23 1.89z' fill='%2300bebf'/%3E%3C/svg%3E");
+}
+.custom-tech-list.no-indents {
+  margin-bottom: 0;
+}
+.custom-tech-list.no-indents + .custom-tech-list {
+  margin-top: 0;
+}
+.custom-tech-item-hints {
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+}
+.custom-tech-item-hints:after {
+  content: '';
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -25px;
+  border-left: 1px solid #cccccc;
+}
+.custom-tech-item-hints:last-child:after {
+  content: none;
+}
+.phox .resources-block-case-study {
+  background-color: #f8f9f9;
+}
+.phox .technology-icon {
+  max-height: 36px;
+  min-width: 42px;
+}
+
+@media all and (max-width: 900px) {
+  .phox.case-study .info-block .logo-block {
+    height: 100px;
+    width: 260px;
+  }
+  .case-study-wrapper.with-custom-bg {
+    padding-top: 20px;
+  }
+  .full-height-image-wrapper .comment-image-wrapper.round-bordered-shadow img,
+  .comment-wrapper .comment-image-wrapper.blue-shadow img {
+    margin: 0 auto;
+    width: 60%;
+  }
+  .with-custom-bg:before {
+    height: 100%;
+  }
+  .feature-heading {
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+  .feature-body p {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 767px) {
+  .phox.case-study .info-block .logo-block {
+    height: 60px;
+    width: 160px;
+  }
+  .phox .name-link.text-theme {
+    margin: 43px auto;
+  }
+  .case-study-feature {
+    padding: 20px 0;
+  }
+  .case-study-feature p {
+    padding-left: 48px;
+  }
+  .feature-icon {
+    padding: 0 10px 0 0;
+  }
+  .feature-heading {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .feature-body p {
+    font-size: 14px;
+  }
+  .phox .tech-icon-wrapper {
+    display: block;
+    width: 100%;
+  }
+  .case-section-subtitle {
+    font-size: 1.2em;
+  }
+  .phox .technology-icon {
+    vertical-align: middle;
+  }
+  .phox .custom-tech-list {
+    text-align: center;
+  }
+  .custom-tech-item-hints {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  .custom-tech-item-hints:after {
+    display: block;
+    position: static;
+    width: 70px;
+    height: 1px;
+    content: '';
+    margin: auto;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  .phox .custom-tech-item:last-child:after {
+    border: none;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .phox .tech-list .icon-holder {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .phox .tech-list .icon-holder img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .feature-heading {
+    font-size: 18px;
+  }
+}

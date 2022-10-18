@@ -1,0 +1,129 @@
+@import "mixins";
+.industries-title {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: #333333;
+  margin: 0.8em auto;
+  line-height: 1.2em;
+  @media all and (min-width: 768px) {
+    margin: 0.5em auto;
+    @media all and (max-width: 1024px) {
+      max-width: 15em;
+      font-size: 40px;
+      letter-spacing: -1px;
+    }
+  }
+  @media all and (min-width: 1025px) {
+    font-size: 38px;
+  }
+}
+.industries-grid__wrapper {
+  width: auto;
+  margin: 0 -15px;
+}
+.chatbot-industries-grid {
+  flex-wrap: nowrap;
+  @include industries_grid(9, 3, 0px, 880px, 320px);
+  margin: 49px auto 22px;
+  h4 {
+    font-size: 12px;
+    white-space: normal;
+    font-weight: 300;
+    text-align: center;
+    margin: 2em auto 0;
+    min-height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+  }
+  .icon-wrapper {
+    display: block;
+    text-align: center;
+    svg {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .column {
+    text-align: center;
+  }
+  @media all and (min-width: 1025px) {
+    h4  {
+      margin: 2.3em auto 0;
+    }
+  }
+  @media all and (min-width: 1200px) and (max-width: 1600px){
+    margin: 49px auto 12px;
+  }
+  @media all and (max-width: 1024px) {
+    flex-wrap: wrap;
+    @for $i from 1 through 9 {
+      .mobile-#{$i} { order: #{$i}; }
+    }
+    margin: 37px auto 12px;
+
+    .column {
+      width: 33.3%;
+      margin: 10px auto;
+    }
+    @media all and (min-width: 768px) {
+      max-width: 530px;
+      margin: 40px auto 4px;
+      h4 {
+        font-size: 16px;
+        max-width: 8em;
+        margin: 1.5em auto 0;
+      }
+      .column {
+        margin: 6px auto;
+        .icon-wrapper svg {
+          height: 70px;
+          width: 80px;
+        }
+      }
+
+    }
+    @media all and (max-width: 767px) {
+
+      .column {
+        .icon-wrapper svg {
+          height: 47px;
+          width: 51px;
+        }
+      }
+    }
+    @media all and (max-width: 374px) {
+      .column {
+        .icon-wrapper svg {
+          height: 46px;
+          width: 46px;
+        }
+      }
+    }
+  }
+}
+
+.chatbot-industries-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: color .4s;
+
+  &:hover, &:focus {
+    color: #F1563C;
+  }
+}
+
+
+//.chatbot-industries-link {
+//  font-size: 12px;
+//  font-weight: 300;
+//  color: #333333;
+//  text-decoration: none;
+//  transition: color .4s;
+//
+//  &:hover, &:focus {
+//    color: #F1563C;
+//  }
+//}

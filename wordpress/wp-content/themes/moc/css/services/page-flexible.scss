@@ -1,0 +1,668 @@
+/*                   */
+/* general styles    */
+/*                   */
+
+//.flexible-section h1,
+//.flexible-section h2,
+//.flexible-section h3,
+//.flexible-section h4 {
+//    font-family: 'Roboto', sans-serif;
+//    text-align: center;
+//    color: #3a494e;
+//    width: auto;
+//    margin: 0 auto;
+//}
+//.flexible-section h1,
+//.flexible-section h2 {
+//    max-width: 700px;
+//    font-size: 50px;
+//    font-weight: 300;
+//    margin-top: 10px;
+//    margin-bottom: 40px;
+//}
+
+//.page-services .description-block a.get-a-quote-link {
+//    width: 100px;
+//    background: #f1563c;
+//    margin: 0 auto;
+//    display: block;
+//    border-radius: 50%;
+//    border: 2px solid #f1563c;
+//    font-size: 16px;
+//    font-weight: 700;
+//    color: #fff;
+//    line-height: 20px;
+//    padding: 30px 0;
+//    text-decoration: none;
+//    text-transform: uppercase;
+//    -webkit-appearance: none;
+//    -webkit-transition: box-shadow 0.2s;
+//    transition: box-shadow 0.2s;
+//    text-align: center;
+//    vertical-align: middle;
+//    box-sizing: content-box;
+//}
+//.no-touch .page-services .description-block a.get-a-quote-link:hover {
+//    box-shadow: inset 0 0 0 2px #fff;
+//    color: #fff;
+//}
+//.flexible-section .icon-holder {
+//    display: block;
+//    margin: 0 auto;
+//}
+//.flexible-section .icon-holder img,
+//.flexible-section .icon-holder svg {
+//    width: 100%;
+//    height: 100%;
+//}
+//.flexible-section .flexible-list {
+//    width: auto;
+//    max-width: 980px;
+//    margin: 0 auto;
+//    font-size: 0;
+//    text-align: center;
+//    vertical-align: top;
+//}
+//.flexible-section .flexible-list li {
+//    display: inline-block;
+//    width: auto;
+//    vertical-align: top;
+//    box-sizing: border-box;
+//}
+//.flexible-section .flexible-list li p {
+//    font-size: 18px;
+//}
+//.flexible-section .flexible-advantage-list li p {
+//    font-size: 16px;
+//}
+//.flexible-section.description-block p {
+//    line-height: 1.72;
+//    margin: 30px 0;
+//}
+//.flexible-section.description-block {
+//    width: auto;
+//    max-width: 980px;
+//    margin: 0 auto;
+//}
+//.flexible-section .description-block p img {
+//    width: 100%;
+//    height: auto;
+//    display: block;
+//}
+//.flexible-section .description-block .heading-logo {
+//    display: block;
+//    width: 35%;
+//    height: auto;
+//    min-width: 200px;
+//    margin: 55px auto 25px;
+//}
+/*                   */
+/*   block abilities */
+/*                   */
+//
+//.flexible-section.abilities {
+//    margin: 0 auto;
+//    padding: 10px 0 30px;
+//}
+//.flexible-section .abilities-list {
+//    display: -webkit-box;
+//    display: -ms-flexbox;
+//    display: flex;
+//    -webkit-box-orient: horizontal;
+//    -webkit-box-direction: normal;
+//    -ms-flex-direction: row;
+//    flex-direction: row;
+//    -webkit-box-pack: center;
+//    -ms-flex-pack: center;
+//    justify-content: center;
+//    -webkit-justify-content: center;
+//    max-width: 986px;
+//    margin: auto;
+//    padding: 0;
+//    overflow: hidden;
+//}
+//.flexible-section .abilities-list li {
+//    background: #fff;
+//    margin: 0 3px 5px;
+//    width: calc( 25% - 6px);
+//    text-align: left;
+//}
+//.flexible-section .abilities-list li svg {
+//    fill: #fff;
+//}
+//.flexible-section .abilities-list li p {
+//    font-size: 16px;
+//    line-height: 1.5;
+//}
+//.flexible-section .ability .item-container {
+//    display: block;
+//    width: 100%;
+//    height: auto;
+//    padding-top: 25px;
+//    min-height: 31px;
+//    margin: 0;
+//    position: relative;
+//    overflow: hidden;
+//}
+//.flexible-section .healthcare-item .item-container {
+//    display: block;
+//    width: 100%;
+//    height: auto;
+//    padding: 20px 30px 0;
+//    margin: 0;
+//    overflow: hidden;
+//}
+//.healthcare-item .item-container .icon-holder {
+//    height: 24px;
+//    width: 24px;
+//    margin: 0;
+//    display: block;
+//    vertical-align: middle;
+//    line-height: 24px;
+//    text-align: left;
+//}
+//.healthcare-item .item-container .icon-holder img {
+//    vertical-align: middle;
+//}
+//.ability .item-container .icon-holder {
+//    height: 56px;
+//    width: 56px;
+//    margin: 0 auto;
+//    display: block;
+//    position: absolute;
+//    top: 50%;
+//    left: 50%;
+//    margin-left: -28px;
+//    margin-top: -28px;
+//    vertical-align: bottom;
+//    line-height: 56px;
+//    text-align: center;
+//}
+//.ability .icon-bg {
+//    height: auto;
+//    width: auto;
+//  margin: -25px auto 0;
+//    max-height: 168px;
+//    min-width: 100%;
+//}
+//.flexible-section .ability-text{
+//    padding: 20px 30px 25px;
+//    margin: 0;
+//}
+//.flexible-section .icon-holder img {
+//    height: 100%;
+//    width: auto;
+//    max-height: 100%;
+//    display: inline-block;
+//    margin: 0 auto;
+//    line-height: inherit;
+//    vertical-align: bottom;
+//}
+///*                   */
+///* block social      */
+///*                   */
+//.flexible-section.flexible-social {
+//    position: relative;
+//    margin: 0 auto;
+//    background: #f3f3f3;
+//}
+//.flexible-section .flexible-caption.small-font-caption {
+//    font-size: 26px;
+//    font-weight: 400;
+//    margin: 0 auto 50px;
+//    width: auto;
+//}
+//.flexible-section .flexible-social-list li {
+//    /*width: 20%;*/
+//    text-align: center;
+//    padding: 0 30px;
+//}
+//.flexible-section .flexible-social-list .icon-holder {
+//    width: 78px;
+//    height: 66px;
+//    margin-bottom: 15px;
+//    background-size: 100% auto;
+//    background-repeat: no-repeat;
+//    line-height: 66px;
+//    /*background-image: url('../images/services/chatbot/services.png');*/
+//}
+//.flexible-section .flexible-social-list .icon-holder img {
+//    height: auto;
+//    width: auto;
+//    max-height: 100%;
+//    max-width: 100%;
+//    display: inline-block;
+//    line-height: 66px;
+//    vertical-align: middle;
+//}
+//.flexible-section .icon-messenger {
+//    background-position: center top;
+//}
+//
+//.flexible-section .icon-telegram {
+//    background-position: center -66px;
+//}
+//
+//.flexible-section .icon-skype {
+//    background-position: center -132px;
+//}
+//
+//.flexible-section .icon-kik {
+//    background-position: center -276px;
+//}
+//
+//.flexible-section .icon-line {
+//    background-position: center -197px;
+//}
+//
+//.flexible-section .flexible-social-item p {
+//    color: #a0a0a0;
+//    font-size: 16px;
+//    font-weight: 400;
+//}
+//
+///*                   */
+///* block invite    */
+///*                   */
+//
+//
+//.flexible-section.flexible-invite {
+//    position: relative;
+//}
+//
+//.flexible-invite .inner-wrapper {
+//    width: auto;
+//    max-width: 980px;
+//    margin: 0 auto ;
+//    padding: 43px 0;
+//    background: url('../images/services/chatbot/messageme_bg.png') center top no-repeat;
+//    background-size: auto 100%;
+//    overflow: hidden;
+//}
+//
+//.flexible-invite .white-text {
+//    color: #fff;
+//    font-size: 26px;
+//    font-weight: 400;
+//    margin-bottom: 20px;
+//}
+//
+//.flexible-section .messenger-btn {
+//    display: inline-block;
+//    color: #0084ff;
+//    background: #fff;
+//    font-family: "Roboto", sans-serif;
+//    font-size: 26px;
+//    font-weight: 400;
+//    padding: 0 20px;
+//    border-radius: 5px;
+//    text-decoration: none;
+//    transition: opacity 0.2s;
+//    -webkit-transition: opacity 0.2s;
+//    height: 60px;
+//    line-height: 60px;
+//    vertical-align: middle;
+//}
+//
+//.flexible-section .messenger-btn svg {
+//    height: 35px;
+//    width: 35px;
+//    display: inline-block;
+//    line-height: inherit;
+//    margin: -5px 8px 0 0;
+//    font-size: 26px;
+//    vertical-align: middle;
+//    fill: #0084ff;
+//}
+//
+//.flexible-section .messenger-btn:hover {
+//    opacity: .95;
+//}
+//
+///*                   */
+///* block benefits    */
+///*                   */
+//
+//
+//.flexible-section.chatbot-benefits {
+//    padding: 83px 0 112px;
+//    background: #f2f2f2;
+//}
+//
+//.flexible-section .chatbot-benefit-list {
+//    max-width: 980px;
+//}
+//
+//.flexible-section .chatbot-benefit-list li {
+//    width: 20%;
+//    padding: 0 20px;
+//}
+//
+//.flexible-section .chatbot-benefit-list .icon-holder {
+//    height: 87px;
+//    width: 80px;
+//    margin: 30px auto;
+//    background-position: center;
+//    background-repeat: no-repeat;
+//    background-size: contain;
+//}
+//
+//.flexible-section .chatbot-benefit-list p {
+//    font-size: 18px;
+//}
+//
+///*                    */
+///* block advantages   */
+///*                    */
+//
+//
+///*.flexible-section .flexible-advantage-list {*/
+//    /*max-width: 1040px;*/
+///*}*/
+//
+//.flexible-section .flexible-advantage-list li {
+//    width: 33.33%;
+//    padding: 0 30px;
+//    text-align: center;
+//}
+//
+//.flexible-section .flexible-advantage-list .icon-holder {
+//    height: 67px;
+//    width: 101px;
+//    background-position: center;
+//    background-repeat: no-repeat;
+//    background-size: auto 68px;
+//}
+//
+//.flexible-section .advantage-header {
+//    color: #e95937;
+//    font-size: 22px;
+//    font-weight: 700;
+//    margin: 25px 0;
+//}
+//
+//.flexible-section .flexible-advantage-list p {
+//    font-size: 18px;
+//    color: #303030;
+//    width: auto;
+//    margin: auto;
+//    text-align: left;
+//}
+
+///*                      */
+///* blog section         */
+///*                      */
+//
+//.selected-block + .flexible-section.chatbot-blog {
+//    margin-bottom: 35px;
+//}
+//.selected-block + .flexible-section.chatbot-blog .blog-list-caption {
+//    padding-top: 0;
+//}
+//
+//.flexible-section.chatbot-blog {
+//    padding: 10px 0 52px;
+//    background-color: #fff;
+//}
+//.flexible-section .blog-list-caption {
+//    position: relative;
+//    font-size: 24px;
+//    font-weight: 500;
+//    text-transform: uppercase;
+//    padding: 54px 0;
+//    letter-spacing: 0.12em;
+//}
+//
+//.flexible-section .flexible-blog-list {
+//    max-width: 980px;
+//}
+//
+//.flexible-section .flexible-blog-list li {
+//    width: 33.33%;
+//    padding: 0 30px;
+//    text-align: left;
+//}
+//
+//.flexible-section .new-style-header {
+//    color: black;
+//    font-family: 'Roboto', sans-serif;
+//    font-size: 32px;
+//    font-weight: 500;
+//    text-transform: uppercase;
+//}
+//
+//.flexible-section .flexible-blogpost-title {
+//    color: #303030;
+//    font-size: 22px;
+//    line-height: 1.27;
+//    font-weight: 500;
+//    margin: 0 0 18px;
+//    text-align: left;
+//    transition: color .06s ease;
+//    -webkit-transition: color .06s ease;
+//}
+//.flexible-section .flexible-blogpost-link {
+//    display: block;
+//    text-decoration: none;
+//    border: none;
+//}
+//.no-touch .flexible-blogpost-link:hover .flexible-blogpost-title {
+//    color: #e95937;
+//}
+//.flexible-section .flexible-blog-list .blogpost-short-content {
+//    color: #656565;
+//    font-size: 14px;
+//    font-weight: 400;
+//    line-height: 1.5;
+//    text-decoration: none;
+//    font-family: "Roboto", sans-serif;
+//}
+//
+//.flexible-section .blogpost-short-content:after {
+//    content: '...';
+//}
+//.flexible-section.chatbot-blog + .selected-block:before {
+//    background: transparent;
+//}
+//@media only screen and (max-width: 1040px) {
+//    .flexible-section .flexible-advantage-list {
+//        margin: 0 auto;
+//    }
+//}
+//@media only screen and (max-width: 920px){
+//    .flexible-section .advantage-header {
+//        min-height: 3em;
+//        line-height: 1.5;
+//        margin: 25px 0 0 ;
+//    }
+//}
+//@media only screen and (max-width: 768px) {
+//
+//
+//  .flexible-advantages .flexible-caption {
+//      margin: 0;
+//  }
+//  .flexible-section .flexible-caption.small-font-caption {
+//      font-size: 18px;
+//      margin: 0 auto 30px;
+//  }
+//  .flexible-section .flexible-list:not(.abilities-list) {
+//      display: block;
+//      overflow: hidden;
+//
+//
+//              box-sizing: border-box;
+//      margin: 0 auto;
+//  }
+//  .flexible-section .flexible-list.abilities-list {
+//    flex-wrap: wrap;
+//    -webkit-flex-wrap: wrap;
+//    -ms-flex-wrap: wrap;
+//  }
+//  .flexible-section .flexible-list.abilities-list li {
+//    margin: 0 3px 5px;
+//    width: calc( 50% - 6px);
+//  }
+//  .flexible-section .flexible-list.healthcare-list li {
+//    width: calc( 33.3% - 6px);
+//  }
+//    .flexible-section .flexible-advantage-list li {
+//        margin:30px 0 0;
+//    }
+//    .flexible-section .flexible-list.flexible-social-list  li {
+//        display: inline-block;
+//        width: auto;
+//        padding: 10px;
+//    }
+//    .flexible-section .flexible-social-list .icon-holder {
+//        width: 40px;
+//        height: 40px;
+//    }
+//
+//    .flexible-section .healthcare-item .item-container {
+//        padding: 20px 30px 0;
+//    }
+//    .ability-text {
+//        padding: 20px 30px;
+//    }
+//    .flexible-social .flexible-caption  {
+//        font-size: 20px;
+//    }
+//    .flexible-section .chatbot-footer-text {
+//        font-size: 16px;
+//    }
+//    .flexible-section.flexible-social {
+//        display: none;
+//    }
+//    .flexible-invite .white-text {
+//        margin-bottom: 27px;
+//        padding: 0 55px;
+//        font-size: 20px;
+//        line-height: 30px;
+//    }
+//    .flexible-section .messenger-btn {
+//        height: 40px;
+//        padding: 0 12px;
+//        font-size: 18px;
+//        line-height: 40px;
+//    }
+//    .flexible-section .messenger-btn svg {
+//        width:25px;
+//        height: 25px;
+//        margin: -5px 5px 0 0;
+//    }
+//
+//}
+//@media only screen and (max-width: 767px) {
+//    .heading-wrapper {
+//        display: -webkit-box;
+//        display: -ms-flexbox;
+//        display: flex;
+//        overflow: hidden;
+//        -webkit-box-align: center;
+//        -ms-flex-align: center;
+//        align-items: center;
+//        -ms-flex-line-pack: start;
+//        align-content: flex-start;
+//    }
+//    .flexible-section .flexible-advantage-list .icon-holder {
+//        margin: 0 20px 0 0;
+//        height: 60px;
+//        background-size: auto 60px;
+//    }
+//    .flexible-advantage-list .advantage-header {
+//        margin: 0;
+//        text-align: left;
+//        font-size: 18px;
+//        line-height: 1.5;
+//        min-height: initial;
+//    }
+//    //.flexible-section div {
+//    //  /*font-size: 14px;*/
+//    //  margin: 0 auto 20px;
+//    //}
+//    .flexible-advantage-list p {
+//        padding: 20px 0 0;
+//    }
+//    //.flexible-section  .flexible-list.flexible-blog-list li {
+//    //    margin-bottom: 20px;
+//    //}
+//    //.flexible-section .flexible-blogpost-title {
+//    //    font-size: 18px;
+//    //    margin-bottom: 10px;
+//    //}
+//    //.flexible-section  .flexible-blog-list .blogpost-short-content {
+//    //    font-size: 12px;
+//    //}
+//    //.flexible-section.chatbot-blog {
+//    //    padding: 10px 0 30px;
+//    //}
+//    //.selected-block + .flexible-section.chatbot-blog {
+//    //    margin-bottom: 0;
+//    //}
+//}
+//@media only screen and (max-width: 540px) {
+//    .flexible-section .flexible-list.abilities-list {
+//        display: block;
+//    }
+//    .flexible-section .flexible-list li,
+//    .flexible-section .flexible-list.healthcare-list li,
+//    .flexible-section .flexible-list.abilities-list li {
+//        display: block;
+//        width: 100%;
+//        margin: 5px 0;
+//    }
+//    .flexible-section .flexible-list.flexible-advantage-list {
+//        margin-bottom: 40px;
+//    }
+//    .flexible-section .flexible-advantage-list li {
+//        padding: 0;
+//        margin: 40px 0 0;
+//    }
+//    .flexible-section .flexible-advantage-list .icon-holder {
+//        height: 50px;
+//        width: 80px;
+//        background-size: auto 50px;
+//    }
+//}
+//@media (min-width: 768px) and (max-width: 1023px) {
+//    .flexible-section .abilities-list {
+//        overflow: hidden;
+//        display: -webkit-box;
+//        display: -moz-box;
+//        display: -ms-flexbox;
+//        display: -webkit-flex;
+//        -webkit-flex-wrap: wrap;
+//        flex-wrap: wrap;
+//        display: flex;
+//        justify-content: center;
+//        -webkit-justify-content: center;
+//        overflow: hidden;
+//    }
+//    .flexible-section .flexible-social-list li {
+//        padding: 0 25px;
+//    }
+//    .flexible-section .flexible-social-list .icon-holder {
+//        width: 65px;
+//        height: 65px;
+//    }
+//    .flexible-section.flexible-advantages {
+//        padding: 60px 40px 60px;
+//    }
+//    .flexible-section .flexible-advantage-list li {
+//        display: inline-block;
+//        width: 33.33%;
+//        padding: 0 25px;
+//    }
+//    .flexible-invite .white-text {
+//        max-width: 450px;
+//    }
+//}
+//@media only screen and (min-width: 1024px) {
+//    .flexible-section.flexible-social {
+//        padding: 30px 0 102px;
+//    }
+//    .flexible-section.flexible-advantages {
+//        padding: 52px 0 70px;
+//    }
+//}

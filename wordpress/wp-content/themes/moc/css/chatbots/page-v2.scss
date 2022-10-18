@@ -1,0 +1,65 @@
+#estimate-project-form {
+  section + section {
+    display: none !important;
+  }
+}
+
+.page-chatbots {
+  //letter-spacing: -0.15px;
+  .section-description {
+    letter-spacing: -0.15px;
+  }
+  .integration-image__wrapper {
+    padding-top: 68%;
+    max-width: inherit;
+    margin: 30px auto 0;
+    position: relative;
+  }
+  .centered-image {
+    width: 100%;
+    max-width: inherit;
+    height: auto;
+    display: block;
+    margin: 30px auto 0;
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .page-chatbots {
+    .section-subheading {
+      font-size: 42px;
+    }
+
+    .contact-form-wrapper .two-columns-description {
+      padding-top: 30px;
+    }
+    .integration-image__wrapper {
+        position: relative;
+        margin: 80px auto 0;
+        .centered-image{
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: auto;
+          width: 100%;
+          margin: 0;
+        }
+      max-width: 1140px;
+      padding-top: 710px;
+    }
+  }
+}
+
+
+@media all and (max-width: 768px){
+  .integration-image__wrapper {
+    padding-top: 0;
+    margin: 0;
+    width: 100%;
+    .centered-image {
+      margin: 30px auto 0;
+    }
+  }
+}

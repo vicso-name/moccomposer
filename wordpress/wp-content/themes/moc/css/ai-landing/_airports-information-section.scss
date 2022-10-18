@@ -1,0 +1,128 @@
+.airports-information {
+
+  &.moc-section {
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    @media all and (min-width: 521px) {
+      padding-top: 80px;
+    }
+
+    @media all and (min-width: 861px) {
+      padding-bottom: 100px;
+    }
+
+    @media all and (min-width: 1201px) {
+      padding-top: 102px;
+      padding-bottom: 126px;
+    }
+  }
+
+  &__row {
+    color: #666666;
+
+    @media all and (min-width: 861px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &:nth-of-type(even) {
+      @media all and (min-width: 861px) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 60px;
+
+      @media all and (min-width: 521px) {
+        margin-bottom: 80px;
+      }
+
+      @media all and (min-width: 861px) {
+        margin-bottom: 103px;
+      }
+    }
+  }
+
+  &__image-wrap {
+    margin-bottom: 24px;
+    text-align: center;
+
+    @media all and (min-width: 521px) {
+      max-width: 320px;
+      margin: 0 auto 40px;
+    }
+
+    @media all and (min-width: 861px) {
+      width: 45%;
+      max-width: 482px;
+      margin: 0;
+    }
+
+    @media all and (min-width: 1201px) {
+      padding-right: 27px;
+      text-align: left;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__text-part {
+    @media all and (min-width: 861px) {
+      width: 50%;
+      max-width: 550px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 32px;
+
+    @media all and (min-width: 861px) {
+      max-width: 380px;
+      margin-bottom: 24px;
+    }
+
+    &.mobile-title {
+      @media all and (min-width: 861px) {
+        display: none;
+      }
+    }
+
+    &.desktop-title {
+      @media all and (max-width: 860px) {
+        display: none;
+      }
+    }
+  }
+
+  &__item-text {
+    font-size: 16px;
+    line-height: 26px;
+
+    p:not(:last-of-type) {
+      margin-bottom: 24px;
+      @media all and (min-width: 861px) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  &__item-source {
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #BEBEBE;
+
+    .source-name {
+      color: #F1563C;
+    }
+  }
+}

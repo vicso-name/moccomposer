@@ -1,0 +1,22 @@
+.embed-wrap {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow: auto;
+  text-align: center;
+}
+
+.info-pdf {
+  padding: 40px 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+
+  a {
+    font-size: 16px;
+  }
+}

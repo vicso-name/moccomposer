@@ -1,0 +1,308 @@
+.our-masters {
+    .back-bg {
+      height: 928px !important;
+    }
+    h2 {
+        font-size: 48px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #333333;
+        text-align: left;
+
+        margin: 240px 0 46px 0;
+    }
+    .dflex {
+        display: flex;
+        flex-direction: row;
+    }
+    .our-masters-text {
+        width: 30%;
+        margin-right: 120px;
+
+        p {
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.78;
+            letter-spacing: normal;
+            color: #666666;
+        }
+    }
+    .our-masters-photos {
+        margin-top: 138px;
+        margin-bottom: 130px;
+
+        .bg-img {
+          width: 364px;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+          background-size: cover;
+          background-position: center center;
+        }
+
+        .bg-img-1 {          
+          height: 314px;
+          background-image: url(../images/about-page/our-masters/img-1.jpg);
+        }
+        .bg-img-2 {          
+          height: 576px;
+          background-image: url(../images/about-page/our-masters/img-2.jpg);
+
+          background-position: left center;
+        }
+        .bg-img-3 {          
+          height: 327px;
+          background-image: url(../images/about-page/our-masters/img-6.jpg);
+        }
+        .bg-img-4 {
+          margin-top: 107px;
+          
+          height: 406px;
+          background-image: url(../images/about-page/our-masters/img-5.jpg);
+        }
+        .bg-img-5 {          
+          height: 304px;
+          background-image: url(../images/about-page/our-masters/img-4.jpg);
+        }
+        .bg-img-6 {          
+          height: 400px;
+          background-image: url(../images/about-page/our-masters/img-7.jpg);
+        }
+        .bg-img-7 {
+          width: 100% !important;
+          height: 378px;
+          background-image: url(../images/about-page/our-masters/img-3.jpg);
+          background-size: cover;
+          background-position: center center;
+        }
+
+
+        .ml {
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+            -webkit-column-count: 2;
+               -moz-column-count: 2;
+                    column-count: 2;
+            -webkit-column-gap: 0;
+               -moz-column-gap: 0;
+                    column-gap: 0;
+            position: relative;
+          }
+          
+          .ml * {
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+          }
+          
+          .ml-pnl {
+            margin: 0;
+            padding: 12px;
+          }
+          
+          .ml-pnl {
+            -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+          }
+          
+          .ml-pnl__cntnt {
+            overflow: hidden;
+            width: 364px;
+          }
+          .ml-pnl__cntnt--img {
+            max-width: 100%;
+            padding: 0;
+          }
+          
+          .ml-clstr {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            padding: 0;
+          }
+          .ml-clstr--vrt {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+          }
+          .ml-clstr__sgmnt {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1 1 auto;
+                -ms-flex: 1 1 auto;
+                    flex: 1 1 auto;
+          }
+          .ml-clstr__sgmnt--clmn {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+          }
+          
+    }
+}
+
+@media all and (max-width: 768px) {
+	.our-masters  {
+		.our-masters-text {
+			margin-right: 30px;
+		}
+		.our-masters-photos {
+			.ml-pnl__cntnt {
+				width: 206px;
+			}
+			.bg-img-1 {
+				height: 178px;
+			}
+			.bg-img-2 {
+				height: 325px;
+			}
+			.bg-img-3 {
+				height: 197px;
+			}
+			.bg-img-4 {
+				margin-top: 72px;
+				height: 229px;
+			}
+			.bg-img-5 {
+				height: 172px;
+			}
+			.bg-img-6 {
+				height: 227px;
+			}
+			.bg-img-7 {
+				height: 222px;
+			}
+		}
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1030px) {
+	.our-masters  {
+		.our-masters-text {
+			margin-right: 30px;
+		}
+		.our-masters-photos {
+			.ml-pnl__cntnt {
+				width: 220px;
+			}
+		}
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1144px) {
+	.our-masters  {
+		.back-bg {
+			max-height: 762px !important;
+		}
+		.our-masters-text {
+			h2 {
+				margin: 181px 0 44px 0;
+				font-size: 40px;
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+		.our-masters-photos {
+			.bg-img-1 {
+				height: 178px;
+			}
+			.bg-img-2 {
+				height: 325px;
+			}
+			.bg-img-3 {
+				height: 197px;
+			}
+			.bg-img-4 {
+				margin-top: 72px;
+				height: 229px;
+			}
+			.bg-img-5 {
+				height: 172px;
+			}
+			.bg-img-6 {
+				height: 227px;
+			}
+			.bg-img-7 {
+				height: 222px;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 767px) {
+  .our-masters  {
+    .dflex {
+      flex-direction: column;
+    }
+    .our-masters-text {
+      width: 100%;
+      min-width: 280px;
+      margin-right: unset;
+      text-align: center;
+      h2 {
+        text-align: center;
+        margin: 64px auto 24px auto;
+        font-size: 32px;
+      }
+    }
+    .our-masters-photos {
+      margin-top: 56px;
+      margin-bottom: 80px;
+
+      .ml-clstr--vrt {
+        flex-direction: column;
+      }
+      .ml-pnl__cntnt {
+        width: 100%;
+        min-width: 280px;
+      }
+      .bg-img-1 {
+        height: 323px;
+      }
+      .bg-img-2 {
+        height: 412px;
+      }
+      .bg-img-3 {
+        height: 590px;
+      }
+      .bg-img-4 {
+        margin-top: 0px;
+        height: 312px;
+      }
+      .bg-img-5 {
+        height: 358px;
+      }
+      .bg-img-6 {
+        height: 412px;
+      }
+      .bg-img-7 {
+        height: 188px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 380px) {
+  .our-masters  {
+    .our-masters-photos {
+      .ml-pnl {
+        padding: 0 0 20px 0;
+      }
+      .ml-pnl__cntnt {
+        min-width: 260px;
+      }
+    }
+  }
+}

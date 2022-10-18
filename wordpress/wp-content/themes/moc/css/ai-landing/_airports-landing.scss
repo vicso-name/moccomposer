@@ -1,0 +1,46 @@
+.airports-landing {
+  .ai-hero-title {
+      margin-bottom: 24px;
+  }
+
+  .ai-use-cases__content p:not(.ai-use-cases__additional-info-description) {
+      margin-bottom: 24px;
+  }
+
+  .ai-hero-description {
+      margin-bottom: 32px;
+  }
+
+  .ai-use-cases__main-info {
+    ul {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      color: #666666;
+
+      @media all and (min-width: 861px) {
+        font-size: 16px;
+      }
+    }
+
+    li {
+      padding-left: 21px;
+      position: relative;
+
+      &:not(:last-of-type) {
+        margin-bottom: 12px;
+      }
+
+      &:before {
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #F1563C;
+        position: absolute;
+        top: 10px;
+        left: 7px;
+      }
+    }
+  }
+}

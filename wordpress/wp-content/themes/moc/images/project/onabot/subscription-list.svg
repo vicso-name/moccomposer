@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #666;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Subscription_List.svg" data-name="Subscription List.svg" class="cls-1" d="M1153,4648.7a6.3,6.3,0,1,0,6.3,6.3A6.3,6.3,0,0,0,1153,4648.7Zm0-11.7a18,18,0,1,0,18,18A18,18,0,0,0,1153,4637Zm0,27.14a15.34,15.34,0,0,1-13.92-8.89,0.551,0.551,0,0,1,0-.5,15.343,15.343,0,0,1,27.84,0,0.551,0.551,0,0,1,0,.5A15.34,15.34,0,0,1,1153,4664.14Z" transform="translate(-1135 -4637)"/>
+</svg>

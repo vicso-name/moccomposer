@@ -1,0 +1,259 @@
+.page-about-us {
+    .company-facts {
+        margin-bottom: 110px;
+
+        h2 {
+            margin: 100px auto 56px auto;
+        }
+
+        .col-3 {
+            width: 31.5%;
+            height: 158px;
+            p {
+                padding: 36px 32px 2px 32px;
+            }
+            span {
+                padding: 0px 16px 36px 32px;
+            }
+        }
+        .col-4 {
+            width: 23%;
+            min-height: 116px;
+            p {
+                padding: 16px 32px 0px 32px;
+            }
+            span {
+                padding: 0px 16px 16px 32px;
+            }
+        }
+
+        #company-facts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 300px;
+        }
+        .facts-item {
+            box-shadow: 0 2px 10px 0 rgba(177, 177, 177, 0.5);
+            margin-bottom: 24px;
+
+            p {
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.78;
+                letter-spacing: normal;
+                color: #6c6c6c;
+            }
+            span {
+                font-size: 44px;
+                font-weight: 900;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.18;
+                letter-spacing: normal;
+                color: #f1563c;
+            }
+            .small-facts-text {
+                display: flex;
+                align-items: center;
+                padding: 0 12px 16px 0;
+
+                span {
+                    font-weight: 900 !important;
+                    font-size: 10px;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.2;
+                    letter-spacing: normal;
+                    color: #f1563c;
+
+                    padding: 0 !important;
+                }
+                p {
+                    padding: 0 !important;
+                    font-size: 10px;
+                    font-weight: normal;
+                    color: #f1563c;
+                    line-height: 1;
+                }        
+            
+            }
+            & > div {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1144px) {
+    .company-facts {
+        margin-bottom: 81px !important;
+        
+        .facts-item {
+            &.col-3 {
+                height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                p {
+                    font-size: 16px !important; 
+                    line-height: 1.5;
+                    padding: 16px 46px 8px 20px;
+                }
+                span {
+                    font-size: 32px;
+                    line-height: 1;
+                    padding: 0 20px 16px 20px;
+                }
+            }
+            &.col-4 {
+                height: 125px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                p {
+                    font-size: 16px !important; 
+                    line-height: 1.5;
+                    padding: 16px 37px 8px 20px;
+                }
+                span {
+                    font-size: 32px;
+                    line-height: 1;
+                    padding: 0 10px 16px 20px;
+                }
+                .small-facts-text {
+                    p {
+                        font-size: 8px !important;
+                        font-weight: 500;
+                    }
+                    span {
+                        font-size: 8px !important; 
+                        font-weight: 900;
+                    }
+                    
+                }
+            } 
+        }
+    }
+}
+
+@media all and (max-width: 767px) {
+    .company-facts {
+        margin-bottom: 80px !important;
+        h2 {
+            margin: 80px auto 54px auto;
+        }
+        #company-facts {
+            max-width: 374px;
+            margin: auto;
+            height: unset !important;
+        }
+        .facts-item {
+            margin-bottom: 16px !important;
+            p {
+                padding: 16px 16px 8px 16px !important;
+            }
+            span {
+                font-size: 24px !important;
+                padding: 0 16px 16px 16px !important;
+            }
+            &.col-3, &.col-4 {
+                width: 48%;
+                min-width: 120px;
+                height: 123px;
+                min-height: 80px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            &.offices-item {
+                height: 140px;
+            }
+            .small-facts-text {
+                p {
+                    font-size: 14px !important;
+                    font-weight: 500 !important;
+                    line-height: 1.14 !important;
+                }
+                span {
+                    font-size: 14px !important;
+                }
+            }
+        }
+        .ord-1 {
+            order: 1;
+        }
+        .ord-2 {
+            order: 2;
+        }
+        .ord-3 {
+            order: 3;
+        }
+        .ord-4 {
+            order: 4;
+        }
+        .ord-5 {
+            order: 5;
+        }
+        .ord-6 {
+            order: 6;
+        }
+        .ord-7 {
+            order: 7;
+            width: 100% !important;
+            min-width: 280px;
+            span {
+                font-size: 48px !important;
+                padding: 0 12px 16px 16px !important;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 384px) {
+    .page-about-us {
+        .company-facts {
+            .facts-item {
+                p {
+                    font-size: 12px !important;
+                }
+                span {
+                    font-size: 20px !important;
+                }
+                &.ord-7 {
+                    span {
+                        font-size: 48px !important;
+                    }
+                }
+                .small-facts-text {
+                    span, p {
+                        font-size: 12px !important;
+                    }
+                }
+            }
+        }         
+    }   
+}
+
+.location-section {
+    .section-heading {
+        margin-bottom: 0;
+    }
+
+    .office-pin-wrapper.disabled  {
+        .office-pin {
+            fill: #f1563c !important;
+        }
+
+        .office-city {
+            color: #333;
+        }
+    }
+}

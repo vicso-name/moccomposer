@@ -1,0 +1,148 @@
+.awards-recognitions {
+    padding-top: 72px;
+    padding-bottom: 150px;
+
+    @media all and (max-width: 1024px) {
+        padding-top: 91px;
+        padding-bottom: 78px;
+    }
+
+    @media all and (max-width: 680px) {
+        padding-top: 80px;
+        padding-bottom: 54px;
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 60px;
+
+        @media all and (max-width: 680px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .live-person-title {
+        margin-bottom: 45px;
+
+        @media all and (max-width: 1024px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .awards-logos {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 150px;
+        margin-right: -15px;
+        margin-left: -15px;
+
+
+        @media all and (max-width: 1024px) {
+            margin-bottom: 58px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 600px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media all and (max-width: 414px) {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .awards-logos-item {
+            flex-basis: 264px;
+            padding: 16px 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ffffff;
+            margin: 0 15px;
+            box-sizing: border-box;
+            min-height: 100px;
+            position: relative;
+
+            @media all and (max-width: 1024px) {
+                margin-bottom: 30px;
+                min-height: 82px;
+            }
+
+            @media all and (max-width: 680px) {
+                max-width: unset;
+                flex-basis: unset;
+                min-height: 65px;
+                padding: 9px;
+                margin-bottom: 30px;
+            }
+
+            @media all and (max-width: 414px) {
+                margin: 0 0 40px;
+
+            }
+
+            &:hover {
+                border: 1px solid $brand_color;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .awards-logos-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .awards-logo-image {
+        max-width: 100%;
+    }
+
+    .capterra-logo {
+        @media all and (max-width: 680px) {
+            max-width: 149px;
+        }
+    }
+
+    .clutch-image {
+        @media all and (max-width: 680px) {
+            max-width: 91px;
+        }
+    }
+
+    .lp-image-wrapper {
+        max-width: 770px;
+        margin: 0 auto;
+    }
+
+    .lp-image {
+        width: 100%;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
+
+@media all and (max-width: 680px) {
+    .awards-recognitions {
+        h2 {
+            margin-top: 0;
+            margin-bottom: 54px;
+        }
+        .awards-logos {
+            flex-direction: column;
+            align-items: center;
+
+            div {
+                width: 100%;
+                min-width: 236px;
+
+                img {
+                    max-height: 42px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

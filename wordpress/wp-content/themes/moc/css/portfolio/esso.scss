@@ -1,0 +1,1012 @@
+.esso_container{
+  width: 100%;
+  max-width: 1141px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.esso_section-title{
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 63px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #333333;
+  @media screen and (max-width: 768px){
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 48px;
+  }
+}
+
+.esso_hero{
+  padding-top: 123px;
+  padding-bottom: 108px;
+  background-color: #fff;
+  @media screen and (max-width: 992px){
+    padding-top: 150px;
+  }
+  @media screen and (max-width: 576px){
+    padding-bottom: 0;
+    padding-top: 125px;
+  }
+  .main_imag-mobile{
+    display: none;
+    @media screen and (max-width: 576px){
+      display: block;
+      max-width: 100%;
+      margin-bottom: -97px;
+    }
+    @media screen and (max-width: 414px){
+      margin-bottom: -70px;
+    }
+    @media screen and (max-width: 380px){
+      margin-bottom: -45px;
+    }
+  }
+
+  &-guts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__description{
+      flex-basis: 515px;
+      @media screen and (max-width: 992px){
+        flex-basis: unset;
+      }
+      h1{
+        font-family: Roboto;
+        font-size: 80px;
+        font-weight: 500;
+        line-height: 90px;
+        letter-spacing: 0px;
+        text-align: left;
+        position: relative;
+        padding: 0;
+        margin-bottom: 40px;
+        color: #333333;
+        &::before{
+          content: "";
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          right: -30px;
+          background-image: url(../images/project/esso/esso_facebook_messager.svg);
+        }
+        @media screen and (max-width: 992px){
+          margin-bottom: 24px;
+          font-size: 40px;
+          line-height: 48px;
+        }
+        @media screen and (max-width: 992px){
+          &::before{
+            background-image: none;
+          }
+        }
+      }
+      .subtitle{
+        font-family: Roboto;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-bottom: 24px;
+        color: #333333;
+        @media screen and (max-width: 992px){
+          margin-bottom: 24px;
+          font-size: 18px;
+          line-height: 28px;
+          max-width: 294px;
+          width: 100%;
+        }
+      }
+      p{
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin: 0;
+        color: #666666;
+        @media screen and (max-width: 992px){
+          margin-bottom: 24px;
+        }
+        @media screen and (max-width: 768px){
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+    }
+    &__image{
+      flex-basis: 671.58px;
+      figure{
+        margin: 0;
+        img{
+
+          width: 671.58px;
+          max-width: 100%;
+
+        }
+
+        @media screen and (max-width: 576px){
+
+          .main_imag-descktop{
+            display: none;
+          }
+
+        }
+
+      }
+      @media screen and (max-width: 576px){
+        flex-basis: unset;
+      }
+    }
+    @media screen and (max-width: 992px){
+      flex-direction: column;
+    }
+  }
+}
+
+.esso_resuls-numbers{
+  background-image: url("../images/project/esso/esso_line_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 31.5px;
+  padding-bottom: 31.5px;
+  @media screen and (max-width: 992px){
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: 992px){
+      flex-direction: column;
+      margin-bottom: 60px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    li{
+      position: relative;
+      @media screen and (max-width: 992px){
+        margin-bottom: 60px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+      div{
+        font-family: Roboto;
+        font-size: 54px;
+        font-weight: 500;
+        line-height: 63px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #ffffff;
+        @media screen and (max-width: 576px){
+          font-size: 40px;
+          line-height: 47px;
+          letter-spacing: 0px;
+        }
+      }
+      p{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #ffffff;
+        margin: 0;
+        padding-top: 18px;
+        @media screen and (max-width: 576px){
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16px;
+        }
+
+      }
+      @media screen and (max-width: 992px){
+        &::before{
+          content: "";
+          position: absolute;
+          width: 600px;
+          height: 1px;
+          background-color: #D7D7D7;
+          left: 50%;
+          transform: translate(-50%);
+          bottom: -35%;
+          opacity: .3;
+        }
+        &:last-child{
+          &::before{
+            width: 0px;
+            height: 0px;
+          }
+        }
+      }
+      @media screen and (max-width: 576px){
+        &::before{
+          width: 305px;
+        }
+      }
+    }
+  }
+}
+
+.esso_challenge{
+  background-color: #F5F5F5;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-image: url(../images/project/esso/challenge_background.png);
+  background-repeat: no-repeat;
+  background-position-x: 80%;
+  background-size: 380px;
+  @media screen and (max-width: 576px){
+    background-image: url(../images/project/esso/hockey_mobile_bg.png);
+    background-position-x: 103%;
+    background-position-y: 99%;
+    background-size: 57%;
+  }
+  &__content{
+    h2{
+      font-family: Roboto;
+      font-size: 54px;
+      font-weight: 300;
+      line-height: 63px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #333333;
+      margin-bottom: 24px;
+      @media screen and (max-width: 576px){
+        font-size: 32px;
+        line-height: 48px;
+      }
+    }
+    p{
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #666666;
+      margin: 0;
+      margin-bottom: 30px;
+      width: 856px;
+      max-width: 100%;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      @media screen and (max-width: 576px){
+        font-size: 16px;
+        line-height: 28px;
+        margin: 0;
+      }
+    }
+
+  }
+
+}
+
+.esso_creation{
+  background-color: #fff;
+  padding-top: 70px;
+  padding-bottom: 120px;
+  background-image: url('../images/project/esso/esso_hokkey_ball_right.png');
+  background-repeat: no-repeat;
+  background-size: 12.5%;
+  background-position: right;
+  @media screen and (max-width: 992px){
+    background-image: unset;
+    padding-bottom: 40px;
+  }
+  @media screen and (max-width: 576px){
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  &__item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 88px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: 992px){
+      flex-direction: column-reverse;
+      margin-bottom: 15px;
+      &:last-child{
+        flex-direction: column;
+      }
+    }
+    &-content{
+      flex-basis: 445px;
+      h2{
+        font-family: Roboto;
+        font-size: 54px;
+        font-weight: 300;
+        line-height: 63px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #333333;
+        @media screen and (max-width: 576px){
+          font-size: 32px;
+          line-height: 48px;
+        }
+      }
+      p{
+        color: #666666;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin: 0;
+        @media screen and (max-width: 576px){
+          font-size: 16px;
+          line-height: 28px;
+        }
+      }
+      @media screen and (max-width: 992px){
+        flex-basis: unset;
+      }
+    }
+    &-image{
+
+      .creation_first_mobile{
+        display: none;
+        @media screen and (max-width: 576px){
+          display: block;
+        }
+      }
+
+
+      .creation_first_desctop{
+        @media screen and (max-width: 576px){
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 992px){
+        margin-left: -40px;
+      }
+
+      figure{
+        margin: 0;
+        @media screen and (max-width: 576px){
+          margin-top: 40px;
+        }
+        img{
+          width: 589px;
+          max-width: 100%;
+          @media screen and (max-width: 576px){
+            width: 358px;
+            max-width: 100%;
+          }
+        }
+
+      }
+    }
+
+    &.second-item{
+      img{
+        width: 344px;
+        max-width: 100%;
+      }
+    }
+
+  }
+
+}
+
+.esso_description{
+  background-image: url('../images/project/esso/esso_hokkey_ball_left.png');
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: 80%;
+  background-size: 12.5%;
+  background-color: #F9F9F9;
+  padding-bottom: 117px;
+  padding-top: 78px;
+  @media screen and (max-width: 992px){
+    padding-top: 60px;
+    padding-bottom: 58.87px;
+    background-image: unset;
+  }
+  &__content{
+    &-item{
+      @media screen and (max-width: 992px){
+        flex-direction: column-reverse;
+        row-gap: 32px;
+      }
+      @media screen and (max-width: 768px){
+        margin-top: 32px;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 60px;
+      &:first-child{
+        margin-bottom: 83px;
+        margin-top: 67px;
+        @media screen and (max-width: 992px){
+          flex-direction: column;
+          margin-bottom: 40px;
+        }
+      }
+      &__content{
+        flex-basis: 415px;
+        padding-left: 77px;
+        @media screen and (max-width: 992px){
+          flex-basis: unset;
+          padding-left: 0;
+        }
+        &.esso_second{
+          padding-right: 110px;
+          padding-left: 0;
+          @media screen and (max-width: 992px){
+            padding-right: 0;
+            padding-left: 0;
+          }
+        }
+        h3{
+          font-family: Roboto;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 23px;
+          letter-spacing: 0px;
+          text-align: left;
+          color: #333333;
+          @media screen and (max-width: 576px){
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+          }
+        }
+        p{
+          font-family: Roboto;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 0px;
+          text-align: left;
+          color: #666666;
+          @media screen and (max-width: 576px){
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0px;
+            text-align: left;
+
+          }
+        }
+      }
+      &__image{
+        figure{
+          margin: 0;
+          .esso_first_section_image{
+            width: 540px;
+            max-width: 100%;
+          }
+          .esso_second_section_image{
+            width: 520px;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.esso_slider-section{
+
+
+  padding-top: 80px;
+  padding-bottom: 101px;
+  background-color: #ffffff;
+
+  .esso-slider-mobile{
+    display: none;
+    @media (max-width: 890px) {
+      display: block;
+    }
+  }
+
+  @media(max-width:576px){
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  .esso__slider-wrapper{
+
+    .esso__slider-description{
+      display: flex;
+      align-items: flex-end;
+      column-gap: 127px;
+      @media (max-width: 1100px) {
+        column-gap: 71px;
+      }
+      p{
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 44px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #333333;
+        margin: 0;
+        flex-basis: 760px;
+      }
+
+    }
+
+
+    .owl-nav{
+      display: flex;
+      align-items: center;
+      #esso_counter{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #666666;
+      }
+      button{
+        border-radius: 50%;
+        border: none;
+        width: 36px;
+        height: 36px;
+        background: #666666;
+        padding: 0;
+        line-height: 36px;
+        transition: all .5s ease;
+        cursor: pointer;
+        span{
+          color: #ffffff;
+          font-size: 18px;
+        }
+        &:hover{
+          background: #F1563C;
+        }
+        margin-right: 24px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+      .owl-prev{
+        &.disabled{
+          background-color: #E6E6E6;
+          cursor: auto;
+        }
+        span{
+          position: relative;
+          font-size: 0;
+          &::before{
+            content: "";
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            background-image: url(../images/project/esso/arrow_left.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: -15px;
+            left: -11px;
+          }
+        }
+      }
+      .owl-next{
+        &.disabled{
+          background-color: #E6E6E6;
+          cursor: auto;
+        }
+        span{
+          position: relative;
+          font-size: 0;
+          &::before{
+            content: "";
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            background-image: url(../images/project/esso/arrow_right.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: -16px;
+            left: -9px;
+          }
+        }
+      }
+    }
+
+  }
+
+
+  #esso_mobile_navigation{
+    margin-top: 32px;
+    display: none;
+    @media (max-width: 992px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  #esso_slider-nav{
+    @media (max-width: 890px) {
+      display: none;
+    }
+  }
+
+  .esso_slider{
+    @media (max-width: 890px) {
+      display: none;
+    }
+    margin-top: 72px;
+    .owl-stage{
+      left: -150px;
+      &.second-owl{
+        left: 0;
+      }
+      &.third-owl{
+        left: 87px;
+      }
+      &.four-owl{
+        left: 173px;
+      }
+      &.five-owl{
+        left: 257px;
+      }
+      &.six-owl{
+        left: 342px;
+      }
+      &.six-owl-rotation{
+        left: 259px;
+      }
+      &.five-owl-rotation{
+        left: 170px;
+      }
+      &.four-owl-rotation{
+        left: 86px;
+      }
+      &.third-owl-rotation{
+        left: 86px;
+      }
+      &.second-owl-rotation{
+        left: -150px;
+      }
+    }
+    @media (max-width: 576px) {
+      margin-top: 32px;
+    }
+    .owl-item{
+      width: 264px!important;
+      height: 310px!important;
+      .item{
+        padding: 24px;
+        min-height: 310px;
+        transition: all .5s ease;
+        .esso-slider-item{
+
+          span{
+            color: #E6E6E6;
+            font-family: Roboto;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 75px;
+            letter-spacing: 0px;
+            text-align: left;
+          }
+          p{
+            color: #E6E6E6;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0px;
+            text-align: left;
+          }
+          &:hover{
+            cursor: pointer;
+          }
+        }
+
+      }
+      &:hover{
+        .item{
+          background: rgba(221, 221, 221, 0.2);
+          .esso-slider-item{
+            span{
+              color: #F1563C;
+            }
+            p{
+              color: #666666;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .esso-slider-mobile{
+    margin-top: 72px;
+    @media (max-width: 576px) {
+      margin-top: 32px;
+    }
+    .owl-item{
+      touch-action: pan-y!important;
+      .item{
+        padding: 24px;
+        min-height: 310px;
+        transition: all .5s ease;
+        .esso-slider-item{
+          span{
+            color: #E6E6E6;
+            font-family: Roboto;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 75px;
+            letter-spacing: 0px;
+            text-align: left;
+          }
+          p{
+            color: #E6E6E6;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 30px;
+            letter-spacing: 0px;
+            text-align: left;
+          }
+        }
+      }
+      &.center{
+        .item{
+          background: rgba(221, 221, 221, 0.2);
+          .esso-slider-item{
+            span{
+              color: #F1563C;
+            }
+            p{
+              color: #666666;
+            }
+          }
+        }
+      }
+      &:hover{
+        .item{
+          background: rgba(221, 221, 221, 0.2);
+          .esso-slider-item{
+            span{
+              color: #F1563C;
+            }
+            p{
+              color: #666666;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.esso_active_slider{
+  background: rgba(221, 221, 221, 0.2)!important;
+  .esso-slider-item{
+    span{
+      color: #F1563C!important;
+    }
+    p{
+      color: #666666!important;
+    }
+  }
+}
+
+.esso_technologies{
+  background-color: #F9F9F9;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  @media screen and (max-width: 576px){
+    padding-top: 65px;
+  }
+  .esso_list--wrapper{
+    display: flex;
+    column-gap: 74px;
+    justify-content: center;
+    @media screen and (max-width: 992px){
+
+    }
+    @media screen and (max-width: 768px){
+      flex-direction: column;
+      align-items: flex-start;
+      overflow: hidden;
+    }
+  }
+  &-list{
+    margin-top: 81px;
+    @media screen and (max-width: 768px){
+      margin-left: 41px;
+      margin-top: 24px;
+    }
+    li{
+      width: 100%;
+      max-width: 335px;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #333333;
+      position: relative;
+      margin-bottom: 33px;
+      @media screen and (max-width: 768px){
+        font-size: 14px;
+        line-height: 22px;
+        padding-left: 9px;
+      }
+      &::before{
+        content: "";
+        position: absolute;
+        left: -12%;
+        top: 13%;
+        background-image: url(../images/project/esso/checkmark.svg);
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 18px;
+        background-size: contain;
+        @media screen and (max-width: 768px){
+          top: 22%;
+          left: -10%;
+        }
+      }
+      @media screen and (max-width: 768px){
+        &::after{
+          content: "";
+          position: absolute;
+          width: 300%;
+          height: 1px;
+          background-color: #D7D7D7;
+          bottom: -15px;
+          right: -100%;
+        }
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.esso_results{
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #fff;
+  @media screen and (max-width: 768px){
+    padding-top: 65px;
+    padding-bottom: 42px;
+    .esso_section-title{
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 48px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+  &--content{
+    width: 100%;
+    max-width: 790px;
+    margin: 0 auto;
+    padding-top: 40px;
+    @media screen and (max-width: 768px){
+      padding-top: 15px;
+    }
+    p{
+      margin-top: 0!important;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0px;
+      text-align: center;
+      @media screen and (max-width: 768px){
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+        &:first-child{
+          margin-bottom: 20px;
+        }
+      }
+
+    }
+  }
+}
+
+
+.esso_statistics{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(../images/project/esso/esso_statistic_bg_new.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (max-width: 767px){
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media screen and (max-width: 570px){
+    background-image: url(../images/project/esso/esso_mobile_bg.jpg);
+  }
+  .esso_statistics-wrapper{
+    .final-result-list{
+      margin-top: 0!important;
+      margin-bottom: 0!important;
+      .le-numbers{
+        font-family: Roboto;
+        font-size: 54px;
+        font-weight: 500;
+        line-height: 63px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 23.5px;
+        @media screen and (max-width: 768px){
+          font-size: 40px;
+          font-weight: 500;
+          line-height: 47px;
+          letter-spacing: 0px;
+          text-align: center;
+          margin-bottom: 14.5px;
+        }
+      }
+      .le-description{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #ffffff;
+        @media screen and (max-width: 768px){
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .esso_technologies{
+    .esso_section-title{
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .esso_technologies{
+    .esso_section-title{
+      width: 230px;
+    }
+  }
+}
+
+.postid-39809 {
+  .single-portfolio main{
+    padding-top: 0!important;
+  }
+}

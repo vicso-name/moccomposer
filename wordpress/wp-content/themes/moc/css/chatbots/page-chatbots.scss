@@ -1,0 +1,238 @@
+@import "variables";
+
+.page-chatbots {
+  //backface-visibility: hidden;
+  //overflow-x: hidden;
+}
+
+//.page-chatbots__section {
+//  background: $white;
+//  overflow: hidden;
+//  padding: 10px 0 120px;
+//  //padding: 110px 0 120px;
+//  &.heading-section {
+//    padding: 0;
+//  }
+//  .inner-wrapper {
+//    display: block;
+//    width: auto;
+//    //max-width: 980px;
+//    margin: 0 auto;
+//    padding: 0 30px;
+//  }
+//}
+.chatbots-sub__header {
+  display: block;
+  font-size: .71em;
+  font-weight: 500;
+  text-align: right;
+  line-height: 1.34;
+  letter-spacing: -0.9px;
+}
+
+.grey-bg__section {
+  background: #f2f2f2;
+  overflow: hidden;
+}
+
+.page-chatbots {
+  .section-subheading {
+    font-size: 42px;
+    max-width: 14em;
+    line-height: normal;
+    padding: 1.3em 0 1em;
+    margin: 0 auto;
+  }
+
+  .section-description {
+    width: auto;
+    max-width: 960px;
+    margin: auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+
+    &.centered-description {
+      text-align: center;
+      margin: -9px auto 0;
+      @media all and (min-width: 1400px) and (max-width: 1600px) {
+        margin: 0 auto -10px;
+      }
+      @media all and (min-width: 768px) and (max-width: 1024px) {
+        font-size: 18px;
+        margin: -4px auto 0;
+      }
+    }
+  }
+}
+
+.chatbots-services-list {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 44px auto;
+  width: auto;
+  max-width: 1180px;
+  padding: 0 30px;
+
+  li {
+    margin: 0 10px;
+    width: 20%;
+  }
+}
+
+.chatbots-services-item {
+  display: block;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.chatbots-services-item:hover {
+  opacity: 0.8;
+}
+
+.chatbots-services-item .icon-wrapper {
+  display: block;
+  float: none;
+  width: 64px;
+  height: 60px;
+  margin: auto;
+}
+
+//
+.interface-image {
+  height: 100%;
+  width: 100%;
+}
+
+.chatbots-services-item .icon-description {
+  display: block;
+  text-align: center;
+  color: $white;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 1em;
+}
+
+//
+//@media all and (max-width: 1440px) {
+//  .page-chatbots__section {
+//    padding: 100px 0 115px;
+//
+//    .section-heading {
+//      padding-top: 0;
+//    }
+//    .section-subheading {
+//      font-size: 40px;
+//    }
+//  }
+//}
+@media all and (max-width: 1024px) {
+  //.page-chatbots__section {
+  //  padding: 80px 0 95px;
+  //  .section-subheading {
+  //    font-size: 36px;
+  //  }
+  //}
+  .platforms-section {
+    padding: 15px 30px 30px;
+  }
+  //.chatbots-top__heading {
+  //  letter-spacing: -2px;
+  //}
+}
+
+@media (max-width: 800px) {
+  //.page-chatbots__section {
+  //  padding: 60px 0 70px;
+  //  .section-subheading {
+  //    font-size: 32px;
+  //  }
+  //}
+
+  .platforms-section {
+    padding: 10px 30px 20px;
+  }
+  .chatbots-services-item .icon-description {
+    font-size: 14px;
+  }
+}
+
+
+@media all and (max-width: 768px) {
+  .chatbots-services-list {
+    padding: 0;
+  }
+  .chatbots-services-item .icon-description {
+    font-size: 10px;
+  }
+  .chatbots-services-item .icon-wrapper {
+    width: 32px;
+    height: 30px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .page-chatbots__section {
+    .section-subheading {
+      font-size: 25px;
+    }
+  }
+  .chatbots-top__heading {
+    letter-spacing: -1px;
+  }
+  .chatbot-services__list {
+    font-size: calc(12px + 0.0135 * (100vw - 320px));
+  }
+  .page-chatbots .section-description.centered-description {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .page-chatbots__section {
+    padding: 45px 0;
+
+  }
+  .platforms-section {
+    padding: 10px 30px 10px;
+  }
+  .chatbots-services-list li {
+    margin: 0 5px;
+    width: 36%;
+  }
+  .chatbots-services-item .icon-description {
+    font-size: 9px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .chatbots-services-item .icon-description {
+    font-size: 8px;
+  }
+}
+
+.brand-logo:hover path,
+.brand-logo:hover polygon {
+  fill: #000000;
+}
+
+.vonage {
+  max-width: 136px;
+  max-height: 57px;
+
+  @media all and (max-width: 740px) {
+    max-width: 110px;
+    max-height: 50px;
+  }
+  @media all and (max-width: 680px) {
+    max-width: 84px;
+    max-height: 30px;
+  }
+}

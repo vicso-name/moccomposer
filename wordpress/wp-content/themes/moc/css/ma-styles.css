@@ -1,0 +1,25 @@
+.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute !important;width:1px;word-wrap:normal !important}
+.screen-reader-text:focus{background-color:#eee;clip:auto !important;-webkit-clip-path:none;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
+body{font-family:"Roboto",sans-serif;font-size:21px;font-weight:300;line-height:1.4;color:#7e7e7e;text-align:center;padding:0;margin:0}
+body *{box-sizing:border-box}h1,h2,h3,h4{color:#2e2d2d;font-weight:400}section{display:block}
+section{display:flex;flex-direction:column;justify-content:space-between;padding:10vh 40px}
+.ma-logo{width:300px;height:auto;display:block;margin:0 auto}.ma-logo img{display:block;height:auto;width:100%}
+.ma-heading-section{background-image:url(../images/masters-academy/Background.jpg);background-position:center center;background-size:cover;height:auto;min-height:100vh}
+.heading__top-text{margin:0 auto;width:50vw;min-width:600px;padding-top:30%;display:block;opacity:1;background-image:url(../images/masters-academy/season.png);background-size:contain;background-position:center;background-repeat:no-repeat}
+.courses-list__section{display:block}.courses-list{list-style:none;padding:0;margin:8vh auto;max-width:1400px;display:block}
+.courses-list__item{display:inline-block;vertical-align:top;padding:30px 20px;width:calc(33% - 40px);max-width:380px;margin:auto}
+.courses-list__item__icon{height:120px;width:auto;display:block;box-shadow:0 0 8px rgba(0,0,0,0.2);margin:auto}
+h2{font-size:50px}h3{margin:1em 0 .1em;font-size:33px}p{margin:0 auto}.registration-button{color:#e41800;text-transform:uppercase;font-weight:bold;text-decoration:none;display:inline-block;vertical-align:middle;font-size:29px;line-height:.1em;padding:1.2em;background:#fff;border-radius:10px;transition:opacity .3s ease}
+.registration-button:hover{opacity:.9}.footer__section{padding:50px 40px 70px;background-image:url(../images/masters-academy/footer_baner.jpg);background-position:center bottom;background-size:cover}
+.ma-footer{padding:40px 40px 20px;background-image:url(../images/masters-academy/footer_map.png);background-position:center bottom;background-repeat:repeat;font-size:12px;color:#a3a3a3}
+.copy,.terms{display:inline-block;margin:0 0 0 5px}.terms a{margin:0 0 0 5px;color:#a3a3a3;text-decoration:none;transition:opacity .3s ease}
+.terms a:hover{text-decoration:underline;opacity:.9}.heading__bottom-text{margin:0 auto 38px;width:40vw;min-width:342px;padding-top:5.2vw;display:block;opacity:1;background-image:url(../images/masters-academy/your_start.png);background-size:contain;background-position:center;background-repeat:no-repeat}
+@media all and (max-width:960px){.courses-list__item{width:calc(50% - 80px)}
+}@media all and (max-width:767px){body{font-size:15px}section{padding:10vh 40px}.ma-logo{width:150px;height:auto}
+.ma-heading-section{background-image:url(../images/masters-academy/Background-mob.jpg)}.courses-list{display:block}
+.courses-list__item{width:100%;padding:30px 0}.ma-heading-section .registration-button{font-size:18px}
+.registration-button{font-size:15px;border-radius:5px;padding:1.2em 1.8em}h2{font-size:32px}
+h3{font-size:29px}}@media all and (max-width:680px){.heading__top-text{margin:auto;min-width:inherit;width:calc(100vw - 80px);max-width:100%}
+.heading__bottom-text{min-width:inherit;width:calc(100vw - 80px);max-width:100%;padding-top:11vw}
+}
+/*# sourceMappingURL=ma-styles.css.map */

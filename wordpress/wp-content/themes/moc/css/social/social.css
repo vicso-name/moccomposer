@@ -1,0 +1,111 @@
+/*---------------------------------------------------------------------------*/
+/*------------------------------> SOCIAL <-----------------------------------*/
+/*---------------------------------------------------------------------------*/
+.share-block {
+  width: auto;
+  max-width: 840px;
+  overflow:hidden;
+  margin:30px auto;
+  padding: 0 0 70px;
+}
+.share-block div div {
+  text-align:center !important;
+  font-size:0;
+}
+.share-block a {
+  width:118px;
+  height:40px;
+  display:inline-block;
+  margin:6px;
+  position:relative;
+  background: transparent;
+  font-size:18px;
+  font-weight:400;
+  border-radius: 20px;
+  line-height: 40px;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.share-block a svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -11px;
+  margin-left: -16px;
+  width: 32px;
+  height: 22px;
+}
+.share-block .ssba_facebook_share {
+  color:#3C5B9A;
+}
+.share-block .ssba_facebook_share svg {
+  fill:#3C5B9A;
+}
+.no-touch .share-block .ssba_facebook_share:hover {
+  border-color:#3C5B9A;
+}
+.share-block .ssba_twitter_share {
+  color:#28AAE1;
+}
+.share-block .ssba_twitter_share svg {
+  fill:#28AAE1;
+}
+.no-touch .share-block .ssba_twitter_share:hover {
+  border-color:#28AAE1;
+}
+.share-block .ssba_linkedin_share {
+  color:#0B78B7;
+}
+.share-block .ssba_linkedin_share svg {
+  fill:#0B78B7;
+}
+.no-touch .share-block .ssba_linkedin_share:hover {
+  border-color:#0B78B7;
+}
+.share-block .ssba_google_share {
+  color:#DE4F42;
+}
+.share-block .ssba_google_share svg {
+  fill:#DE4F42;
+}
+.no-touch .share-block .ssba_google_share:hover {
+  border-color:#DE4F42;
+}
+.share-block a img {
+  display:none !important;
+}
+.share-block .ssba_sharecount {
+  color: #a3a3a3;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: static;
+  line-height: 44px;
+  margin: 0 50px 0 -50px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+@media all and (max-width: 980px) {
+  .share-block {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media all and (max-width: 767px) {
+  .share-block {
+    margin: 30px auto;
+    padding: 0 0 10px;
+  }
+  .share-block a {
+    width: 40px;
+    height: 40px;
+  }
+  .share-block .ssba_sharecount {
+    display: none;
+  }
+}

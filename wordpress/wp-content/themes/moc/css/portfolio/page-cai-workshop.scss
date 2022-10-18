@@ -1,0 +1,826 @@
+.portfolio-cai-workshop {
+  .case-study-general-info,
+  .case-study-content {
+    background: #ffffff;
+    font-family: 'Roboto', Sans-Serif;
+  }
+}
+
+.hide-on-desktop {
+  @media all and (min-width: 861px) {
+    display: none;
+  }
+}
+
+.hide-on-mobile {
+  @media all and (max-width: 860px) {
+    display: none;
+  }
+}
+
+.page-project.cai-workshop {
+  background: #FFFFFF;
+  font-family: 'Roboto', Sans-Serif;
+}
+
+.case-study-content.cai-workshop-bg-gray,
+.cai-workshop-bg-gray {
+  background: #F5F5F5;
+}
+
+.project-container {
+  width: 100%;
+  max-width: 1152px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media all and (max-width: 820px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media all and (max-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media all and (max-width: 520px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media all and (max-width: 380px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.case-study-general-info {
+  @media all and (min-width: 861px) {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.cai-workshop-header {
+  padding-top: 152px;
+  padding-bottom: 108px;
+
+  @media all and (max-width: 1024px) {
+    padding-top: 130px;
+    padding-bottom: 90px;
+  }
+
+  @media all and (max-width: 860px) {
+    padding-top: 120px;
+  }
+
+  @media all and (max-width: 520px) {
+    padding-top: 110px;
+    padding-bottom: 80px;
+  }
+
+  .name-caption {
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 118px;
+
+    @media all and (max-width: 1280px) {
+      font-size: 54px;
+      line-height: 62px;
+      margin-bottom: 80px;
+    }
+
+    @media all and (max-width: 1024px) {
+      font-size: 50px;
+      line-height: 56px;
+    }
+
+    @media all and (max-width: 860px) {
+      text-align: left;
+      font-size: 48px;
+      line-height: 54px;
+      margin-bottom: 48px;
+    }
+
+    @media all and (max-width: 768px) {
+      text-align: left;
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    @media all and (max-width: 520px) {
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 32px;
+    }
+
+    @media all and (max-width: 380px) {
+      font-size: 38px;
+      line-height: 46px;
+    }
+  }
+}
+
+.cai-workshop-header-inner {
+  @media all and (min-width: 861px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.cai-workshop-info-block {
+  @media all and (min-width: 861px) {
+    width: 50%;
+    max-width: 504px;
+  }
+
+  .project-description {
+    h4 {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 34px;
+      margin-bottom: 24px;
+
+      @media all and (max-width: 520px) {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #666666;
+
+      @media all and (max-width: 520px) {
+        line-height: 28px;
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: 10px;
+
+        @media all and (max-width: 520px) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+.cai-workshop-image-block {
+  @media all and (min-width: 861px) {
+    width: 41%;
+    max-width: 415px;
+  }
+
+  @media all and (max-width: 860px) {
+    max-width: 360px;
+    margin: 0 auto 64px;
+  }
+
+  @media all and (max-width: 520px) {
+    margin-bottom: 48px;
+  }
+}
+
+.cai-workshop-section-title {
+  font-weight: 300;
+  font-size: 54px;
+  line-height: 63px;
+  color: #111111;
+
+  @media all and (max-width: 1024px) {
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  @media all and (max-width: 520px) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+//challange section
+.cai-workshop-challenge {
+  padding-top: 72px;
+  padding-bottom: 100px;
+
+  @media all and (max-width: 520px) {
+    padding-top: 56px;
+    padding-bottom: 60px;
+  }
+
+  .case-section-title {
+    text-align: left;
+    margin: 0 0 32px;
+
+    @media all and (max-width: 520px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .case-section-text {
+    color: #666666;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0;
+    font-family: 'Roboto', Sans-Serif;
+    text-align: left;
+
+    @media all and (max-width: 520px) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &:not(:last-of-type ) {
+      margin-bottom: 32px;
+
+      @media all and (max-width: 520px) {
+        margin-bottom: 45px;
+      }
+    }
+  }
+}
+
+//consultation-section
+.case-study-content.consultation-section {
+  //background: #F2F2F2;
+}
+
+.consultation-section {
+  padding-top: 60px;
+  padding-bottom: 80px;
+
+  @media all and (min-width: 861px) {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  @media all and (min-width: 1025px) {
+    padding-top: 100px;
+    padding-bottom: 110px;
+  }
+}
+
+.consultation-section-title {
+  margin-bottom: 24px;
+
+  @media all and (min-width: 861px) {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.consultation-section-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 60px;
+  color: #666666;
+
+  @media all and (min-width: 861px) {
+    text-align: center;
+    max-width: 888px;
+    margin: 0 auto 60px;
+  }
+
+  @media all and (min-width: 1025px) {
+    font-size: 18px;
+    line-height: 32px
+  }
+}
+
+.workshops-list {
+  @media all and (min-width: 861px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.workshops-item {
+  max-width: 520px;
+
+  @media all and (min-width: 861px) {
+    width: 45%;
+    max-width: 457px;
+  }
+
+  &:not(:last-of-type) {
+    @media all and (max-width: 860px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.workshops-item-header {
+  @media all and (max-width: 860px) {
+    display: flex;
+    margin-bottom: 16px;
+  }
+
+  @media all and (min-width: 861px) {
+
+  }
+}
+
+.workshops-item-icon {
+  width: 56px;
+  height: 56px;
+  background: #F1563C;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+  flex-shrink: 0;
+
+  @media all and (max-width: 380px) {
+    width: 48px;
+    height: 48px;
+    margin-right: 18px;
+  }
+
+  @media all and (min-width: 861px) {
+    margin-bottom: 24px;
+  }
+}
+
+.workshops-item-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+
+  @media all and (max-width: 380px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @media all and (min-width: 861px) {
+    margin-bottom: 24px;
+  }
+}
+
+.workshops-item-description {
+  padding-left: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #666666;
+
+  @media all and (max-width: 380px) {
+    padding-left: 20px;
+  }
+
+  @media all and (min-width: 421px) {
+    padding-left: 80px;
+  }
+
+  @media all and (min-width: 861px) {
+    padding-left: 0;
+  }
+
+  @media all and (min-width: 1025px) {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+//about-workshop
+.about-workshop {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media all and (min-width: 381px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media all and (min-width: 1025px) {
+    padding-top: 88px;
+  }
+}
+
+.about-workshop-row {
+  @media all and (min-width: 861px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &:not(:last-of-type) {
+    @media all and (max-width: 860px) {
+      margin-bottom: 80px;
+    }
+
+    @media all and (min-width: 861px) {
+      margin-bottom: 68px;
+    }
+  }
+
+  &:nth-of-type(even) {
+    @media all and (min-width: 861px) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.about-workshop-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #666666;
+
+  @media all and (min-width: 861px) {
+    width: 50%;
+    max-width: 513px;
+  }
+
+  @media all and (min-width: 1025px) {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  &.short-text {
+    @media all and (min-width: 861px) {
+      max-width: 484px;
+    }
+  }
+}
+
+.about-workshop-image-wrap {
+  margin: 0 auto 40px;
+
+  @media all and (min-width: 381px) {
+    width: 85%;
+    max-width: 305px;
+  }
+
+  @media all and (min-width: 521px) {
+    max-width: 320px;
+  }
+
+  @media all and (min-width: 861px) {
+    width: 41%;
+    max-width: 416px;
+    margin: 0;
+  }
+
+  img {
+    //width: 100%;
+    max-width: 100%;
+  }
+}
+
+//discussion-workshop-section
+.discussion-workshop-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media all and (min-width: 381px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media all and (min-width: 1025px) {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+
+  .about-workshop-text {
+    @media all and (min-width: 861px) {
+      max-width: 470px;
+    }
+  }
+}
+
+//workshop-technologies {
+.workshop-technologies {
+  padding-bottom: 20px;
+
+  @media all and (min-width: 381px) {
+    padding-bottom: 40px;
+  }
+
+  @media all and (min-width: 1025px) {
+    padding-bottom: 110px;
+  }
+}
+
+.workshop-technologies-title {
+  margin-bottom: 32px;
+  color: #333333;
+
+  @media all and (min-width: 861px) {
+    text-align: center;
+    margin-bottom: 42px;
+  }
+
+  @media all and (min-width: 1025px) {
+    margin-bottom: 60px;
+  }
+}
+
+.workshop-technologies-list {
+  max-width: 856px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media all and (min-width: 541px) and (max-width: 860px) {
+    justify-content: flex-start;
+  }
+
+}
+
+.workshop-technologies-item {
+  width: 18%;
+  max-width: 152px;
+
+  @media all and (max-width: 860px) {
+    width: 33.33%;
+    max-width: unset;
+    margin-bottom: 40px;
+  }
+
+  @media all and (max-width: 540px) {
+    width: calc((100% - 20px) / 2);
+    max-width: 175px;
+  }
+}
+
+.workshop-technologies-icon-wrap {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 46px 0;
+
+  @media all and (max-width: 860px) {
+    height: 112px;
+    margin: 0 0 8px;
+  }
+}
+
+.azure-logo svg {
+  margin-top: -10px;
+
+  @media all and (max-width: 860px) {
+
+  }
+}
+
+.glia-logo svg {
+  margin-bottom: -7px;
+
+  @media all and (max-width: 860px) {
+
+  }
+}
+
+.workshop-technologies-item-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #666666;
+}
+
+//workshop-results
+.workshop-results {
+  @media all and (min-width: 861px) {
+    padding-top: 70px;
+    padding-bottom: 110px;
+    background: url('../images/project/сai-workshop/results-bg.jpg') no-repeat center/cover;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  .workshop-results-section-title {
+    color: inherit;
+    margin-bottom: 24px;
+  }
+}
+
+.workshop-results-section-description {
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #666666;
+
+  @media all and (min-width: 861px) {
+    width: 90%;
+    max-width: 858px;
+    margin: 0 auto 48px;
+    font-size: 18px;
+    color: inherit;
+  }
+}
+
+.workshop-results-info {
+  @media all and (max-width: 860px) {
+    background: url('../images/project/сai-workshop/results-bg.jpg') no-repeat center/cover;
+    color: #FFFFFF;
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+
+.workshop-results-title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 32px;
+
+  @media all and (min-width: 641px) {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+
+  }
+}
+
+.workshop-results-list {
+  @media all and (min-width: 641px) {
+    max-width: 685px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.workshop-results-left-part {
+  @media all and (max-width: 641px) {
+    margin-bottom: 20px;
+
+  }
+  @media all and (min-width: 641px) {
+    width: 46%;
+    max-width: 276px;
+  }
+}
+
+.workshop-results-right-part {
+  @media all and (min-width: 641px) {
+    width: 49%;
+    max-width: 331px;
+  }
+}
+
+.workshop-results-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  padding-left: 48px;
+  position: relative;
+  max-width: 320px;
+  text-align: left;
+  display: block;
+
+  @media all and (min-width: 1025px) {
+    font-size: 18px;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 18px;
+    background: url('../images/project/сai-workshop/checkmark.svg') no-repeat center/contain;
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+}
+
+.mobile-order-1 {
+  @media all and (max-width: 540px) {
+    order: 1;
+  }
+}
+
+.mobile-order-2 {
+  @media all and (max-width: 540px) {
+    order: 2;
+  }
+}
+
+.mobile-order-3 {
+  @media all and (max-width: 540px) {
+    order: 3;
+  }
+}
+
+.mobile-order-4 {
+  @media all and (max-width: 540px) {
+    order: 4;
+  }
+}
+
+.mobile-order-5 {
+  @media all and (max-width: 540px) {
+    order: 5;
+  }
+}
+
+//workshop-info-section
+.workshop-info-section {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  text-align: center;
+  position: relative;
+
+  @media all and (max-width: 1024px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  @media all and (max-width: 860px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media all and (max-width: 380px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &:after {
+    content: '';
+    width: 230px;
+    border-bottom: 2px solid #F1563C;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.workshop-info-image {
+  width: 100%;
+  margin-bottom: 40px;
+
+  @media all and (min-width: 381px) {
+    width: 85%;
+    max-width: 305px;
+  }
+
+  @media all and (min-width: 521px) {
+    max-width: 360px;
+    margin-bottom: 50px;
+  }
+
+  @media all and (min-width: 861px) {
+    width: 100%;
+    max-width: 484px;
+    margin-bottom: 60px;
+  }
+}
+
+.workshop-info-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #666666;
+  width: 90%;
+  max-width: 895px;
+  margin: 0 auto;
+
+  @media all and (max-width: 1280px) {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  @media all and (max-width: 860px) {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  @media all and (max-width: 768px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media all and (max-width: 540px) {
+    width: 100%;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

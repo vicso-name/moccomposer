@@ -1,0 +1,284 @@
+.book-call-page {
+  padding-top: 96px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+
+  @media all and (max-width: 992px) {
+    padding-top: 180px!important;
+    padding-bottom: 200px;
+  }
+
+  @media all and (min-width: 768px) {
+    padding-top: 155px;
+    padding-bottom: 200px;
+  }
+
+  @media all and (min-width: 1025px) {
+    padding-top: 140px;
+    padding-bottom: 95px;
+  }
+
+  @media all and (min-width: 1440px) {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  @media all and (min-width: 1600px) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .page-container {
+    @media all and (min-width: 880px) and (max-width: 1024px){
+      padding: 0 90px;
+    }
+  }
+
+  .page-headline {
+    text-align: center;
+    margin-bottom: 34px;
+
+    @media all and (min-width: 768px) {
+      margin-bottom: 48px;
+    }
+
+    @media all and (min-width: 1025px) {
+      text-align: left;
+    }
+
+    @media all and (min-width: 1440px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  .desktop-block {
+    display: none;
+
+    @media all and (min-width: 1025px) {
+      display: block;
+    }
+  }
+
+  .mobile-block {
+    @media all and (min-width: 1025px) {
+      display: none;
+    }
+  }
+
+  .page-headline__title {
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 16px;
+
+    @media all and (min-width: 768px) {
+      font-size: 40px;
+    }
+
+    @media all and (min-width: 1025px) {
+      font-size: 56px;
+    }
+
+    @media all and (min-width: 1440px) {
+      font-size: 68px;
+      line-height: 80px;
+      margin-bottom: 8px;
+    }
+
+    @media all and (min-width: 1800px) {
+      margin-bottom: 28px;
+    }
+  }
+
+  .page-headline__description {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #666666;
+    max-width: 385px;
+    margin: 0 auto;
+
+    @media all and (min-width: 1025px) {
+      margin: 0;
+    }
+
+    @media all and (min-width: 1440px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  .book-call-page__info-wrapper{
+    @media all and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media all and (min-width: 1025px) {
+      align-items: flex-start;
+    }
+  }
+
+  .book-call-page__info {
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+      width: calc((100% - 20px)/2);
+      padding-right: 35px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    @media all and (min-width: 1025px) {
+      flex-basis: 635px;
+      padding-right: 50px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .explanation-main-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    margin-bottom: 24px;
+
+    @media all and (min-width: 1025px) {
+
+    }
+
+    @media all and (min-width: 1440px) {
+      font-size: 32px;
+      line-height: 28px;
+      margin-bottom: 42px;
+    }
+  }
+
+  .explanation-list {
+    margin-bottom: 32px;
+
+    @media all and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .explanation-item {
+    padding-left: 30px;
+    position: relative;
+
+    @media all and (min-width: 1440px) {
+      padding-left: 40px;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #F1563C;
+      position: absolute;
+      top: 4px;
+      left: 0;
+
+      @media all and (min-width: 1440px) {
+        top: 10px;
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 24px;
+
+      @media all and (min-width: 1440px) {
+        margin-bottom: 34px;
+      }
+    }
+  }
+
+  .explanation-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    margin-bottom: 8px;
+
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    @media all and (min-width: 1025px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    @media all and (min-width: 1440px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  .explanation-description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+
+    @media all and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    @media all and (min-width: 1025px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @media all and (min-width: 1440px) {
+      line-height: 24px;
+    }
+  }
+
+  .calendly-embed {
+    @media all and (min-width: 768px) and (max-width: 1024px){
+      width: calc((100% - 20px)/2);
+    }
+
+    @media all and (min-width: 1025px) {
+      flex-basis: 460px;
+    }
+
+    @media all and (min-width: 1800px) {
+      padding-top: 20px;
+    }
+  }
+
+  .calendly-inline-widget {
+    overflow-y: hidden !important;
+    height: 640px;
+    background-color: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    box-shadow: 0 6px 36px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    min-width: 100% !important;
+
+    @media all and (min-width: 730px) {
+      height: 700px;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1024px) {
+      height: 505px;
+      min-width: 335px !important;
+    }
+
+    @media all and (min-width: 1440px) {
+      height: 665px;
+    }
+  }
+}

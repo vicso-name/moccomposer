@@ -1,0 +1,118 @@
+.industry-landing {
+  * {
+    box-sizing: border-box;
+  }
+
+  .use-cases-benefits {
+
+    &.moc-section {
+      padding-top: 72px;
+      padding-bottom: 74px;
+
+      @media all and (max-width: 770px) {
+        padding: 50px 0 35px;
+      }
+
+      @media all and (max-width: 540px) {
+        padding-top: 32px;
+      }
+    }
+
+    &__title {
+      margin-bottom: 60px;
+
+      @media all and (max-width: 768px) {
+        margin-bottom: 55px;
+      }
+
+      @media all and (max-width: 768px) {
+        margin-bottom: 45px;
+      }
+
+      @media all and (max-width: 540px) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+
+.use-cases-benefits {
+
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    @media all and (max-width: 770px) {
+      flex-wrap: wrap;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+  }
+
+  &__item {
+    padding: 0 16px;
+    text-align: center;
+    flex-basis: 200px;
+
+    @media all and (max-width: 770px) {
+      flex-basis: 215px;
+      padding: 0 10px;
+      margin-bottom: 45px;
+    }
+
+    @media all and (max-width: 500px) {
+      flex-basis: auto;
+      width: calc((100% - 30px) / 2);
+      padding: 0;
+      max-width: 196px;
+
+      &:nth-of-type(odd) {
+        margin-right: 30px;
+      }
+    }
+
+    @media all and (max-width: 380px) {
+      width: 100%;
+
+      &:nth-of-type(odd) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__icon-wrap {
+    margin-bottom: 32px;
+
+    @media all and (max-width: 770px) {
+      margin-bottom: 24px;
+    }
+
+    @media all and (max-width: 480px) {
+      margin-bottom: 21px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 24px;
+
+    @media all and (max-width: 770px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &__item-description {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+
+    @media all and (max-width: 770px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+

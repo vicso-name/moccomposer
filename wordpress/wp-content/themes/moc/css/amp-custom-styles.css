@@ -1,0 +1,121 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #565656;
+}
+.amp-wp-byline {
+  display: block;
+  list-style: none;
+}
+.amp-wp-article-header .amp-wp-byline amp-img,
+.amp-wp-article-header .amp-wp-byline img {
+  border-radius: 100%;
+  border-color: transparent;
+}
+a, a:visited {
+  color: inherit;
+  text-decoration:none;
+  border-bottom: 1px solid #ef4a34;
+}
+a:hover {
+  color: #ef4a34;
+  text-decoration: none;
+  border-bottom: 1px solid #ef4a34;
+}
+.amp-wp-header {
+  background: #fff;
+}
+.amp-wp-header a {
+  color: #ef4a34; font-weight:700;
+}
+.amp-wp-meta.amp-wp-posted-on time {
+  text-align: right;
+}
+figcaption {
+  color: #a3a3a3;
+  text-align:center;
+  font-size: 0.89em;
+}
+blockquote {
+  font-size: 1.2em;
+  background: transparent;
+  border: 1px solid #a3a3a3;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 14px;
+}
+.author-name {
+  float: left; font-size: 0.89em; color: #a3a3a3;
+}
+.author-position {
+  overflow: hidden; font-size: 0.89em; color: #a3a3a3;
+}
+.amp-wp-article-footer .amp-wp-tax-category,
+.amp-wp-article-footer .amp-wp-tax-tag {
+  display: none;
+}
+.amp-wp-article-content {
+  text-align: justify;
+}
+.amp-wp-article-content .stk-grid-col_last .align-right {
+  text-align: center;
+}
+.amp-wp-article-content .stk-grid-col_last .align-right u:before {
+  display: block;
+  content: '';
+  margin: 0 auto 30px;
+  border-right: 72px solid #f1563c;
+  height: 3px;
+  width: 1px;
+}
+.amp-wp-article-content .stk-grid-col_last .align-right u {
+  font-size: 1.42em;
+  font-weight: 400;
+  text-decoration: none;
+}
+.amp-wp-article-content .list-item {
+  padding: 0 30px;
+  list-style: none;
+  position: relative;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+.amp-wp-article-content .list-item:before {
+  display: block;
+  position: absolute;
+  left: 0;
+  content: '';
+  top: .5em;
+  width: 7px;
+  border-style: solid none none none;
+  border-width: 7px;
+  border-color: #f1563c;
+}
+.stk-theme_10213__separated_headline  p {
+  padding: 30px 0;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+.stk-theme_10213__separated_headline a {
+  color: #f1563c;
+}
+.chatbot-intro {
+  background: #57aeff;
+  text-align:center;
+  color: #ffffff;
+  padding: 35px 32px; margin: auto -16px 1em -16px;}
+.chatbot-intro .messenger-btn {
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 12px;
+  display: inline-block;
+  color: #0084ff;
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+}
+.blockquotes-with-photo {
+  overflow: hidden;
+}

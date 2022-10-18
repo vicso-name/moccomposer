@@ -1,0 +1,477 @@
+@import "variables";
+@import "mixins";
+
+section.moc-section.channels-section {
+
+  @media all and (max-width: 768px) {
+    padding-top: 61px;
+    padding-bottom: 21px;
+  }
+
+  @media all and (max-width: 680px) {
+    padding-top: 45px;
+    padding-bottom: 32px;
+  }
+
+  h2 {
+    @media all and (max-width: 768px) {
+      font-size: 40px;
+      line-height: 47px;
+      margin-bottom: 22px;
+    }
+
+    @media all and (max-width: 680px) {
+      font-size: 30px;
+      line-height: 35px;
+      max-width: 400px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+
+$size: 166px;
+$size_mobile: 166px;
+$indent: 15px;
+.inner-tile {
+  .channel-logo {
+    fill: #ccc;
+    transition: fill 0.2s ease-out;
+
+    .sms-green,
+    .rsc-darkblue,
+    .google-grey,
+    .google-blue,
+    .google-green,
+    .google-red,
+    .google-yellow {
+      fill: #ccc;
+      transition: fill 0.2s ease-out;
+    }
+  }
+}
+
+.chatbots-channels-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -19px auto -7px;
+  width: auto;
+  max-width: calc(#{$size} * 4 + #{$indent} * 8);
+
+  .column {
+    width: $size_mobile;
+    height: $size_mobile;
+    margin: $indent;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .inner-tile {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transition: transform 0.2s cubic-bezier(.69, .12, .3, .92), background-color 0.2s cubic-bezier(.69, .12, .3, .92), z-index 0.2s 0.01s;
+    transform: translate(-50%, -50%) scale(0.76);
+    transform-origin: center;
+    border: 2px solid #d1d1d1;
+    border-radius: 18px;
+    background-color: #f6f6f6;
+    height: calc(1.3 * #{$size_mobile});
+    width: calc(1.3 * #{$size_mobile});
+    text-align: center;
+    padding: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .chatbots-channels-text,
+    .chatbots-channels-heading {
+      position: absolute;
+      top: 80%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      padding: 0 20px 30px;
+      box-sizing: border-box;
+      font-weight: normal;
+    }
+
+    .chatbots-channels-text {
+      transform: rotate3d(1, 0, 0, 180deg) translateY(-50%);
+      transition: transform 0.3s cubic-bezier(.69, .12, .3, .92);
+      transform-origin: top;
+      font-size: 10px;
+      line-height: 1.38;
+      color: #aaaaaa;
+      backface-visibility: hidden;
+    }
+
+    .chatbots-channels-heading {
+      opacity: 1;
+      font-size: 18px;
+      text-align: center;
+      color: #666666;
+      height: auto;
+      transform-origin: top;
+      transform: translateY(-50%);
+      transition: transform 0.3s cubic-bezier(.69, .12, .3, .92);
+      backface-visibility: hidden;
+    }
+  }
+
+  .inner-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+  }
+
+  @media all and (min-width: 360px) {
+    .chatbots-channels-text {
+      font-size: 14px;
+    }
+  }
+  @media all and (min-width: 600px) {
+    margin: 0 auto;
+    .column {
+      width: $size;
+      height: $size;
+    }
+    .inner-tile {
+      height: calc(1.3 * #{$size});
+      width: calc(1.3 * #{$size});
+
+      .chatbots-channels-text {
+        font-size: 16px;
+      }
+
+      .chatbots-channels-heading {
+        font-size: 24px;
+      }
+    }
+  }
+  @media all and (min-width: 1200px) {
+    margin: -15px auto 8px;
+  }
+  @media all and (min-width: 1600px) {
+    margin: -15px auto 0;
+  }
+}
+
+
+.channel-icon-wrapper {
+  display: block;
+  margin: 0 auto;
+  height: 1em;
+  width: 2.3em;
+  font-size: 60px;
+
+  svg {
+    display: block;
+    margin: 0 auto;
+    font-size: inherit;
+    height: 1em;
+    width: 100%;
+    user-select: none;
+  }
+}
+
+.chatbots-channels-button {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+  color: #F1563C;
+  margin-top: 10px;
+
+  @media all and (min-width: 380px) {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+
+  @media all and (min-width: 680px) {
+    margin-top: 16px;
+  }
+}
+
+.chatbots-mobile {
+  .channel-icon-wrapper {
+    margin: 0 auto;
+    font-size: 36px;
+
+    @media all and (min-width: 380px) {
+      font-size: 54px;
+    }
+
+    @media all and (min-width: 680px) {
+      font-size: 72px;
+    }
+  }
+
+  .chatbots-channels-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: auto;
+    max-width: 500px;
+
+    .column {
+      width: 50%;
+      max-width: 250px;
+      height: auto;
+      margin: 0;
+      position: relative;
+      box-sizing: border-box;
+
+    }
+
+    .inner-tile {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      padding: 32px 15px 40px;
+      transition: none;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      border: none;
+      border-radius: 0;
+      background-color: transparent;
+      text-align: center;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow: unset;
+
+      @media all and (min-width: 680px) {
+        padding: 40px 30px 44px;
+      }
+
+      .chatbots-channels-text,
+      .chatbots-channels-heading {
+        display: block;
+        transform: none;
+        transition: none;
+        position: static;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        font-weight: normal;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 1.2;
+
+        @media all and (min-width: 380px) {
+          line-height: 18px;
+        }
+      }
+
+      .chatbots-channels-text {
+        font-size: 14px;
+        color: #aaaaaa;
+        max-width: 175px;
+
+        &.text-with-button {
+          margin-top: auto;
+        }
+
+        @media all and (min-width: 360px) and (max-width: 400px) {
+            font-size: 10px;
+        }
+      }
+
+      .chatbots-channels-heading {
+        opacity: 1;
+        letter-spacing: 0.3px;
+        font-size: 16px;
+        text-align: center;
+        color: #666666;
+        height: auto;
+        margin: 16px auto 10px;
+        font-weight: bold;
+        max-width: 140px;
+
+        @media all and (min-width: 680px) {
+          font-size: 18px;
+          line-height: 20px;
+          margin: 24px auto 8px;
+        }
+      }
+
+      @media all and (max-width: 360px) {
+        .chatbots-channels-text {
+          font-size: 9px;
+        }
+        .chatbots-channels-heading {
+          font-size: 14px;
+        }
+      }
+    }
+
+    @for $i from 1 through 9 {
+      .mobile-#{$i} {
+        order: #{$i};
+      }
+    }
+
+    .column {
+      &:nth-child(2n) .inner-tile:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        height: 60%;
+        max-height: 90px;
+        width: 1px;
+        background-color: #d1d1d1;
+
+        @media all and (min-width: 680px) {
+          max-height: 120px;
+        }
+      }
+
+      .inner-tile:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 20%;
+        width: 60%;
+        height: 1px;
+        background-color: #d1d1d1;
+      }
+
+      &.mobile-7 .inner-tile:before,
+      &.mobile-8 .inner-tile:before {
+        content: none;
+      }
+    }
+
+    @media all and (max-width: 480px) {
+      margin: 0 -15px;
+    }
+
+    @media all and (max-width: 390px) {
+      margin: 0 -15px;
+      .column,
+      .inner-tile {
+        max-width: 165px;
+        width: calc(50vw - 15px);
+      }
+      .inner-tile {
+        padding: 17px;
+      }
+    }
+    @media all and (min-width: 768px) {
+      margin: 0 auto;
+      max-width: 514px;
+      .column {
+        width: 260px;
+        //height: 240px;
+        .inner-tile {
+          width: 250px;
+          //height: 240px;
+          //padding: 30px;
+        }
+      }
+    }
+    @media all and (min-width: 1025px) {
+      margin: 0 auto;
+    }
+  }
+}
+
+.no-touch {
+  .inner-tile {
+    &.selected,
+    &:hover {
+      background-color: #fff;
+      border-color: transparent;
+      box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.09);
+      transition: transform 0.2s cubic-bezier(.69, .12, .3, .92), background-color 0.2s cubic-bezier(.69, .12, .3, .92), z-index 0.01s;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+
+      .chatbots-channels-text {
+        transform: translateY(-50%);
+      }
+
+      .chatbots-channels-heading {
+        transform: rotate3d(1, 0, 0, 180deg) translateY(-50%);
+      }
+    }
+
+    &:hover {
+      .channel-logo {
+        fill: #000;
+
+        .alexa-blue {
+          fill: #40ccff;
+        }
+
+        .sms-green {
+          fill: #68be05;
+        }
+
+        .wmc-blue {
+          fill: #1d88e5;
+        }
+
+        .wmc-navy {
+          fill: #2869a3;
+        }
+
+        .messenger-blue {
+          fill: #1d88e5;
+        }
+
+        .rsc-yellow {
+          fill: #fdc000;
+        }
+
+        .rsc-blue {
+          fill: #49c9fe;
+        }
+
+        .rsc-midblue {
+          fill: #1d88e5;
+        }
+
+        .rsc-darkblue {
+          fill: #2089e5;
+        }
+
+        .google-grey {
+          fill: #757575;
+        }
+
+        .google-blue {
+          fill: #4285F4;
+        }
+
+        .google-green {
+          fill: #34A853;
+        }
+
+        .google-red {
+          fill: #EA4335;
+        }
+
+        .google-yellow {
+          fill: #FBBC05;
+        }
+      }
+    }
+  }
+}
+

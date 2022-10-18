@@ -1,0 +1,445 @@
+.case-study-general-info {
+  overflow: hidden;
+  position: relative;
+  background: #f6f6f6;
+  background:    -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 100%);
+  background:      -o-linear-gradient(top, #ffffff 0%, #f6f6f6 100%);
+  background:     -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 100%);
+  background:         linear-gradient(to bottom, #ffffff 0%, #f6f6f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0 );
+}
+.case-study-idea {
+  position: relative;
+  color: #ffffff;
+}
+.mocbot .case-study-content .description-wrap-wrapper {
+  background-image: url(../images/project/mocbot/idea_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.wslbot .case-study-content .description-wrap,
+.mocbot .case-study-content .description-wrap {
+  color: #ffffff;
+}
+
+.case-study .name-caption .icon-holder {
+  position: relative;
+  display: inline;
+}
+.case-study .name-caption .icon-holder:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0.8em;
+  right: -23px;
+  height: 18px;
+  width: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 35 35'%3E%3Cpath fill='%230084ff' d='M877.493,1950c-9.669,0-17.507,7.26-17.507,16.2a15.754,15.754,0,0,0,6.524,12.62V1985l5.961-3.27a18.822,18.822,0,0,0,5.022.68c9.669,0,17.508-7.26,17.508-16.21S887.162,1950,877.493,1950Zm1.74,21.82-4.459-4.75-8.7,4.75,9.569-10.15,4.568,4.75,8.59-4.75Z' transform='translate(-860 -1950)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 18px auto;
+}
+.case-study .name-caption .icon-holder.inline-holder:after {
+  content: '';
+  display: inline-block;
+  position: static;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+/*---------------------------------------------------------*/
+/*------------------------CASE STUDY-----------------------*/
+/*---------------------------------------------------------*/
+.description-wrap.description-wrap-hidden {
+  display: none;
+}
+.page-project .case-study-general-info .info-block {
+  position: static;
+  margin: 80px auto;
+  max-width: none;
+  width: auto;
+}
+.case-study .info-block .name-caption {
+  font-weight: 500;
+}
+.case-study .one-image-header,
+.page-project .case-study-general-info .one-image-header {
+  display: block;
+  margin: 0 auto;
+  padding: 0 34px;
+  width: auto;
+  max-width: 828px;
+  box-sizing: border-box;
+}
+.case-study .header-image {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+.case-study-content {
+  color: #333333;
+  background-color: #f3f3f3;
+  font-family: 'Open Sans', sans-serif;
+}
+.case-study-wrapper {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 34px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.case-study-image-wrapper img,
+.comment-image-wrapper img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.case-section-text-centered {
+  text-align: center;
+}
+.case-section-title {
+  margin: 35px auto 15px;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+.case-section-text,
+.case-section-text p {
+  font-size: 14px;
+  line-height: 1.7em;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+}
+.resources-block-case-study {
+  background-color: #ffffff;
+}
+.resources-block.resources-pagination {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.resources-block-case-study.case-grey-bg {
+  background-color: #f3f3f3;
+}
+.tagible-page .resources-block-case-study {
+  background: #ffffff;
+}
+.case-study-content .resources-wrapper {
+  margin: 0 0 45px 0;
+  padding: 0;
+}
+.resources-website-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: 'Open Sans', sans-serif;
+}
+.no-touch .resources-website-link:hover {
+  border-bottom: 1px solid#f1563c;
+}
+.case-study-content h3.caption {
+  letter-spacing: 2px;
+}
+.case-study-content .tech-names {
+  font-weight: 400;
+  color: #333333;
+}
+.delimiter {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin: 0 5px;
+  background-color: #333333;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  vertical-align: middle;
+}
+.case-study-hide-resources {
+  overflow: hidden;
+  background: #f3f3f3;
+}
+.case-study-hide-resources .pagination-wrap {
+  padding: 25px 0 30px;
+  border-top: 1px solid #d7d7d7;
+}
+.case-study-support {
+  padding-bottom: 80px;
+}
+.portfolio-ebags .case-study-support {
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .portfolio-ebags .case-study-support article.case-study-comment {
+    margin-bottom: 60px;
+  }
+}
+
+.case-study .case-study-support + .case-study-buttons-block {
+  margin-top: -70px;
+}
+@media all and (max-width: 960px) {
+  .case-study-support {
+    padding-bottom: 40px;
+  }
+  .case-study .case-study-support + .case-study-buttons-block {
+    margin-top: -20px;
+  }
+}
+@media all and (max-width: 767px) {
+  .case-study-support {
+    padding-bottom: 20px;
+  }
+
+  .case-study .case-study-support + .case-study-buttons-block {
+    margin-top: 0;
+  }
+
+  .comment-wrapper:not(.full-height-image-wrapper):not(.half-height-image-wrapper) .comment-image-wrapper img {
+    max-height: 350px;
+  }
+}
+@media all and (max-width: 767px) and (min-width: 600px) {
+  .short-comment-wrapper .comment-content {
+    margin-top: 9vw;
+  }
+}
+/*---------------------------------------------------------*/
+/*------------------------BUTTONS BLOCK--------------------*/
+/*---------------------------------------------------------*/
+.case-study-buttons-block {
+  margin: 0 auto;
+  padding: 0 0 22px 0;
+}
+.case-study .case-study-buttons-block {
+  padding: 32px 0;
+  background: #ffffff;
+}
+.case-study-buttons-block .buttons-wrap {
+  font-size: 0;
+  line-height: 0;
+}
+.sprite-btn {
+  display: inline-block;
+  position: relative;
+  height: 54px;
+  width: 168px;
+  margin: 0 5px 20px;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: #666666;
+  border-radius: 6px;
+          transition: background-color 0.2s ease;
+  -webkit-transition: background-color 0.2s ease;
+}
+.no-touch .sprite-btn:hover {
+  background-color: #333333;
+  color:#f1563c;
+}
+.no-touch .sprite-btn .btn-img {
+  fill: currentColor;
+}
+.no-touch .sprite-btn_googleplay:hover {
+  color: transparent;
+}
+.sprite-btn .btn-bg-img,
+.sprite-btn .bt-img {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sprite-btn .btn-bg-img {
+  height: 100%;
+  width: 101%;
+  left: 2px;
+  opacity: 0;
+          transition: opacity 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+}
+.no-touch .sprite-btn:hover .btn-bg-img {
+  opacity: 1;
+}
+.sprite-btn .btn-img {
+  height: calc( 100% - 20px );
+  width: calc( 100% - 30px );
+  padding: 10px 15px;
+          transition: fill 0.2s ease;
+  -webkit-transition: fill 0.2s ease;
+}
+/*---------------------------------------------------------*/
+/*---------------------------MEDIA-------------------------*/
+/*---------------------------------------------------------*/
+@media only screen and (max-width: 1250px) {
+  .case-study-general-info .devices-block.iphone .device.left {
+    left: -220px;
+  }
+  .page-project .case-study-general-info .info-block {
+    max-width: none;
+    width: auto;
+    margin: 80px auto;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .page-project .case-study-general-info .info-block {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .case-study .one-image-header,
+  .page-project .case-study-general-info .one-image-header {
+    position: relative;
+    left: 0;
+            transform: none;
+    -webkit-transform: none;
+  }
+  .case-study-general-info .devices-block.iphone,
+  .case-study-general-info .devices-block.iphone .shape {
+    width: 200px;
+  }
+  .case-study-general-info .devices-block.iphone .screen {
+    height: 450px;
+    width: 180px;
+    border-width: 3px;
+    border-radius: 3px;
+  }
+  .case-study-general-info .devices-block.iphone .device.right {
+    right: -140px;
+  }
+  .case-study-general-info .devices-block.iphone .device.left {
+    left: -140px;
+  }
+  .case-study-general-info .devices-block.iphone .device.shape {
+    margin-left: 0;
+  }
+  .case-study-comment .case-section-text ~ .case-section-text {
+    margin: 30px auto;
+  }
+  .comment-content {
+    margin: 20px 0 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .sprite-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mocbot .case-study-content .description-wrap-wrapper {
+    background-image: url(../images/project/mocbot/idea_bg_mob.jpg);
+  }
+}
+@media only screen and (max-width: 540px) {
+  .case-study-general-info .devices-block.iphone .shape {
+    border-radius: 20px;
+  }
+  .case-study-general-info .devices-block.iphone .device.shape {
+    margin-left: 0;
+  }
+  .case-study-general-info .devices-block.iphone .device.left {
+    left: -80px;
+  }
+  .case-study-general-info .devices-block.iphone .device.left,
+  .case-study-general-info .devices-block.iphone .device.right {
+    top: 15px;
+  }
+  .case-study-general-info .devices-block.iphone,
+  .case-study-general-info .devices-block.iphone .shape {
+    width: 105px;
+  }
+  .case-study-general-info .devices-block.iphone .device.right {
+    right: -80px;
+  }
+
+  .case-study-general-info .devices-block.iphone .screen {
+    width: 90px;
+  }
+  .case-study-buttons-block {
+    margin: 0 auto;
+    padding-bottom: 35px;
+  }
+  .case-study .case-study-buttons-block {
+    padding-top: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .case-study-hide-resources .pagination-wrap {
+    padding: 50px 0 55px;
+  }
+  .case-section-title {
+    margin: 45px auto 25px;
+    font-size: 3em;
+  }
+  .case-section-text,
+  .case-section-text p {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  .case-study .info-block .logo-block {
+    display: block;
+    width: 140px;
+    height: 120px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .case-study .info-block .logo-block img {
+    height: auto;
+    width: auto;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .page-project .case-study-general-info .devices-block {
+    position: absolute;
+    left: 50%;
+            transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    top: 420px;
+    margin: 0;
+  }
+  .case-study-content .resources-list {
+    padding: 0 0 45px;
+  }
+  .name-link.text-theme {
+    padding: 0;
+    max-width: 100%;
+  }
+  .case-study-hide-resources .pagination-wrap {
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .case-study-wrapper {
+    padding: 0;
+  }
+  .case-section-title {
+    margin: 60px auto 45px;
+  }
+}
+@media only screen and (min-width: 1251px) {
+  .page-project .case-study-general-info .devices-block {
+    margin: 0 auto;
+  }
+  .case-study-general-info .devices-block.iphone .device.left {
+    left: -285px;
+  }
+  .page-project .case-study-general-info .info-block {
+    margin: 140px 0 80px;
+    position: relative;
+    top: inherit;
+    left: inherit;
+  }
+  .page-project .case-study-general-info .devices-block {
+    top: 515px;
+  }
+}

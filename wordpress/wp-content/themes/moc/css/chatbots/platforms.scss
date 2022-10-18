@@ -1,0 +1,186 @@
+.platforms-list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1038px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  ul {
+    display: flex;
+    width: 75%;
+    align-items: flex-start;
+    justify-content: space-around;
+    li {
+      width: 25%;
+      padding: 0 5px;
+    }
+  }
+  .icon-wrapper {
+    font-size: 60px;
+    line-height: 1em;
+    width: 1em;
+    height: 1em;
+    vertical-align: baseline;
+    text-align: center;
+    &.watson-icon-wrapper {
+      height: 1.1em;
+      margin:  -0.1em auto 0;
+    }
+  }
+  .interface-image {
+    display: inline-block;
+    vertical-align: inherit;
+  }
+  .icon-description {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 0.5em;
+  }
+  .icon-watson {
+    margin-top: -0.1em;
+  }
+  .icon-dialogflow {
+    width: 100%;
+  }
+  .icon-luisai {
+    width: 90.6%;
+  }
+  .icon-recastai {
+    height: 108%;
+  }
+  .icon-msbot {
+    width: 116%;
+  }
+}
+@media all and (min-width: 1140px){
+  .platforms-list {
+    margin: -8px auto 22px;
+    .icon-wrapper {
+      font-size: 80px;
+    }
+    .icon-description {
+      margin-top: 2.3em;
+    }
+    .icon-dialogflow {
+      width: 100%;
+    }
+    .icon-luisai {
+      width: 90.6%;
+    }
+    .icon-recastai {
+      height: 108%;
+    }
+    .icon-msbot {
+      width: 116%;
+    }
+  }
+  @media all and (max-width: 1600px) {
+    .platforms-list {
+      margin: -8px auto 9px;
+      max-width: 900px;
+      .icon-description {
+        margin-top: 2em;
+        font-size: 12px;
+      }
+      .icon-wrapper {
+        font-size: 70px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 800px) {
+  .platforms-list {
+    margin: 5px auto 33px;
+    ul {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      width: 50%;
+      .icon-wrapper {
+        font-size: 50px;
+      }
+      .icon-description {
+        margin-top: 2em;
+        font-size: 10px;
+      }
+      li {
+        margin: 7px 0;
+        padding: 0;
+        width: 50%;
+        min-height: 100px;
+      }
+    }
+
+    .icon-description {
+      margin-top: 2em;
+    }
+  }
+
+}
+@media all and (max-width: 767px) {
+  .platforms-list {
+    margin: 5px auto -15px;
+    ul {
+      .icon-wrapper {
+        font-size: 55px;
+      }
+      .icon-description {
+        margin-top: 1em;
+      }
+    }
+  }
+}
+@media all and (min-width: 801px) {
+  .platforms-list {
+    ul {
+      .icon-wrapper {
+        &.sap-icon-wrapper {
+          padding-left: 8px;
+          .icon-sap-conversational-ai {
+            margin-top: -3px;
+          }
+        }
+      }
+    }
+  }
+
+}
+@media all and (max-width: 530px) {
+  .platforms-list {
+    flex-wrap: wrap;
+    margin: -5px auto -16px;
+  }
+}
+@media all and (max-width: 370px) {
+  .platforms-list {
+    ul {
+      .icon-wrapper {
+        font-size: 50px;
+      }
+    }
+  }
+  .platforms-list .chatbots-services-item .icon-description {
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 360px) {
+  .platforms-list .chatbots-services-item .icon-description {
+    font-size: 8px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 960px) {
+  .platforms-list {
+    margin: -19px auto 12px;
+    padding: 0 80px;
+  }
+  .platforms-list ul li {
+    margin: 20px 0;
+  }
+  .platforms-list ul .icon-wrapper {
+    font-size: 75px;
+  }
+  .platforms-list ul .icon-description {
+    margin-top: 1em;
+  }
+}

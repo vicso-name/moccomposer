@@ -1,0 +1,18 @@
+<svg id="services_web.svg" xmlns="http://www.w3.org/2000/svg" width="172.938" height="131.86" viewBox="0 0 86.469 65.93">
+  <title>Web development</title>
+  <desc>Our developers have expertise with a broad range of technologies such as JavaScript, HTML5, PHP, .NET, Ruby, and Java</desc>
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #f1563c;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="2" y="1.84" width="83" height="53"/>
+  <path class="cls-2" d="M515.535,1211.63a2.907,2.907,0,1,1-2.907-2.86A2.886,2.886,0,0,1,515.535,1211.63Zm9.447,0a2.907,2.907,0,1,1-2.907-2.86A2.885,2.885,0,0,1,524.982,1211.63Zm9.448,0a2.907,2.907,0,1,1-2.907-2.86A2.885,2.885,0,0,1,534.43,1211.63Zm48.232-11.46H505.82a4.781,4.781,0,0,0-4.82,4.75v47.11a4.788,4.788,0,0,0,4.82,4.75h36.6v5.74H531.886a1.79,1.79,0,1,0,0,3.58H556.6a1.79,1.79,0,1,0,0-3.58H546.058v-5.74h36.6a4.788,4.788,0,0,0,4.82-4.75v-47.11A4.781,4.781,0,0,0,582.662,1200.17Zm0.46,51.86a0.454,0.454,0,0,1-.46.45H505.82a0.454,0.454,0,0,1-.46-0.45v-47.11a0.454,0.454,0,0,1,.46-0.45h76.842a0.454,0.454,0,0,1,.46.45v47.11Z" transform="translate(-501 -1200.16)"/>
+</svg>

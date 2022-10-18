@@ -1,0 +1,215 @@
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------TEAM-----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.team {
+    overflow:hidden;
+    height:540px;
+    position:relative;
+}
+.team h1 {
+    color:#333;
+    width: 450px;
+    margin: 35px auto;
+    font-size: 34px;
+}
+.team h1 .orange-color {
+    color: #ef4a35;
+    font-size: inherit;
+    text-decoration: none;
+}
+.team-section__photo {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: auto;
+    z-index: -1;
+}
+.team-section__photo.left {
+    right: 50%;
+    margin-right: 200px;
+}
+.team-section__photo.right {
+    left: 50%;
+    margin-left: 200px;
+}
+.team ul {
+    overflow:hidden;
+    width:1903px;
+    margin:0 auto;
+    white-space:nowrap;
+}
+.team ul li {
+    float:left;
+}
+.team ul li img {
+    display:block;
+}
+.team a.team-video__link {
+  position: absolute;
+  bottom: 160px;
+  left: 50%;
+  margin: 0 0 0 -54px;
+  padding-top: 36px;
+  transition: none;
+  -webkit-transition:  none;
+  display: block;
+  width:106px;
+  height:106px;
+  border: 2px solid  rgba(187,187,187,0.6);
+  border-radius: 50%;
+  font-size: 16px;
+  text-align: center;
+  line-height: 102px;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+.no-touch .team a.team-video__link:hover {
+    border-color: rgba(51,51,51,0.6);
+}
+.team-video__link:after {
+    content: '';
+    height: 1px;
+    width: 1px;
+    margin-left: 37px;
+    margin-top: -4px;
+    border: 18px solid transparent;
+    border-left: 36px solid #f1563c;
+    border-right: none;
+    display: block;
+}
+.show-video {
+    display: none;
+    z-index: -100;
+}
+.show-video.popup-fixed {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+    box-sizing: border-box;
+    background: #000;
+    overflow: hidden;
+}
+.show-video #team-video {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+.show-video .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 15px;
+    width: 15px;
+    opacity: .9;
+}
+.close-popup svg {
+    height: 15px;
+    width: 15px;
+    fill: #fff;
+}
+.no-touch .show-video .close-popup:hover {
+    opacity: 1;
+}
+
+@media all and (max-width: 1080px) {
+  .team {
+    height: 380px;
+  }
+  .team h1 {
+    width: 400px;
+    margin: 12px auto;
+    font-size: 28px;
+  }
+  .team a.team-video__link {
+    margin: 0 auto;
+    position: static;
+    bottom: inherit;
+    padding-top: 28px;
+    width: 84px;
+    height: 84px;
+  }
+  .team-video__link:after {
+    margin-left: 31px;
+    margin-top: -2px;
+    border: 13px solid transparent;
+    border-left: 23px solid #f1563c;
+  }
+  .team-section__photo.left {
+    margin-right: 120px;
+  }
+  .team-section__photo.right {
+    margin-left: 120px;
+  }
+}
+@media all and (max-width: 800px) {
+    .team a.team-video__link {
+      position: static;
+      margin: 0 auto;
+      padding-top: 25px;
+      background: none;
+      width: 56px;
+      height: 56px;
+    }
+    .team-video__link:after {
+        content: '';
+        height: 1px;
+        font-size: 0;
+        margin-left: 18px;
+        margin-top: -8px;
+        border: 8px solid transparent;
+        border-left: 16px solid #f1563c;
+        border-right: none;
+    }
+}
+@media all and (max-width: 800px) and (orientation: portrait) {
+    .team {
+        overflow: hidden;
+        height: auto;
+        position: relative;
+    }
+    .team h1 {
+        width: auto;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+    .team-section__photo,
+    .team-section__photo.right {
+        display: block;
+        position: static;
+        z-index: -1;
+        height: auto;
+        width: 120%;
+        margin: 20px -12% 0 -12%;
+    }
+    .team-section__photo.left {
+        display: none;
+    }
+}
+@media all and (max-width: 768px) and (orientation: landscape) {
+    .team {
+        overflow:hidden;
+        height:auto;
+        position:relative;
+    }
+    .team-section__photo,
+    .team-section__photo.right {
+        display: block;
+        position: static;
+        width: 90%;
+        z-index: -1;
+        height: auto;
+        margin: 10px auto 0;
+    }
+    .team-section__photo.left {
+        display: none;
+    }
+}

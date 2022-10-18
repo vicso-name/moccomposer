@@ -1,0 +1,34 @@
+@import "variables";
+@import "mixins";
+section.moc-section {
+  @include moc_section(#fff, $max_section_width);
+  h2 {
+    @include heading_style($heading_color, $roboto, 54px, 48px, 40px, 30px);
+  }
+  &.grey-section {
+    background-color: $grey_section_bg;
+  }
+  &.navy-section {
+    background-color: #4c616c;
+    h2 {
+      color: #f6f7f8;
+    }
+  }
+  &.zero-padding-top {
+    padding-top: 0;
+  }
+  &.zero-padding-bottom {
+    padding-bottom: 0;
+  }
+}
+.unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  li,
+  dt,
+  dd {
+    padding: 0;
+    margin: 0;
+  }
+}

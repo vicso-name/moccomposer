@@ -1,0 +1,553 @@
+/*----------------------------------------------------------------------------------*/
+/*--------------------------------------PROCESSES-----------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.processes-description {
+  max-width: 600px;
+  width: auto;
+  padding: 30px;
+  margin: -20px auto 30px;
+  text-align: center;
+}
+.process-icon__holder {
+  width: 140px;
+  height: 140px;
+  margin: 27px ;
+  display: block;
+  background: #f2f2f2;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: backwards;
+  transition: transform .5s ease-in-out;
+  -webkit-transition: transform .5s ease-in-out;
+  position: relative;
+}
+.process-icon {
+  height: 72px;
+  width: 52px;
+  line-height: 72px;
+  vertical-align: middle;
+  fill: #f1563c;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -26px;
+  margin-top: -36px;
+  transition: transform .5s ease-in-out;
+  -webkit-transition: transform .5s ease-in-out;
+  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: backwards;
+}
+.process-icon img{
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.processes-list__item.opened {
+  z-index: 5;
+}
+.processes-list__item.opened .process-icon__holder {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transition: transform .5s ease-in-out;
+  -webkit-transition: transform .5s ease-in-out;
+  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: backwards;
+}
+.processes-item__content {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding: 0 27px;
+  width: 700px;
+  background: #fff;
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.5;
+  height: 0;
+  overflow: hidden;
+  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: backwards;
+}
+.processes-list {
+  display: block;
+  margin: 60px auto 0;
+  padding-bottom: 265px ;
+  overflow: hidden;
+  text-align: center;
+}
+.processes-list__item {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  -webkit-backface-visibility:  hidden;
+  -webkit-tap-highlight-color:  transparent;
+}
+.processes-list__item.opened .processes-item__content {
+  height: 200px;
+  padding: 27px;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+.processes-header__wrapper {
+  margin: 35px 27px 0;
+  height: 75px;
+  width: 140px;
+  position: relative;
+}
+.processes-item__header {
+  position: absolute;
+  color: #f1563c;
+  font-size: 20px;
+  text-align: left;
+  line-height: 40px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  right: inherit;
+  margin: 0;
+  padding-bottom: 35px;
+  width: auto;
+  max-width: 140px;
+  font-weight: 400;
+  vertical-align: middle;
+  transition: all .3s .2s linear, font-size 0.5s ease;
+  -webkit-transition: all .3s .2s linear, font-size 0.5s ease;
+  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: backwards;
+}
+.processes-list__item:nth-child(n+4) .processes-item__header{
+  left: inherit;
+  right: 50%;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  text-align: right;
+}
+.processes-item__header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 4px;
+  width:  65px;
+  bottom: 5px;
+  left: 0;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transition: transform .5s ease-in-out;
+  -webkit-transition: transform .5s ease-in-out;
+  transform-origin: left;
+  animation-fill-mode: backwards;
+  -webkit-animation-fill-mode: backwards;
+}
+.processes-list__item:nth-child(n+4) .processes-item__header:after {
+  right: 0;
+  left: inherit;
+  -webkit-transform-origin: right;
+  transform-origin: right;
+}
+.processes-list__item.opened .processes-item__header:after {
+  background-color: #f1563c;
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+}
+.processes-list__item.opened .processes-item__header {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  left: 0;
+  color: #333;
+  font-size: 32px;
+  font-weight: 700;
+  transition: all .3s linear, font-size 0.5s ease;
+  -webkit-transition: all .3s linear, font-size 0.5s ease;
+
+}
+.processes-list__item.opened .process-icon{
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+.processes-list__item:nth-child(n+4) .processes-item__content {
+  text-align: right;
+  right: 0;
+  left: inherit;
+}
+.processes-list__item:nth-child(n+4).opened  .processes-item__header{
+  right: 0;
+  left: inherit;
+}
+.processes-list__item.development.opened  .processes-item__header{
+  min-width: 180px;
+}
+/*---------------------approach--------------------*/
+.approach-section {
+  background: #f3f3f3;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+}
+.approach-section .section-description.processes-description {
+  max-width: 600px;
+}
+.approach-list {
+  width: auto;
+  max-width: 1077px;
+  margin: 50px auto 0;
+  padding-left: 7px;
+  overflow: hidden;
+}
+.approach-list__item {
+  float: left;
+  box-sizing: border-box;
+  height: 264px;
+  width: calc( 33.3% - 7px);
+  padding: 20px;
+  margin: 0 7px 7px 0;
+  background: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4em;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+}
+.approach-list__item.double-width {
+  width: calc( 66.6% - 7px );
+}
+.approach-list__item.full-width {
+  width: calc( 100% - 7px );
+}
+.approach-list__item {
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.approach-list__item p {
+  width: auto;
+  max-width: 335px;
+}
+.ap-communication {
+  background-image: url(../images/processes/comms.jpg) ;
+}
+.ap-deployment {
+  background-image: url(../images/processes/deploy.png) ;
+  background-size: auto 63%;
+  background-position: right 70%;
+}
+.ap-requirement {
+  background-image: url(../images/processes/capture.png) ;
+  background-size: 64%;
+  background-position: right 85%;
+}
+.ap-quality {
+  background-image: url(../images/processes/qa.png) ;
+  background-size: 76%;
+  background-position: right 83%;
+}
+.ap-demo {
+  background-image: url(../images/processes/report.jpg) ;
+  align-items: flex-end;
+}
+.approach-list__item.ap-team {
+  text-align: center;
+  display: block;
+  height: auto;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.ap-team__image {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+.ap-team p {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  width: auto;
+  max-width: 480px;
+}
+.ap-demo p  {
+  color: #fff;
+}
+.ap-red {
+  color: #f1563c;
+}
+.ap-blue {
+  color: #419cd6;
+}
+.ap-green {
+  color: #6bbd43;
+}
+.ap-yellow {
+  color: #f2b100;
+}
+.ap-violet-bg {
+  background-color: #564d9a;
+}
+.ap-banner {
+  width: auto;
+  max-width: 700px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2em 50px;
+  font-weight: 300;
+}
+/*.approach-section:after {*/
+  /*content: '';*/
+  /*display: block;*/
+  /*width: auto;*/
+  /*max-width: 1067px;*/
+  /*height: 3px;*/
+  /*margin: 0 auto;*/
+  /*background-color: #f1563c;*/
+/*}*/
+/*------------custom styles for homepage-----------*/
+.launch-page .processes-section:after {
+  display: block;
+  content: '';
+  width: 88px;
+  height: 4px;
+  background: #bbb;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 1228px) {
+
+  .process-icon__holder {
+    width: 100px;
+    height: 100px;
+    margin: 20px ;
+    vertical-align: middle;
+  }
+  .process-icon {
+    height: 54px;
+    line-height: 54px;
+    width: 36px;
+    margin-left: -18px;
+    margin-top: -27px;
+  }
+  .processes-header__wrapper {
+    margin: 24px 20px 0;
+    height: 70px;
+    width: 100px;
+  }
+  .processes-item__header {
+    font-size: 18px;
+  }
+  .processes-list__item.opened .processes-item__header {
+    font-size: 24px;
+  }
+  .processes-item__header:after {
+    width: 45px;
+    height: 3px;
+  }
+  .processes-item__content {
+    width: 600px;
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 1080px) {
+  
+  .processes-header__wrapper {
+    margin: 20px 20px 0;
+  }
+  .processes-item__header {
+    font-size: 16px;
+  }
+  .processes-list__item.opened .processes-item__header {
+    font-size: 22px;
+  }
+  .processes-list__item.opened .processes-item__content {
+    height: 140px;
+    padding: 20px;
+  }
+  .processes-item__content {
+    width: 500px;
+    font-size: 16px;
+  }
+  .ap-communication p {
+    max-width: 330px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .approach-list, .processes-list {
+    margin-top: 0;
+  }
+}
+@media all and (max-width: 900px) {
+  .processes-list {
+    margin: 0 auto 46px;
+    padding: 0;
+    width: auto;
+    max-width: 300px;
+    text-align: left;
+    max-height: 900px;
+  }
+  .processes-list__item {
+    display: block;
+    position: relative;
+  }
+  .processes-item__content {
+    left: 0;
+    position:static;
+    height:0;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+  }
+  .processes-list__item:nth-child(n+4) .processes-item__header:after {
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    left: 27px;
+  }
+  .processes-item__header:after {
+    display: none;
+  }
+  .process-icon__holder {
+    width: 70px;
+    height: 70px;
+    margin: 14px ;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .process-icon {
+    height: 38px;
+    line-height: 38px;
+    width: 28px;
+    margin-left: -14px;
+    margin-top: -19px;
+  }
+  .processes-header__wrapper {
+    display: inline-block;
+    margin: 0 30px;
+    vertical-align: middle;
+    width: 130px;
+  }
+  .processes-list__item:nth-child(n+4) .processes-item__header,
+  .processes-item__header {
+    display: inline-block;
+    padding: 0;
+    line-height: 70px;
+    width: 100%;
+    vertical-align: middle;
+    text-align: left;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    left: 0;
+  }
+  .processes-list__item:nth-child(n+4).opened .processes-item__header,
+  .processes-list__item.opened .processes-item__header {
+    text-align: left;
+    left: 0;
+  }
+  .processes-item__content,
+  .processes-list__item:nth-child(n+4) .processes-item__content {
+    position: static;
+    padding: 0 14px;
+    margin: 0;
+    width: auto;
+    height: 0;
+    text-align: left;
+  }
+  .processes-list__item.opened .processes-item__content {
+    /*display: block;*/
+    padding: 10px 14px;
+    height: 220px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+  }
+  .processes-list__item.opened.idea .processes-item__content,
+  .processes-list__item.opened.quotation .processes-item__content {
+    height: 245px;
+  }
+  .processes-list__item.opened.discovery .processes-item__content {
+    height: 265px;
+  }
+  .processes-list__item.opened.launch .processes-item__content {
+    height: 70px;
+  }
+  .processes-list__item.opened.development .processes-item__content {
+    height: 220px;
+  }
+  .processes-list__item.opened.support .processes-item__content {
+    height: 140px;
+  }
+  .approach-list__item {
+    font-size: 18px;
+  }
+  .ap-deployment {
+    background-size: auto 50%;
+  }
+  .ap-team {
+    /*min-height: 62.5vw;*/
+    background-size: 95%;
+  }
+  .ap-team p {
+    top: 20px;
+  }
+  .ap-communication {
+    background-position: center;
+  }
+  .ap-banner {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 767px) {
+  .ap-team p {
+    position: static;
+    transform: none;
+    margin: 20px auto 0;
+    padding: 0 20px;
+  }
+  .ap-team p br {
+    display: none;
+  }
+}
+@media all and (max-width: 540px) {
+  .processes-item__header {
+    margin: 0;
+  }
+  .processes-list__item.opened .processes-item__header {
+    margin: 0;
+  }
+  .approach-list__item {
+    height: 174px;
+    padding: 15px;
+    width: calc( 50% - 7px);
+    font-size: 16px;
+  }
+  .approach-list__item.mobile-full-width  {
+    width: calc( 100% - 7px );
+  }
+  .ap-communication {
+    height: 210px;
+  }
+  ap-communication p {
+    max-width: 183px;
+  }
+  .ap-deployment {
+    background-size: auto 45%;
+    background-position: right 90%;
+  }
+  .ap-demo {
+    height: 142px;
+  }
+  .ap-quality {
+    height: 165px;
+  }
+  .ap-banner {
+    font-size: 22px;
+  }
+}

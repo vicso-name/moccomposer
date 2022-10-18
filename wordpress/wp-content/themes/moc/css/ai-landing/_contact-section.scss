@@ -1,0 +1,56 @@
+.page-ai-landing,
+.page-ai-landing-ecommerce {
+  .contact-form-wrapper form {
+    padding-bottom: 0;
+  }
+
+  .contact-form-wrapper .wpcf7-submit {
+    margin-bottom: 0;
+  }
+}
+
+.ecommerce-industry {
+  .contact-form-wrapper {
+
+    input {
+      box-sizing: content-box;
+    }
+
+    .wpcf7-submit {
+      margin-bottom: 0;
+    }
+
+    &.wide-form-wrapper {
+      .section-description {
+        max-width: 530px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media all and (max-width: 500px) {
+          max-width: 300px;
+        }
+
+        span {
+          @media all and (min-width: 501px) {
+          display: block;
+        }
+        }
+      }
+    }
+  }
+}
+
+
+.industry-landing {
+  input,
+  #file-upload, #file-upload-1 {
+    box-sizing: content-box;
+  }
+
+  .contact-form-wrapper {
+    @media all and (max-width: 360px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

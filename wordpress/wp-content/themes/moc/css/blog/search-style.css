@@ -1,0 +1,305 @@
+.highlighter {
+    background-color: #ffe84f;
+}
+
+.search-error {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+/*.fixed-header .search a {*/
+/*padding: 18px 20px 28px;*/
+/*}*/
+.fixed-header .search a svg {
+    width: 18px;
+    height: 18px;
+    fill: #333;
+    margin-top: -1px;
+    overflow: visible;
+}
+
+.fixed-header .search a:hover svg {
+    fill: #fff;
+}
+
+.search-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: fixed;
+    opacity: 0;
+    top: 160px;
+    left: 0;
+    overflow: hidden;
+    z-index: 85;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.search-overlay.menu-opened {
+    display: block;
+    opacity: 1;
+}
+
+.blog-search-overlay .search-form {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 0;
+    transition: .4s;
+}
+
+.blog-search-overlay .wrapper-search {
+    width: auto;
+    max-width: 996px;
+    margin: 0 auto;
+    padding: 85px 20px 20px;
+    height: calc(100% - 175px);
+}
+
+.blog-search-overlay .search-form {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog-search-overlay .search-icon {
+    width: 14px;
+    height: 15px;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+}
+
+.search-overlay .logo-search {
+    z-index: 99;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.blog-search-overlay .search-form input {
+    -webkit-appearance: none;
+    font-size: 18px;
+    line-height: 24px;
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 0 0 7px 30px;
+    border-bottom: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 16px;
+    border-radius: 0;
+}
+
+@media all and (max-width: 992px) {
+    .blog-search-overlay .search-form input {
+        /*//margin-bottom: 24px;*/
+    }
+}
+
+@media all and (max-width: 680px) {
+    .blog-search-overlay .search-form input {
+        margin-bottom: 14px;
+    }
+}
+
+.blog-search-overlay .search-form input:focus,
+.active-search .blog-search-overlay .search-form input {
+    border-bottom-color: #F1563C;
+}
+
+.blog-search-overlay .search-form input::-webkit-input-placeholder {
+    color: #666666;
+}
+
+.blog-search-overlay .search-form input::-moz-placeholder {
+    color: #666666;
+}
+
+.blog-search-overlay .search-form input:-ms-input-placeholder {
+    color: #666666;
+}
+
+.blog-search-overlay .search-form input:-moz-placeholder {
+    color: #666666;
+}
+
+.blog-search-overlay .search-form input:-webkit-autofill {
+    background: none;
+    color: #fff;
+}
+
+.fixed-header .search-form input::-ms-clear {
+    display: none;
+}
+
+.search-overlay .search-form .count {
+    position: absolute;
+    display: none;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    background: rgba(255, 255, 255, .8);
+    top: 75px;
+    width: 200px;
+    left: 50%;
+    margin: 0 0 0 -100px;
+}
+
+.subscribe-content .close-btn,
+.blog-search-overlay .close-btn {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.blog-search-overlay .close-btn {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    transition: .2s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.active-search .blog-search-overlay .close-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.subscribe-content .close-btn .close-btn-line,
+.blog-search-overlay .close-btn .close-btn-line {
+    display: inline-block;
+    width: 17px;
+    height: 1px;
+    background-color: #666666;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+
+.close-btn-line.first {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-btn-line.second {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.search-overlay .search-form button {
+    display: none;
+}
+
+.search-result .title a {
+    padding: 0 5px 0 0;
+    font-size: 32px;
+    font-weight: 400;
+    color: #212121;
+    border: none;
+    text-decoration: none;
+}
+
+.search-result .title a:hover {
+    color: #f1563c;
+}
+
+.search-result .link {
+    color: #595959;
+    font-size: 18px;
+    margin: 25px 0 0;
+}
+
+.search-result .text {
+    font-size: 18px;
+    line-height: 26px;
+    color: #595959;
+    word-break: initial;
+    margin: 10px 0 0;
+    padding: 0 15px 0 0;
+    text-align: justify;
+}
+
+/*
+AJAX SEARCH CSS
+ */
+.displayed-search-phrases {
+    /*position: absolute;*/
+    /*top: 50px;*/
+    /*left: 0;*/
+    /*z-index: 1;*/
+    width: 100%;
+}
+
+.displayed-ajax-search {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+/*.displayed-ajax-search .search-result {*/
+/*    overflow: hidden;*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.displayed-ajax-search .search-result footer {*/
+/*    background-color: transparent;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.displayed-ajax-search .search-result .search-link {*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    margin: 20px 0 30px;*/
+/*    padding: 0 0 1px;*/
+/*    text-decoration: none;*/
+/*    border-bottom: 1px solid #f1563c;*/
+/*}*/
+
+/*.displayed-ajax-search .search-result .search-link:hover {*/
+/*    color: #f1563c;*/
+/*}*/
+
+
+/*.search-spinner {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    -webkit-transform: translate(-50%, -50%);*/
+/*    display: none;*/
+/*}*/
+
+.popular-searches-list li a {
+    position: relative;
+    color: #212121;
+    font: 400 22px / 27px "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+.displayed-ajax-search .search-result .notfound-title {
+    margin: 0 auto;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media all and (max-width: 1023px) and (orientation: landscape) {
+    .search-overlay .wrapper-search {
+        padding: 100px 15px 15px;
+        height: calc(100% - 115px);
+    }
+}

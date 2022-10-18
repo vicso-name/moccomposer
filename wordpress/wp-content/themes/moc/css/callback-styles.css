@@ -1,0 +1,309 @@
+/*---------------------z-index fixes for vidgets--------------------*/
+/*------------------------------------------------------------------*/
+/*body.intercom-mobile-messenger-active {*/
+    /*position: static;*/
+/*}*/
+body #intercom-container,
+body #zcwMiniButton {
+    z-index: 8887 !important;
+}
+/*-------------------------jivo chat positioning - mobile-----------*/
+body .wrap_mW._show_1e {
+    right: 90px !important;
+}
+
+/*------------------------------------------------------------------*/
+/*--------------------------zadarma icon styles---------------------*/
+/*------------------------------------------------------------------*/
+body #zcwMiniButton {
+    left: 27px;
+    bottom: 27px;
+    width: 60px;
+    height: 60px;
+    opacity: 1;
+}
+body #intercom-container .intercom-launcher-frame {
+    bottom: 27px!important;
+    right: 27px!important;
+}
+.free_estimate #zcwMiniButton,
+.free_estimate #intercom-container .intercom-launcher-frame {
+    bottom: 118px!important;
+    -webkit-transition: bottom 0.5s;
+    transition: bottom 0.5s;
+}
+body #zcwMiniButton #zcwMiniButtonMain {
+    background-color: #0db487;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: zcwminimoc 1.5s 0s ease-out infinite;
+    -moz-animation: zcwminimoc 1.5s 0s ease-out infinite;
+    animation: zcwminimoc 1.5s 0s ease-out infinite;
+}
+body #zcwMiniButton #zcwMiniButtonMain:before {
+    background-size: 50% auto;
+    background-position: 14px 13px;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+body #zcwMiniButton:hover {
+    opacity: 1;
+}
+body #zcwMiniButton:hover #zcwMiniButtonMain:before {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+body #zcwMiniButton:hover #zcwMiniButtonMain {
+    -webkit-animation: zcwminimoc2 1s 0.4s ease-out infinite;
+    -moz-animation: zcwminimoc2 1s 0.4s ease-out infinite;
+    animation: zcwminimoc2 1s 0.4s ease-out infinite;
+}
+body .zcwPopup-bg {
+    background: rgba(0,0,0, 0.16) !important;
+    filter: none;
+    -webkit-filter: none;
+}
+body .zcwPopup {
+    padding: 10px !important;
+    border-radius: 0 !important;
+    margin: -172px 0 0 -150px;
+    opacity: 1;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 40px 68px rgba(0, 0, 0, 0.35) !important;
+}
+body .zcwPopup-close {
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    top: 10px;
+    right: 10px;
+}
+
+body .zcwPopup-title,
+body .zcwPopup-description,
+body .zcwPopup-content {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+body .zcwPopup-content {
+    font-size: 12px;
+}
+
+body .zcwPopup-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 34px;
+    font-weight: 700;
+}
+body .zcwPopup-description {
+    font-size: 18px;
+    font-weight: 300;
+}
+body .zcwPopup button,
+body .zcwPopup input[type="text"],
+body .zcwPopup select,
+body .zcwPopup textarea {
+    border-radius: 0 !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin-bottom: 5px;
+}
+body .zcwPopup .zcwPopup-form {
+    margin-top: 20px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+body .zcwPopup .zcwPopup-form form {
+    min-height: 60px;
+    height: auto;
+    font-size: 20px;
+    line-height: 50px;
+}
+body .zcwPopup input[type="text"],
+body .zcwPopup select {
+    border-bottom: 2px solid #ccc;
+    padding: 0 0 5px 0;
+    height: 30px;
+    line-height: 22px;
+
+    vertical-align: bottom;
+    box-sizing: border-box;
+    display: inline-block;
+}
+body .zcwPopup select {
+    -webkit-appearance: none;
+    padding-right: 23px;
+    margin-left: 5px;
+    background-size: 13px auto;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+body .zcwPopup input[type="text"] {
+    width: 70% !important;
+    max-width: 140px;
+}
+body .zcwPopup input[type="submit"] {
+    font-size: 0;
+    height: 32px;
+    width: 32px !important;
+    border-radius: 50%;
+    margin: 0 0 0 10px;
+    background-color: #0db487;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: 7px 6px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+body .zcwPopup input[type="submit"]:hover {
+    opacity: .9;
+}
+body .zcwPopup .link.zcwPopup-deferred,
+body .zcwPopup .link.zcwPopup-active {
+    color: #f1563c;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+}
+body .zcwPopup .zcwPopup-form span {
+    color: #999;
+    font-size: 18px;
+    font-weight: 700;
+}
+body #zcwPopup-callresult {
+    display: block;
+}
+body #zcwPopup-callresult input[type="button"] {
+    height: 46px;
+    min-width: 190px;
+    border-radius: 25px;
+    margin: 4px;
+    border: 2px solid transparent;
+    box-shadow: none;
+    outline: none;
+    -webkit-appearance:none;
+}
+body #zcwPopup-callresult input[type="button"]:first-child {
+    background-color: #0db487;
+    color: #fff;
+    font-weight: 600;
+}
+body #zcwPopup-callresult input[type="button"]:last-child {
+    border-color: #ccc;
+    background: transparent;
+}
+#zcwPopup-rate {
+    display: block;
+    margin: -1em auto 1em;
+}
+body #zcwPopup-raty { margin: 0 8px;}
+@media all and (min-width: 420px) {
+    body .zcwPopup {
+        width: 80% !important;
+        padding: 20px 5% !important;
+        margin: -145px 0 0 -45%;
+        max-width: 500px;
+    }
+}
+@media all and (min-width: 626px) {
+    body .zcwPopup {
+        width: 500px !important;
+        padding: 20px !important;
+        margin: -145px 0 0 -270px;
+    }
+}
+@media all and (min-width: 960px) {
+    body .zcwPopup {
+        padding: 30px 30px !important;
+        width: 760px !important;
+        max-width: 760px;
+        margin: -160px 0 0 -410px;
+    }
+    body .zcwPopup .zcwPopup-form {
+        font-size: 32px;
+        margin-top: 40px;
+    }
+    body .zcwPopup button,
+    body .zcwPopup input[type="text"],
+    body .zcwPopup textarea {
+        font-size: 32px;
+        height: 50px;
+    }
+    body .zcwPopup select {
+        font-size: 22px;
+        height: 50px;
+        font-weight: 700;
+    }
+    body .zcwPopup input[type="submit"] {
+        height: 62px;
+        width: 62px !important;
+        background-position: 14px 12px;
+    }
+    body .zcwPopup input[type="text"] {
+        width: 30% !important;
+        min-width: 200px;
+    }
+    body .zcwPopup .zcwPopup-form form {
+        height: 80px;
+    }
+    body .zcwPopup-close {
+        top: 20px;
+        right: 20px;
+    }
+    #zcwPopup-rate {
+        display: block;
+        margin: -.7em auto .7em;
+    }
+}
+
+@media all and (min-width: 1025px) {
+    .free_estimate #zcwMiniButton,
+    .free_estimate #intercom-container .intercom-launcher-frame {
+        bottom: 132px!important;
+        -webkit-transition: bottom 0.5s;
+        transition: bottom 0.5s;
+    }
+}
+
+
+@-webkit-keyframes zcwminimoc {
+    0% {box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);}
+    10% {box-shadow: 0 0 8px 6px rgba(13, 180, 135, 0.6), 0 0 12px 10px rgba(13, 180, 135, 0), 0 0 0 0 rgba(13, 180, 135, 0.6);}
+    100% {box-shadow: 0 0 8px 6px rgba(13, 180, 135, 0), 0 0 0 40px rgba(13, 180, 135, 0), 0 0 0 40px rgba(13, 180, 135, 0);}
+}
+@-moz-keyframes zcwminimoc {
+    0% {box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);}
+    10% {box-shadow: 0 0 8px 6px rgba(13, 180, 135, 0.6), 0 0 12px 10px rgba(13, 180, 135, 0), 0 0 0 0 rgba(13, 180, 135, 0.6);}
+    100% {box-shadow: 0 0 8px 6px rgba(13, 180, 135, 0), 0 0 0 40px rgba(13, 180, 135, 0), 0 0 0 40px rgba(13, 180, 135, 0);}
+}
+@keyframes zcwminimoc {
+    0% {box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);}
+    10% {box-shadow: 0 0 8px 6px rgba(13, 180, 135, 0.6), 0 0 12px 10px rgba(13, 180, 135, 0), 0 0 0 0 rgba(13, 180, 135, 0.6);}
+    100% {box-shadow: 0 0 8px 6px rgba(13, 180, 135, 0), 0 0 0 40px rgba(13, 180, 135, 0), 0 0 0 40px rgba(13, 180, 135, 0);}
+}
+@-webkit-keyframes zcwminimoc2 {
+    0% {box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);}
+    10% {box-shadow: 0 0 8px 6px rgba(13, 180, 135, 0.8), 0 0 12px 10px rgba(13, 180, 135, 0), 0 0 0 0 rgba(13, 180, 135, 0.8);}
+    100% {box-shadow: 0 0 8px 6px rgba(13, 180, 135, 0), 0 0 0 40px rgba(13, 180, 135, 0), 0 0 0 40px rgba(13, 180, 135, 0);}
+}
+@-moz-keyframes zcwminimoc2 {
+    0% {box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);}
+    10% {box-shadow: 0 0 8px 6px rgba(13, 180, 135, 0.8), 0 0 12px 10px rgba(13, 180, 135, 0), 0 0 0 0 rgba(13, 180, 135, 0.8);}
+    100% {box-shadow: 0 0 8px 6px rgba(13, 180, 135, 0), 0 0 0 40px rgba(13, 180, 135, 0), 0 0 0 40px rgba(13, 180, 135, 0);}
+}
+@keyframes zcwminimoc2 {
+    0% {box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);}
+    10% {box-shadow: 0 0 8px 6px rgba(13, 180, 135, 0.8), 0 0 12px 10px rgba(13, 180, 135, 0), 0 0 0 0 rgba(13, 180, 135, 0.8);}
+    100% {box-shadow: 0 0 8px 6px rgba(13, 180, 135, 0), 0 0 0 40px rgba(13, 180, 135, 0), 0 0 0 40px rgba(13, 180, 135, 0);}
+}

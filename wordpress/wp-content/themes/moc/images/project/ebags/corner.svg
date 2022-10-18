@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d7d7d7;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="corner.svg" class="cls-1" d="M1024,4749l-10,10h-2v-12h2v9l9-9Z" transform="translate(-1012 -4747)"/>
+</svg>

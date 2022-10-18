@@ -1,0 +1,229 @@
+@import '_variables.scss';
+.page-services {
+  font-size: 18px;
+  color: $main_text_color;
+}
+.flexible-section  {
+  background: $section-background;
+  overflow: hidden;
+  line-height: 1.8;
+}
+.page-services p {
+  letter-spacing: 0.5px;
+  //line-height: 1.56;
+  margin: 0 0 30px;
+  text-align: justify;
+}
+.page-services .description-block {
+  max-width: 980px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.flexible-section h1,
+.flexible-section h2,
+.flexible-section h3,
+.flexible-section h4 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: $heading_color;
+  font-weight: 300;
+  width: auto;
+  max-width: 700px;
+  margin: auto;
+  //line-height: 1.2;
+}
+.flexible-section h1,
+.flexible-section h2 {
+  margin: 10px auto 40px;
+  font-size: 50px;
+}
+.flexible-section .flexible-caption {
+  line-height: 1.2;
+}
+.page-services .details-block h2,
+.page-services .details-block h3 {
+  font-size: 24px;
+  margin: 56px auto 16px;
+  font-weight: 500;
+}
+
+/* ------------- heading ----------- */
+.page-services .heading-block {
+  position: relative;
+  background: #fff;
+  font-size: 54px;
+  padding: 2.42em 0 0;
+}
+.page-services .heading-1 {
+  margin: 0 auto;
+  padding: 0.5em 0 1.5em;
+  font-size: 1em;
+}
+.page-services .icon-holder-service {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2.67em;
+  height: 2.03em;
+}
+.page-services .icon-holder-service svg {
+  height: 100%;
+  width: 100%;
+}
+.page-services .icon-holder-service img {
+  height: 100%;
+  width: auto;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/*sections*/
+.details-block {
+  padding: 44px 0 27px;
+}
+.page-services .details-block + .details-block {
+  padding-top: 0;
+}
+.page-services section:not(.flexible-section) p:last-child {
+  margin-bottom: 0;
+}
+.details-block h2:first-child {
+  margin-top: 0;
+}
+/*tech block*/
+.page-services .tech-holder .tech-caption {
+  font-size: 22px;
+  text-align: center;
+  margin: 0 auto 31px;
+  font-weight: 400;
+}
+.page-services .technologies-list {
+  font-size: 0;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.page-services .technologies-list li {
+  display: inline-block;
+  background: #FFF;
+  width: 159px;
+  height: 159px;
+  padding: 30px 10px 0;
+  margin: 0 4px 8px;
+  box-sizing: border-box;
+}
+.technologies-list .icon-holder {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+}
+.technologies-list .icon-holder img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.tech-name {
+  font-size: 14px;
+  color: $grey-text;
+  text-transform: uppercase;
+  display: block;
+  margin: 10px 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/*red accented block*/
+.page-services .red-accent {
+  color: $brand_color;
+  font-size: 1.44rem;
+  padding: 1.25em 3.85em;
+  margin: 0 auto 1.2em;
+  border: 1px solid $border-color;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  line-height: 1.65;
+  letter-spacing: 1px;
+}
+.page-services a:not(.read-more):not(.link):not(.cta-btn) {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid $brand_color;
+}
+.no-touch .page-services a:not(.read-more):not(.link):not(.cta-btn):hover {
+  color: $brand_color;
+  text-decoration: none;
+  border-bottom-width: 2px;
+}
+/*images*/
+.page-services .flexible-image {
+  height: auto;
+  width: auto;
+  margin: auto;
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+/*unordered, ordered list */
+
+.flexible-section ul,
+.flexible-section ol {
+  margin:0 auto 30px;
+  padding:0 0 0 50px;
+}
+.flexible-section li {
+  padding: 0 0 0 20px;
+  list-style: none;
+  position: relative;
+}
+.flexible-section li:before {
+  display: block;
+  position: absolute;
+  left: -18px;
+}
+.flexible-section ul li:before {
+  content: '';
+  top: .75em;
+  height: .4em;
+  width: .4em;
+  background-color: $brand_color;
+}
+.flexible-section ol {
+  counter-reset: item;
+}
+.flexible-section ol li:before {
+  content: counter(item);
+  counter-increment: item;
+  top: 0;
+  color: $brand_color;
+  font-weight: 700;
+}
+.page-services a.get-a-quote-link {
+  width: 100px;
+  background: $brand_color;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid $brand_color;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 20px;
+  padding: 30px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: content-box;
+}
+.no-touch .page-services a.get-a-quote-link:hover {
+  box-shadow: inset 0 0 0 2px #fff;
+  color: #fff;
+}

@@ -1,0 +1,593 @@
+$tab_height: calc(50vw - 40px);
+$max_tab_height: 490px;
+
+.usecases-tabs {
+  display: block;
+  margin: 0;
+  min-height: 700px;
+
+  @media all and (min-width: 768px) {
+    margin-top: -12px;
+  }
+  @media (min-width: 768px) and (max-width: 1599px) {
+    min-height: 650px;
+  }
+}
+
+.usecases-heading {
+  display: block;
+  position: relative;
+  min-height: 57px;
+
+  a {
+    position: absolute;
+    display: block;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    padding: 15px 0;
+    box-sizing: border-box;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    .progress,
+    .progress-active {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: '';
+      display: block;
+      width: 100%;
+
+    }
+
+    .progress {
+      border-bottom: 2px solid #f1563c;
+    }
+
+    .progress-active {
+      transform: scaleX(0);
+      transform-origin: left;
+      border-bottom: 2px solid #f1563c;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.5;
+      text-align: center;
+      color: #aaaaaa;
+    }
+
+    &.active {
+      .progress {
+        border-bottom: 2px solid #aaaaaa;
+      }
+
+      .progress-active {
+        border-bottom: 2px solid #f1563c;
+        transform: scaleX(1);
+        transition: transform 5s linear;
+      }
+
+      h3 {
+        color: #666666;
+      }
+
+      & + a + a .progress {
+        border-bottom: 2px solid #aaaaaa;
+      }
+
+      & + a .progress {
+        border-bottom: 2px solid #aaaaaa;
+      }
+    }
+
+    &.active.clicked .progress-active {
+      transition: none;
+    }
+  }
+
+  @media all and (min-width: 370px) and (max-width: 767px) {
+    a {
+      h3 {
+        font-size: 22px;
+      }
+    }
+  }
+  @media all and (max-width: 767px) {
+    a {
+      width: 100%;
+      position: absolute;
+      display: block;
+      padding: 27px 0;
+
+      h3 {
+        opacity: 0;
+      }
+
+      z-index: 1;
+      margin: 0;
+
+      &.active {
+        z-index: 2;
+
+        h3 {
+          opacity: 1;
+        }
+      }
+
+      .progress,
+      .progress-active {
+        z-index: 1;
+        opacity: 1;
+        width: 30%;
+
+      }
+    }
+    a:nth-child(1) .progress,
+    a:nth-child(1) .progress-active {
+      left: 0;
+    }
+    a:nth-child(2) .progress,
+    a:nth-child(2) .progress-active {
+      left: 35%;
+    }
+    a:nth-child(3) .progress,
+    a:nth-child(3) .progress-active {
+      left: inherit;
+      right: 0;
+    }
+  }
+  @media all and (min-width: 768px) {
+    .usecases-tabs {
+      min-height: 615px;
+    }
+    a {
+      position: relative;
+      display: inline-block;
+      width: calc(33.3% - 23px);
+      margin: 0 0 0 30px;
+
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+  @media all and (min-width: 1100px) {
+    .usecases-tabs {
+      min-height: 700px;
+    }
+    a {
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
+  @media all and (min-width: 1300px) {
+    a {
+      h3 {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.usecases-list {
+  margin: 40px 0;
+
+  li {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    color: #333333;
+    padding: 0 0 0 2.5em;
+    margin: 9px 0;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0.8em;
+      left: 1em;
+      height: 7px;
+      width: 7px;
+      border: 1px solid #f1563c;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin: 0;
+    }
+  }
+
+  @media all and (min-width: 370px) {
+
+  }
+  @media all and (min-width: 768px) {
+    margin: 40px 0 40px 15px;
+    li {
+      margin: 0;
+      font-size: 24px;
+    }
+  }
+  @media all and (min-width: 1600px) {
+    li {
+      font-size: 24px;
+    }
+  }
+}
+
+.usecases-content {
+  margin: 1px auto 0;
+
+  .right-part {
+    width: 100%;
+    margin: 0;
+    min-height: 425px;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: inherit;
+  }
+
+  .left-part {
+    overflow: hidden;
+  }
+
+  .text-tab {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 34px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease-out, visibility 0.3s 0.01s;
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+      z-index: 1;
+      transition: opacity 0.3s 0.3s ease-out, visibility 0.3s 0.01s;
+    }
+  }
+
+  .accent-btn {
+    color: #f1563c;
+    border: solid 1px #f1563c;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+    bottom: -33%;
+
+    @media all and (min-width: 768px) and (max-width: 1600px)  {
+      bottom: -28%;
+    }
+
+    &:hover {
+      color: white;
+      background: #f1563c;
+    }
+  }
+
+  @media all and (max-width: 767px) {
+    .right-part {
+      width: auto;
+      margin: 0;
+      min-height: inherit;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #fff;
+    }
+    .text-tab {
+      opacity: 1;
+      position: static;
+      visibility: visible;
+      left: inherit;
+      transform: none;
+      padding: 4px 0;
+    }
+    .left-part {
+      display: none;
+    }
+    .accent-btn {
+      transform: unset;
+      position: unset;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+      width: 170px;
+    }
+  }
+  @media all and (min-width: 768px) {
+
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    .left-part,
+    .right-part {
+      width: 50%;
+      height: calc(50vw - 4px);
+      max-height: 450px;
+      padding: 30px;
+      position: relative;
+      box-sizing: border-box;
+    }
+    .left-part {
+      padding: 0;
+      background-image: url('../images/services/chatbots/Device.svg');
+      background-repeat: no-repeat;
+      background-position: 61% 61%;
+      background-size: 63% auto;
+    }
+    .text-tab {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      visibility: hidden;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 0.5s ease-out, visibility 0.5s 0.1s;
+
+      &.active {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        transition: opacity 0.6s 0.5s ease-out, visibility 0.5s 0.1s;
+      }
+    }
+  }
+}
+
+.inactive .image-tab {
+  opacity: 0;
+}
+
+.image-tab {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  .shadow {
+    background-repeat: no-repeat;
+    background-position: 90% 25%;
+    background-size: 60% auto;
+    transition: opacity 0.2s ease-out;
+
+    &.bpa {
+      background-image: url(../images/services/chatbots/ba/sbpa.svg);
+    }
+
+    &.cc {
+      background-position: 91% 25%;
+      background-image: url(../images/services/chatbots/cc/scc.svg);
+    }
+
+    &.cs {
+      background-image: url(../images/services/chatbots/cs/scs.svg);
+      background-position: 88% 26%;
+    }
+  }
+
+  .icon {
+    background-repeat: no-repeat;
+    background-position: 94% 23%;
+    background-size: 60% auto;
+
+    &.bpa {
+      background-image: url(../images/services/chatbots/ba/bpa.svg);
+    }
+
+    &.cc {
+      background-image: url(../images/services/chatbots/cc/cc.svg);
+    }
+
+    &.cs {
+      background-image: url(../images/services/chatbots/cs/cs.svg);
+    }
+  }
+
+  .shadow,
+  .icon {
+    opacity: 0;
+    top: 56.5%;
+    transform: translateY(-50%);
+    height: $tab_height;
+    max-height: $max_tab_height;
+    width: 79%;
+    position: absolute;
+  }
+
+  //.icon {
+  //  animation: hide 0.6s;
+  //}
+  z-index: 1;
+
+  &.active {
+    .shadow,
+    .icon {
+      opacity: 1;
+    }
+
+    .shadow {
+      transition: opacity 0.5s 0.2s linear;
+    }
+
+    .icon {
+      animation: show 0.6s;
+      animation-direction: normal;
+    }
+  }
+}
+
+.image-tab:not(.active) {
+  .icon {
+    //transform: translateY(-1%);
+    //transition: transform 0.5s, opacity 0.5s ease-out, visibility 0.5s 0.1s;
+    animation: hide 0.6s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+
+}
+
+.usecases-content .owl-dots {
+  bottom: inherit;
+  top: 52px;
+  width: 100%;
+
+  .owl-dot {
+    width: 29%;
+    background-color: #f1563c;
+    height: 2px;
+    margin: 0 1.5%;
+    opacity: 1;
+    font-size: 0;
+
+    &.active {
+      background-color: #f1563c;
+
+      & + .owl-dot {
+        background-color: #ccc;
+      }
+
+      & + .owl-dot + .owl-dot {
+        background-color: #ccc;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .slider-only {
+    display: none !important;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .usecases-tabs {
+    display: none;
+  }
+  .usecases-list {
+    margin-top: 70px;
+
+    li {
+      padding: 0 0 0 3em;
+
+      &:before {
+        left: 1.5em;
+      }
+    }
+  }
+  h3.slider-only {
+    text-align: center;
+  }
+  .text-tab {
+    background-color: inherit;
+  }
+  .usecases-content .owl-dots {
+    top: 65px;
+  }
+}
+
+@media all and (max-width: 370px) {
+  h3.slider-only {
+    font-size: 16px;
+  }
+  .usecases-list {
+    margin-top: 45px;
+  }
+  .usecases-list li {
+    font-size: 16px;
+  }
+  .usecases-content .owl-dots {
+    top: 40px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .image-tab .shadow, .image-tab .icon {
+    opacity: 0;
+    top: 60.6%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .usecases-heading a h3 {
+    font-size: 24px;
+    line-height: 1em;
+  }
+  .usecases-heading {
+    display: flex;
+  }
+  .usecases-heading a {
+    align-self: stretch;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .usecases-content .left-part,
+  .usecases-content .right-part {
+    height: 356px;
+    // min-height: 356px;
+    min-height: 390px;
+  }
+  .usecases-list li {
+    font-size: 20px;
+  }
+  .usecases-tabs {
+    min-height: 610px;
+  }
+}
+
+@keyframes show {
+  0% {
+    top: 30%;
+    opacity: 0;
+  }
+  60% {
+    top: 40%;
+    opacity: 0;
+  }
+  75% {
+    top: 50%;
+    opacity: 0.3;
+  }
+  100% {
+    top: 55%;
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    top: 55%;
+    opacity: 1;
+  }
+  25% {
+    top: 58%;
+    opacity: 0.3;
+  }
+  50% {
+    top: 65%;
+    opacity: 0;
+  }
+  100% {
+    top: 70%;
+    opacity: 0;
+  }
+}
